@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(171, 181, 235);
+}
+
+.cl-1 {
+    background-color: chocolate;
+}
+
+.cl-2 {
+    color: rgb(86, 242, 51);
+}
+
+.card_red {
+    display: inline-block;  /* отображение в линию */
+    background-color: lightgray; /* цвет фона */
+    color: red; /* цвет текста */
+    width: 32px;
+    height: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card_black {
+    display: inline-block;
+    background-color: lightgray;
+    color: black;
+    width: 32px;
+    height: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
