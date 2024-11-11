@@ -1,63 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-        <!--! тэги: -->
-        <p title="Всплывающая подсказка">Текст всегда помещаем внутрь тэга</p> 
-        <p></p>  <!-- - обозначает параграф (имеет отступы) -->
-        <div></div> <!-- текст документа (не имеет отступы)-->
-        
-        <h1></h1> <!-- Заголовки  -->
-        <h2></h2> <!-- Заголовки  -->
-        <h3></h3> <!-- Заголовки  -->
-        <h4></h4> <!-- Заголовки  -->
-        <h5></h5> <!-- Заголовки  -->
-        <h6></h6> <!-- Заголовки  -->
-        <img src="public/dog.webp" alt=""> <!-- встаивание изображения -->
-        <img src="public/card_game.jpg" alt="">
-        <a href="">ссылка</a>
-
-        <!--! Атрибуты тэгов: id, class -->
-        <div id=""></div>    <!-- 'id' используется один раз -->
-        <div class=""></div> <!--'class' используется много раз -->
-        <div><span>П</span>рив <sub>е</sub><sup>т</sup></div><!-- <span> — используется для стилизации части текста -->
-        
-            <div style="text-align: center;">Player 1:</div>
-<!-- чтобы выбрать спецсимвол используем 'Специальные символы HTML' -->
-        <div class="card_black">2 &clubs;</div>
-        <div class="card_red">9 &hearts;</div>
-        <div class="card_red">6 &hearts;</div>
-        <div class="card_red">A &diams;</div>
-        <div class="card_black">Q &spades;</div>
-        <div class="card_black">J &clubs;</div>
-
-<hr>
-    <div>ny <span style="color: red;">khhhho</span>  FGFG kjnoi</div>
-
     
-    <p class="cl-1 cl-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A aut hic perferendis soluta officiis obcaecati.</p>
-    <p>Distinctio sint harum autem obcaecati excepturi adipisci inventore perferendis enim qui. Omnis earum ipsa mollitia!</p>
-    <p>Maxime minus neque, vitae sint magni fugiat odio ab aperiam nemo, ut, deserunt enim iusto!</p>
-    <!-- <div>nyko FGFG kjnoi</div> -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <div class="changeDiv">text</div>
+        <div class="changeDiv">text</div>
+        <div class="changeDiv">text</div>
+        
+        <div>
+            <!-- <div title="Альтернативный текст">1sdrgdsthydfhdghdsrgy</div> -->
+            <div>2</div>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div></div>
+        </div>
+
+<div id="test">
+    <p class="block">Blanditiis similique, modi 
+        oficiis, dignissimos asperiores totam quae aut 
+        doloribus quam esse reprehenderit quos sed.</p>
+                <p class="block">Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Odio rerum, 
+                praesentium repellat cupiditate dolorum 
+                voluptatum. </p>
+    <p class="block">Blanditiis similique, modi 
+    oficiis, dignissimos asperiores totam quae aut 
+    doloribus quam esse reprehenderit quos sed.</p>
+                       <p class="block">Eum facilis voluptates ut 
+                       dicta, delectus, tempore animi repudiandae 
+                       qui quis voluptas maxime ullam, assumenda.</p>
+</div>
 
 
+        <p id="changeColor">Animi<br> libero error maxime ex <br> cum eaque <br>similique <br> nemo, quod fuga quas minima, debitis reprehenderit provident dolore earum! Nisi debitis sapiente soluta aliquam!</p>
+<hr>
+    <h1></h1> <!--Заголовки  -->
+    <h2></h2> <!--Заголовки  -->
+    <h3></h3> <!--Заголовки  -->
+    <h4></h4> <!--Заголовки  -->
+    <h5></h5> <!--Заголовки  -->
+    <h6></h6> <!--Заголовки  -->
+
+    <div id="square"> cum eaque <br>similique <br> nemo, quod fuga quas minima, debitis reprehenderit provident dolore earum! Nisi debitis sapiente soluta aliquam</div>
+
+    <div></div> <!--текст без отступов  -->
+    <p></p> <!--текст с отступами-->
+
+    <!-- id - уникальный номер (может быть использован только один раз) -->
+    <!-- class - может быть использован много раз -->
+    <!-- <br> - отступ на следующую строку -->
+    <!-- <hr> - горизонтальная полоса -->
+    <h4 title="Игрок 1"> Player 1</h4>
+    <div class="card_black">2 &clubs;</div>
+    <div class="card_red">9 &hearts;</div>
+    <div class="card_red">6 &hearts;</div>
+    <div class="card_red">A &diams;</div>
+    <div class="card_black">Q &spades;</div>
+    <div class="card_black">J &clubs;</div>
+
+    <img src="public/dog.webp" class="image">
+    <a
+        href="https://yandex.ru/images/search?family=yes&from=tabbar&img_url=https%3A%2F%2Fimg.goodfon.ru%2Foriginal%2F2048x1367%2F1%2F80%2Fblake-tsvety-sobaka-priroda.jpg&lr=239&pos=24&rpt=simage&text=%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0">Собака</a>
+
+<a href="">Название нашей ссылки</a> <!--  вставка ссылки -->
+
+<!-- p*5>lorem25  - первая цифра количество параграфов
+вторая цифра - количество слов в каждом параграфе--> 
+
+<!-- теги <b></b> <strong></strong> - выделение текста -->
+ <!--теги <i></i> <em></em> - курсивный шрифт -->
+ 
+ 
+ <p>Nam magni ipsum <span style="color: red; background-color: aqua;">dolorem quibusdam minima tenetur</span>, ex quaerat sapiente natus deleniti iusto, id nemo cumque porro aliquam maiores voluptates! Dolore, officiis ex.</p>
+<hr>
 
 
+ <div><span style="color: green; margin-top: 20px; margin-bottom: 10px;">text 1</span></div>
+ <div><span style="color: green; margin-top: 20px; margin-bottom: 10px;">text 2</span></div>
+ <div><span style="color: green; margin-top: 20px; margin-bottom: 10px;">text 3</span></div>
+ <div>text 3</div>
+ <div>text</div>
 
-    <ul>
-        <li>
-            $ git config --global user.name "John Doe"
-        </li>
-        <li>
-            $ git config --global user.email johndoe@example.com
-        </li>
-    </ul>
-
+ <blockquote>
+    цитата
+ </blockquote>
+ 
+ 
+ <p> <b><i>Lorem ipsum dolor sit ametconsectetur</i></b> adipisicing elit. Non molestiae accusantium eius provident, dolorem pariatur eum ipsam aliquid sunt voluptatibus, vero, vitae beatae!</p>
+ <p> <i>Enim maiores quos voluptatum excepturi,</i> vitae voluptatem molestias optio quasi fugit eveniet obcaecati nobis ex incidunt blanditiis voluptate laboriosam nisi nam pariatur. Nisi.</p>
+ <blockquote>Блочная цитата</blockquote>
+<p> <strong>Similique provident</strong> dignissimos repellat non vero labore esse culpa in a, molestiae repudiandae ea. Vero aut delectus sapiente vel quisquam sunt cum velit.</p>
+<p> <em>Animi voluptate reprehenderit facere</em> delectus aspernatur mollitia voluptatibus, exercitationem dolorem blanditiis? Similique molestias dolor corrupti quibusdam velit aut quo laboriosam tempora laborum harum.</p>
+<p>Totam earum saepe quis quod ab fugit veritatis tenetur delectus odit. Sapiente magni at consequatur maiores mollitia eligendi vitae id fugiat voluptate sed!</p>
+<p>Et, recusandae. Eum voluptas voluptates saepe, possimus aspernatur alias quaerat quae sequi rerum veritatis temporibus velit. Distinctio tenetur atque sit, nobis eveniet illo?</p>
+<p>Officia odio a cupiditate, alias, libero laborum asperiores eum dolor modi illum magnam. Amet, officiis dicta odit voluptatum quis deleniti ratione iusto deserunt!</p>
+<p>Quo repellat optio quaerat neque temporibus nam corporis iure ut! Eius nisi quia in! Voluptas cupiditate expedita, eveniet quas illum doloremque! Placeat, molestiae!</p>
 
 </body>
+
 </html>
