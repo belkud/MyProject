@@ -69,4 +69,33 @@ body {
 }
 
 
+span {
+    color: blue;
+}
+
+#uniq {
+    color: aqua;
+}
+.textt {
+    color: aquamarine;
+    
+}
+
+
+.greenColor {
+    color: chartreuse;
+    background-color: rgb(18, 99, 123, .8);
+    text-decoration: underline;
+    /* font-weight: 900; */
+}
+
+h1{
+    color:rgb(76, 211, 117);
+}
+h2 {
+    color: rgb(162, 67, 67);
+}
+h3 {
+    color: red;
+}
 
