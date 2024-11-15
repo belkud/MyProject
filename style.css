@@ -1,5 +1,5 @@
 body {
-    background:  rgb(87, 84, 84);
+    background:  rgb(143, 140, 140);
 }
 
 .cl-1 {
@@ -10,9 +10,7 @@ body {
     color: rgb(86, 242, 51);
 }
 
-#title {
-    color: red;
-}
+
 
 
 
@@ -51,14 +49,14 @@ body {
     opacity: 0.5;
 }
 
-#square {
-    /* background: linear-gradient(blue, pink); */
-    color: green;
+#textId {
+    background: linear-gradient(blue, rgb(6, 130, 25));
+    color: red;
     width: 200px;
-    height: 200px;
     transition: 1s;
 }
-#square:hover {
+
+#textId:hover { /* :hover - изменяет стиль при наведении мышки */
     color: yellow;
     transition: 1s;
 }
@@ -94,13 +92,4 @@ span {
     /* font-weight: 900; */
 }
 
-h1{
-    color:rgb(76, 211, 117);
-}
-h2 {
-    color: rgb(162, 67, 67);
-}
-h3 {
-    color: red;
-}
-
+ 

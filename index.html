@@ -1,96 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    
-    <body>
 
-    <h1>Заголовок 1 уровня</h1> <!--! Заголовки  -->
-    <h2>Заголовок 2 уровня</h2> <!--! Заголовки  -->
-    <h3>Заголовок 3 уровня</h3> <!--! Заголовки  -->
-    <h4>Заголовок 4 уровня</h4> <!--! Заголовки  -->
-    <h5>Заголовок 5 уровня</h5> <!--! Заголовки  -->
-    <h6>Заголовок 6 уровня</h6> <!--! Заголовки  -->
-    
-    <p></p> <!--! текстовый абзац (параграф)-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <div></div> <!--! определяет логическое разделение содержимого веб-cтраницы.  -->
-    
-    <!-- id - уникальный номер (может быть использован только один раз) -->
-    <!-- class - может быть использован много раз -->
-    
-    
-    <img src="public/dog.webp" class="image"> <!--! встраивание изображения -->
-    <a href="https://www.yandex.ru/">Название нашей ссылки</a> <!--!  вставка ссылки -->
-    
-    <!-- p*5>lorem25  - первая цифра количество параграфов
+<body>
+
+    <!--! Заголовки  -->
+    <h1>Заголовок 1 уровня</h1>
+    <h2>Заголовок 2 уровня</h2>
+    <h3>Заголовок 3 уровня</h3>
+    <h4>Заголовок 4 уровня</h4>
+    <h5>Заголовок 5 уровня</h5>
+    <h6>Заголовок 6 уровня</h6>
+
+    <!--! текстовый абзац (параграф)-->
+    <p> В теге 'p' пишем текст</p>
+
+    <!--! определяет логическое разделение содержимого веб-cтраницы.  -->
+    <div></div>
+
+    <!--! id - уникальный номер (может быть использован только один раз) -->
+    <div id="textId">Нажми на меня</div>
+
+    <!--! class - может быть использован много раз -->
+    <div class="changeDiv">text</div>
+    <div class="changeDiv">text</div>
+    <div class="changeDiv">text</div>
+
+
+
+    <!--! встраивание изображения -->
+    <img src="public/dog.webp">
+
+    <!--!  встраивание ссылки -->
+    <a href="https://www.yandex.ru/">Название нашей ссылки</a>
+
+    <!-- p*5>lorem25 - 'текст рыба', первая цифра количество параграфов
     вторая цифра - количество слов в каждом параграфе-->
-    
+
+
     <!-- <b></b> <strong></strong> - жирный текст -->
     <!-- <i></i> <em></em> - курсивный текст -->
     <!-- <br> - тег отступа на следующую строку -->
     <!-- <hr> - горизонтальная полоса -->
     <!-- <blockquote>цитата</blockquote> -->
 
-    
+    <p> Давайте посмотрим что делает тег 'br' <br> - все верно, переносит текст на следующую строку.. тег 'i' у нас
+        делает <i>текст курсивным</i>, а тег 'b' <b> делает текст жирным</b>
+    </p>
+    <hr>
 
 
-        <div class="changeDiv">text</div>
-        <div class="changeDiv">text</div>
-        <div class="changeDiv">text</div>
-        
-        <div>
-            <div>2</div>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div></div>
-        </div>
-
-<div id="test">
-    <p class="block">Blanditiis similique, modi 
-        oficiis, dignissimos asperiores totam quae aut 
-        doloribus quam esse reprehenderit quos sed.</p>
-                <p class="block">Lorem ipsum dolor sit amet, 
-                consectetur adipisicing elit. Odio rerum, 
-                praesentium repellat cupiditate dolorum 
-                voluptatum. </p>
-    <p class="block">Blanditiis similique, modi 
-    oficiis, dignissimos asperiores totam quae aut 
-    doloribus quam esse reprehenderit quos sed.</p>
-                       <p class="block">Eum facilis voluptates ut 
-                       dicta, delectus, tempore animi repudiandae 
-                       qui quis voluptas maxime ullam, assumenda.</p>
-</div>
 
 
-    <p id="changeColor">Animi<br> libero error maxime ex <br> cum eaque <br>similique <br> nemo, quod fuga quas minima,
-        debitis reprehenderit provident dolore earum! Nisi debitis sapiente soluta aliquam!</p>
-    <hr>    
 
-    <div id="square"> cum eaque <br>similique <br> nemo, quod fuga quas minima, debitis reprehenderit provident dolore
-        earum! Nisi debitis sapiente soluta aliquam</div>
-    
 
-    <h4 title="Игрок 1"> Player 1</h4>
+    <!-- Задание с картами -->
+    <h4> Player 1</h4>
     <div class="card_black">2 &clubs;</div>
     <div class="card_red">9 &hearts;</div>
     <div class="card_red">6 &hearts;</div>
     <div class="card_red">A &diams;</div>
     <div class="card_black">Q &spades;</div>
     <div class="card_black">J &clubs;</div>
-        <br>
-
-
-
-    <a href="https://yandex.ru/images/search?family=yes&from=tabbar&img_url=https%3A%2F%2Fimg.goodfon.ru%2Foriginal%2F2048x1367%2F1%2F80%2Fblake-tsvety-sobaka-priroda.jpg&lr=239&pos=24&rpt=simage&text=%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0">Собака</a>
+    <br>
 
 
 
@@ -100,10 +78,6 @@
 
 
     <div><span style="color: green; margin-top: 20px; margin-bottom: 10px;">text 1</span></div>
-    <div><span style="color: green; margin-top: 20px; margin-bottom: 10px;">text 2</span></div>
-    <div><span style="color: green; margin-top: 20px; margin-bottom: 10px;">text 3</span></div>
-    <div>text 3</div>
-    <div>text</div>
 
 
 
@@ -116,17 +90,6 @@
         ea. Vero aut delectus sapiente vel quisquam sunt cum velit.</p>
     <p> <em>Animi voluptate reprehenderit facere</em> delectus aspernatur mollitia voluptatibus, exercitationem dolorem
         blanditiis? Similique molestias dolor corrupti quibusdam velit aut quo laboriosam tempora laborum harum.</p>
-    <p>Totam earum saepe quis quod ab fugit veritatis tenetur delectus odit. Sapiente magni at consequatur maiores
-        mollitia eligendi vitae id fugiat voluptate sed!</p>
-    <p>Et, recusandae. Eum voluptas voluptates saepe, possimus aspernatur alias quaerat quae sequi rerum veritatis
-        temporibus velit. Distinctio tenetur atque sit, nobis eveniet illo?</p>
-    <p>Officia odio a cupiditate, alias, libero laborum asperiores eum dolor modi illum magnam. Amet, officiis dicta
-        odit voluptatum quis deleniti ratione iusto deserunt!</p>
-    <p>Quo repellat optio quaerat neque temporibus nam corporis iure ut! Eius nisi quia in! Voluptas cupiditate
-        expedita, eveniet quas illum doloremque! Placeat, molestiae!</p>
-
-
-
 
 
 
