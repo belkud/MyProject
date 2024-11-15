@@ -2,94 +2,53 @@ body {
     background:  rgb(143, 140, 140);
 }
 
-.cl-1 {
-    background-color: chocolate;
-}
-
-.cl-2 {
-    color: rgb(86, 242, 51);
-}
 
 
-
-
-
-.card_red {
- color: red; /* цвет шрифта */
- background-color: lightgrey; /* цвет фона */
- display: inline-block; /* отображение  */
- width: 37px; /* ширина */
- padding: 10px; /* внутренний отступ */
- margin: 2px; /* внешний отступ */
- font-size: 25px;
-}
-
-.card_black {
- color: black;
- background-color: lightgrey; 
- width: 38px; 
- display: inline-block; 
- font-size: 25px;
- padding: 10px; 
- margin: 2px; 
-}
-
-
-.changeDiv {
-    color: green;
-    margin-top: 20px; /* верхний отступ */
-    margin-bottom: 10px; /* нижний отступ */
-    /* text-decoration: underline dotted blue 1px; */
-    text-decoration: underline dotted ;
-    /* margin-left:px %; */
-}
-
-.image {
-    width: 250px;
-    opacity: 0.5;
-}
-
-#textId {
+#textId { /* id мы обязательно пишем через '#' */
     background: linear-gradient(blue, rgb(6, 130, 25));
+    text-align: center;
     color: red;
     width: 200px;
     transition: 1s;
 }
+
 
 #textId:hover { /* :hover - изменяет стиль при наведении мышки */
     color: yellow;
     transition: 1s;
 }
 
-#changeColor {
-    color: linear-gradient(blue, pink);
- 
-}
 
-#opacity {
-   color: transparent;
-   background-clip: text;
-   background-image: linear-gradient(to bottom, black, gray);
-}
-
-span {
-    color: blue;
-}
-
-#uniq {
-    color: aqua;
-}
-.textt {
-    color: aquamarine;
-    
+.changeDiv { /* class мы обязательно пишем через '.' */
+    color: green;
+    margin-top: 20px; /* верхний отступ */
+    margin-bottom: 10px; /* нижний отступ */
+    text-decoration: underline blue 1px; /* подчеркивание текста */
 }
 
 
-.greenColor {
-    color: chartreuse;
-    background-color: rgb(18, 99, 123, .8);
-    text-decoration: underline;
-    /* font-weight: 900; */
+/*! задание с картами */
+.card_red {
+    color: red; /* цвет шрифта */
+    background-color: lightgrey; /* цвет фона */
+    display: inline-block; /* отображение  */
+    width: 37px; /* ширина */
+    padding: 10px; /* внутренний отступ */
+    margin: 2px; /* внешний отступ */
+    font-size: 25px;
 }
 
- 
+.card_black {
+    color: black;
+    background-color: lightgrey; 
+    width: 38px; 
+    display: inline-block; 
+    font-size: 25px;
+    padding: 10px; 
+    margin: 2px; 
+}
+/*! конец задания */
+
+
+
+
