@@ -96,5 +96,18 @@ body {
 
 
 
+dt {
+    background-color: gray;
+    width: 120px;
+    text-align: center;  /* выравние текста по середине блока */
+    margin: auto; /* выравние блока по середине страницы */
+}
 
+/* li {
+    background-color: yellow;
+    border: 1px solid red;
+} */
 
+/* ul {
+    color: blue;    
+} */
