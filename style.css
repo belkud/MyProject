@@ -65,16 +65,17 @@ body {
     text-shadow: blue;
     margin: 50px;
     transition: 1s;
-    /* animation: anim 5s alternate infinite; */
+    /* animation: anim5 1s alternate infinite; */
+    animation: anim5 3s alternate infinite;
 }
 
-.header:hover {
+/* .header:hover {
     rotate: 90deg;
     transition: 1s;
-}
+} */
 
 
-@keyframes  anim {
+@keyframes  anim5 {
     from {
         margin-left: 100px;
         background-color: green;
@@ -83,7 +84,7 @@ body {
     to {
         margin-left: 600px;
         background-color: yellow;
-        rotate: 360deg;
+        /* rotate: 360deg; */
 
     }
 
@@ -112,24 +113,105 @@ dt {
     color: blue;    
 } */
 
+ 
 
-#maks {
-    background-color: orange;
-    margin: 100px;
-    width:180px;
-    height: 180px;
-    cursor: pointer;
-    color: brown;
-    transition: 3s;
-    display: flex;
-    align-items: center;
-    
-justify-content: center
+
+#fruit_list {
+    background-color: pink;
+    padding: 20px;
+    font-weight: bold;
 }
 
-#maks:hover {
-    background-color: green;
-    transition: 3s;
-    border-radius: 50%;
+#fruit_list>li {
+    background-color: rgb(170, 54, 74);
+    border: 1px solid rgb(209, 212, 21);
+    margin-top: 5px;
+    /* width: 65px; */
+    /* text-align: center; */
+}
+
+#fruit_list>li::before {
+    content: ' w';
+    background-color: rgb(206, 117, 132);
+}
+
+#fruit_list>li::after {
+    content: ' w';
+    background-color: rgb(206, 117, 132);
+    width: 100px
+}
+
+
+#pseudo_list>li{
+    list-style-type: none;
+    font-size: 24px; /* размер шрифта */
+    font-style: italic; /* курсивный текст */
+    background-color: gainsboro;
+    color: red;
+}
+
+#pseudo_list li::before {
+    content: '> ';
+    color: red;
+    background-color: gray;
     
 }
+/* Псевдоэлемент ::before у нас используется ДО тега li */
+/* Псевдоэлемент ::after у нас используется ПОСЛЕ тега li */
+
+
+
+#dog_img {
+    border: 5px solid blue;
+    padding: 10px;
+    margin: 50px;
+    margin-left: -10px;
+    /* position:fixed; */
+    /* float: right; */
+}
+
+
+
+#lorem_text {
+    width: 250px;
+    border: 5px solid yellow;  /* граница, параметры: толщина границы, вид границы, цвет */
+    border-bottom: 5px dashed red;
+    border-top: 5px double blue;
+    padding-bottom: 25px;
+    margin: 20px; /* внешний отступ (отступ между элементами) */
+    margin-left: 100px;
+    margin-top: 2em;
+    /* padding-top: 105px; */
+    background-color: gray;
+    padding: 15px; /* внутренний отступ (отступ в самом элементе) */
+    padding-left: 25px;
+    padding-right: 5px;
+    transition: 1s; /* длительность анимации */
+}
+
+
+#lorem_text:hover {
+    box-shadow:  10px 10px 10px red;
+    
+}
+
+
+#callToMe {
+    display: inline;
+    background-color: blue;
+    color: white;
+    border: 2px solid transparent;
+    width: 120px;
+    /* border-radius: 50%;  используется чтобы сделать круг из квадрата */
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 1; /* прозрачность, шкала от 0 до 1 */
+    cursor:pointer; /* изменение курсора */
+}
+
+#callToMe:hover {
+    background-color: red;
+    transition: 1s; /* длительность анимации */
+    transition-delay: 2s; /* время задержки */
+}
+

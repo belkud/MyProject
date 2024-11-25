@@ -46,7 +46,7 @@
 
 
   <!--! встраивание изображения -->
-  <img src="public/dog.webp"> <!-- img- название тега, src - путь (расположение) изображения -->
+  <img id="dog_img" src="public/dog.webp"> <!-- img- название тега, src - путь (расположение) изображения -->
   
   <!--!  встраивание ссылки -->
   <a href="https://www.yandex.ru/">Название нашей ссылки</a>
@@ -243,10 +243,10 @@
 <h5>1. Неупорядоченный список </h5>
 
 <h5>2. Упорядоченный список </h5>
-<ol start="10" style="list-style-type:  ;"> <!--! упорядоченный список -->
+<ol start="20" reversed style="list-style-type:  ;"> <!--! упорядоченный список -->
   
   
-  <li value="15">Один</li>
+  <li value="10">Один</li>
   <li>Два</li>
   <li>Три</li>
   <li>Четыре</li>
@@ -272,6 +272,18 @@
   <dd></dd>
 </dl>
 
+<ol>
+  <li>
+    <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+  </li>
+  <li></li>
+  <li></li>
+</ol>
+
 
 <ol id="list">
   <li>Площади:
@@ -296,23 +308,60 @@
 </ol>
 
 <style>
-  #list {
+  #list li {
     list-style-type:upper-latin; /* отображает тип списка */
     list-style-position: inside; /* размещает маркеры (цифры) внутри списка */
     list-style-image: url(public/arrow_16.png); /* вставка изображения */
+    font-weight:bold; /* жирность шрифта */
+ 
   }
 
-  #list>li {
+  /* #list>li {
     background-color: azure;
     color: red;
+    color: yellowgreen;
 
-  }
+
+  } */
 
 
   
   </style>
 
-<div id="maks">МАКСИМКА <br> ПРИВЕТ, <br> оранжевый и <br> зелёный</div>
+<!-- <ol id="fruit_list">
+  <li>Apple</li>
+  <li>Orange</li>
+  <li>Pineapple</li>
+  <li>Pear</li>
+  <li>Chery</li>
+</ol> -->
+
+
+
+<ul id="pseudo_list" > Наш с вами список
+  <li>один </li>
+  <li>два</li>
+  <li>три</li>
+  <li>четыре</li>
+  <li>пять</li>
+</ul>
+
+
+
+
+
+<!-- <div id="lorem_text" style="margin-bottom: 45px;">Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</div> -->
+<div>Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</div>
+<div>Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</div>
+<div>Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</div>
+<p>Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</p>
+<p>Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</p>
+<p>Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</p>
+
+ <button id="callToMe">Позвони мне</button> <!-- создание кнопки -->
+
+<a href="" style="text-decoration: none;">Позвони мне</a>
+
 
 </body>
 
