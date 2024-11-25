@@ -23,7 +23,7 @@ body {
     color: green;
     margin-top: 20px; /* верхний отступ */
     margin-bottom: 10px; /* нижний отступ */
-    text-decoration: underline blue 1px; /* подчеркивание текста */
+    text-decoration: underline; /* подчеркивание текста */
 }
 
 
@@ -35,7 +35,7 @@ body {
     width: 37px; /* ширина */
     padding: 10px; /* внутренний отступ */
     margin: 2px; /* внешний отступ */
-    font-size: 25px;
+    font-size: 25px;  /* размер шрифта */
 }
 
 .card_black {
@@ -111,3 +111,25 @@ dt {
 /* ul {
     color: blue;    
 } */
+
+
+#maks {
+    background-color: orange;
+    margin: 100px;
+    width:180px;
+    height: 180px;
+    cursor: pointer;
+    color: brown;
+    transition: 3s;
+    display: flex;
+    align-items: center;
+    
+justify-content: center
+}
+
+#maks:hover {
+    background-color: green;
+    transition: 3s;
+    border-radius: 50%;
+    
+}

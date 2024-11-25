@@ -30,29 +30,24 @@
   <h6>Заголовок 6 уровня</h6>
 
   <!--! <p> - текстовый абзац (параграф)-->
-  <!-- комментарий -->
-  <p> В теге &#8249;p&#8250; мы пишем текст</p>
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente eius aliquid ea a dolore deserunt assumenda ab
     inventore nihil quaerat nam porro, iure hic non voluptatibus dolores quos adipisci veritatis!</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur aspernatur voluptatibus esse! Odit, optio
-    deleniti? Assumenda omnis ullam in magni suscipit eaque aliquid, rem dolor molestiae eligendi cupiditate repellat!
-  </p>
 
   <!--! <div> - определяет логическое разделение содержимого веб-cтраницы.  -->
   <div></div>
 
   <!--! id - уникальный номер (может быть использован только один раз) -->
-  <div id="textId">id используется один раз Нажми на меня</div>
+  <div id="textId">id используется только один раз</div>
 
   <!--! class - может быть использован много раз -->
-  <div class="changeDiv">class используетмся много раз</div>
-  <div class="changeDiv">class используетмся много раз</div>
-  <div class="changeDiv">class используетмся много раз</div>
+  <div class="changeDiv">class используется много раз</div>
+  <div class="changeDiv">class используется много раз</div>
+  <div class="changeDiv">class используется много раз</div>
 
 
   <!--! встраивание изображения -->
-  <img src="public/dog.webp">
-
+  <img src="public/dog.webp"> <!-- img- название тега, src - путь (расположение) изображения -->
+  
   <!--!  встраивание ссылки -->
   <a href="https://www.yandex.ru/">Название нашей ссылки</a>
 
@@ -75,18 +70,15 @@
 
 
   <!--! тег span -->
-  <p>Тег 'span'в HTML предназначен для выделения отдельных строк, символов или других строчных элементов для <span
-      style="color: red"> дальнейшего изменения их оформления</span> с помощью стилей`</p>
-
-
+<p>Тег 'span' в HTML предназначен для <span style="color: red"> изменения стиля части текста</span>   </p>
 
 
   <!-- Задание с картами -->
   <h4> Player 1</h4>
   <div class="card_black">2 &clubs;</div>
-  <div class="card_red">9 &hearts;</div>
+  <div class="card_red">9  &hearts;</div>
   <div class="card_red">6 &hearts;</div>
-  <div class="card_red">A &diams;</div>
+  <div class="card_red" >A &diams;</div>
   <div class="card_black">Q &spades;</div>
   <div class="card_black">J &clubs;</div>
   <!-- конец задания -->
@@ -156,9 +148,9 @@
 <p>Текст через р</p>
 <p>Текст через р</p>
 <p>Текст через р</p>
-
-  <!--! Для того чтобы найти спецсимвол мы используем таблицу спецсимволов css -->
-
+<!-- <p></p> -->
+  <!--! Для того чтобы найти спецсимвол мы используем таблицу спецсимволов html -->
+<!--Списки -->
 <p>Текст</p>
   <style>
     .newText {
@@ -197,27 +189,58 @@
     <a href="#prices">Цены</a>
     <a href="#contact">Контакты</a>
   </nav>
+  
 
+<div>Lorem <small>ipsum dolor sit</small> ipsum <span style="font-size: big;">dolor sit amet</span>dolor sit amet consectetur adipisicing elit. Quibusdam, veniam dolorem, deserunt facilis natus quae officia excepturi libero odit nobis corporis quo reiciendis aspernatur doloribus aperiam in, odio quam deleniti.</div>
 
-<del>Тег del перечеркивает текст</del>
- <div>Lorem <small>ipsum dolor sit</small> ipsum <span style="font-size: big;">dolor sit amet</span>dolor sit amet consectetur adipisicing elit. Quibusdam, veniam dolorem, deserunt facilis natus quae officia excepturi libero odit nobis corporis quo reiciendis aspernatur doloribus aperiam in, odio quam deleniti.</div>
-
-<p>Через <span  id="spanId">что-нибудь вставляем</span>тег sub мы пишем <sub>нижний индекс</sub> </p> 
-<p>Через тег sup мы пишем <sup>верхний индекс</sup> </p> 
 <samp>Моноширинный шрифт </samp>
 
 
-<h5>1. Неупорядоченный список </h5>
+	 <!--! остальные основные теги -->
+  <!-- <br> - тег отступа на следующую строку -->
+  <!-- <hr> - горизонтальная полоса -->
+  <!-- <b></b> <strong></strong> - жирный текст -->
+  <!-- <i></i> <em></em> - курсивный текст -->
+ 
+  <!-- <blockquote>цитата</blockquote> -->
+  <!-- <del>Тег del перечеркивает текст</del> -->
+  <!-- <sub>нижний индекс</sub> -->
+  <!-- <sup>верхий индекс</sup> -->
 
-<!--! неупорядоченный список -->
-<ul>Цифры
-  <li>Один</li>
-  <li>Два</li>
-  <li>Три</li>
-  <li>Четыре</li>
-  <li>Пять</li>
+
+  <hr>
+
+  <p> Давайте посмотрим что делает тег 'br' <br> - все верно, переносит текст на следующую строку.. тег 'i' у
+    нас делает <i>текст курсивным</i>, а тег 'b' <b> делает текст жирным</b>  
+     <blockquote>тег 'blockquote'- цитирует текст</blockquote>
+     <del>Тег del перечеркивает текст</del>
+    Через тег sub мы пишем <sub>нижний индекс</sub>, через тег sup мы пишем <sup>верхний индекс</sup>
+  </p>
+
+
+
+  
+  <ul></ul> <!--! 1. Неупорядоченный список (проще говоря нет цифр или букв)-->
+  <ol></ol> <!--! 2. Упорядоченный список (есть цифры или буквы) -->
+<li></li> <!--! отдельный элемент в списке -->
+
+<!-- схематичная структрура списков -->
+<ul>
+  <li>Элемент 1</li>
+  <li>Элемент 2</li>
+  <li>Элемент 3</li>
 </ul>
 
+<ol>
+  <li>Элемент 1</li>
+  <li>Элемент 2</li>
+  <li>Элемент 3</li>
+</ol>
+
+<dl></dl> <!--! 3. Список определений -->
+<!-- в этом списке вместо <li></li> мы используем: <dt></dt> и <dd></dd> -->
+
+<h5>1. Неупорядоченный список </h5>
 
 <h5>2. Упорядоченный список </h5>
 <ol start="10" style="list-style-type:  ;"> <!--! упорядоченный список -->
@@ -242,6 +265,13 @@
   <dd>Директор</dd>
   <dd>Управляющий</dd>
 </dl>
+
+<dl>
+  <dt></dt>
+  <dd></dd>
+  <dd></dd>
+</dl>
+
 
 <ol id="list">
   <li>Площади:
@@ -269,7 +299,7 @@
   #list {
     list-style-type:upper-latin; /* отображает тип списка */
     list-style-position: inside; /* размещает маркеры (цифры) внутри списка */
-    list-style-image: url(public/arrow_16.png);
+    list-style-image: url(public/arrow_16.png); /* вставка изображения */
   }
 
   #list>li {
@@ -278,10 +308,11 @@
 
   }
 
+
   
   </style>
 
-
+<div id="maks">МАКСИМКА <br> ПРИВЕТ, <br> оранжевый и <br> зелёный</div>
 
 </body>
 
