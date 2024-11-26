@@ -66,7 +66,7 @@ body {
     margin: 50px;
     transition: 1s;
     /* animation: anim5 1s alternate infinite; */
-    animation: anim5 3s alternate infinite;
+    /* animation: anim5 3s alternate infinite; */
 }
 
 /* .header:hover {
@@ -120,25 +120,34 @@ dt {
     background-color: pink;
     padding: 20px;
     font-weight: bold;
+    list-style-position: inside;
 }
 
 #fruit_list>li {
-    background-color: rgb(170, 54, 74);
+    background-color: rgb(206, 86, 106);
     border: 1px solid rgb(209, 212, 21);
-    margin-top: 5px;
+    margin-top: 10px;
+    padding: 10px;
     /* width: 65px; */
     /* text-align: center; */
 }
 
 #fruit_list>li::before {
-    content: ' w';
-    background-color: rgb(206, 117, 132);
+    content: url(public/arrow_16.png);
+    /* background-color: rgb(206, 117, 132); */
+    width: 20px;
 }
 
 #fruit_list>li::after {
-    content: ' w';
+    content: '';
     background-color: rgb(206, 117, 132);
-    width: 100px
+    width: 100px;
+    margin-left: 10px;
+    padding: 10px;
+    padding-left: 85%;
+    display: inline;
+    width: 100%;
+    
 }
 
 
@@ -209,9 +218,22 @@ dt {
     cursor:pointer; /* изменение курсора */
 }
 
+
+
 #callToMe:hover {
     background-color: red;
     transition: 1s; /* длительность анимации */
     transition-delay: 2s; /* время задержки */
 }
 
+#winter {
+    color: blue;
+}
+
+#winter>ul>li {
+    list-style-image:url(public/arrow_16.png);
+}
+
+#spring {
+    color: orange;
+}
