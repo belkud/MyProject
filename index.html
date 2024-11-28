@@ -17,37 +17,30 @@
   <button id="callToMe">Позвони мне</button> <!-- создание кнопки -->
 
   <!--! прогресс бар -->
-<div id="container">
-  <div id="square"></div>
-</div>
-
-<img id="heart" src="public/favorites.png" alt="Картинка не загрузилась">
+  <div id="container">
+    <div id="square"></div>
+  </div>
 
 
+  <!--! Задание с сердцем -->
+  <img id="heart" src="public/favorites.png" alt="Картинка не загрузилась">
 
-<!--! задание с летающими предметами -->
 
-<div id="container2">
-  <h2 style="text-align: center;">Hello my site!</h2>
-  <img id="pencil" src="public/edit.png" alt="">
-  <!-- <img id="heart" src="public/favorites.png" alt="Картинка не загрузилась"> -->
-</div>
 
-<div id="test"></div>
+  <!--! задание с летающими предметами -->
+  <div id="container2">
+    <h2 style="text-align: center;">Hello my site!</h2>
+    <img id="pencil" src="public/edit.png" alt="">
+  </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  <!-- <div id="test"></div> -->
 
-  <h1 class="header">Romeo and Juliet</h1>
-  <h1 class="header">Romeo and Juliet</h1>
-  <h1 class="header">Romeo and Juliet</h1>
 
+
+
+
+
+  <!---------------------------------------------------------------------------------------->
 
 
 
@@ -71,16 +64,18 @@
 
   <!--! id - уникальный номер (может быть использован только один раз) -->
   <div id="textId">id используется только один раз</div>
-
+  
   <!--! class - может быть использован много раз -->
   <div class="changeDiv">class используется много раз</div>
   <div class="changeDiv">class используется много раз</div>
   <div class="changeDiv">class используется много раз</div>
-
+  
+  <!--! тег span -->
+  <p>Тег 'span' в HTML предназначен для <span style="color: red"> изменения стиля части текста</span> </p>
 
   <!--! встраивание изображения -->
   <img id="dog_img" src="public/dog.webp"> <!-- img- название тега, src - путь (расположение) изображения -->
-  
+
   <!--!  встраивание ссылки -->
   <a href="https://www.yandex.ru/">Название нашей ссылки</a>
 
@@ -88,40 +83,45 @@
   <!-- p*5>lorem25 - первая цифра количество параграфов
     вторая цифра - количество слов в каждом параграфе-->
 
-  <!--! остальные теги -->
+  <!--! строчные теги -->
   <!-- <b></b> <strong></strong> - жирный текст -->
   <!-- <i></i> <em></em> - курсивный текст -->
   <!-- <br> - тег отступа на следующую строку -->
-  <!-- <hr> - горизонтальная полоса -->
+
   <!-- <blockquote>цитата</blockquote> -->
+  <!-- <del>Тег del перечеркивает текст</del> -->
+  <!-- <u>подчеркивает текст</u> -->
+  
+  <!-- <hr> - горизонтальная полоса -->
+  <!-- <sub>нижний индекс</sub> -->
+  <!-- <sup>верхий индекс</sup> -->
 
-  <hr>
-  <p> Давайте посмотрим что делает тег 'br' <br> - все верно, переносит текст на следующую строку.. тег 'i' у нас
-    делает <i>текст курсивным</i>, а тег 'b' <b> делает текст жирным</b>
+  <p> Давайте посмотрим что делает тег 'br' <br> - все верно, переносит текст на следующую строку.. тег 'i' у
+    нас делает <i>текст курсивным</i>, а тег 'b' <b> делает текст жирным</b>
+    <blockquote>тег 'blockquote'- цитирует текст</blockquote>
+    <del>Тег del перечеркивает текст</del>
+    Через тег sub мы пишем <sub>нижний индекс</sub>, через тег sup мы пишем <sup>верхний индекс</sup>
   </p>
-  <blockquote>тег 'blockquote'- цитирует текст</blockquote>
+  
+  <div class="newText">
+    Lorem ipsum dolor, первый способ подчеркивания <u>sit amet</u> второй способ подчеркивания <span
+      style="text-decoration: underline;">consectetur adipisicing elit.</span> Eaque repudiandae modi, nobis quaerat
+    perspiciatis optio recusandae earum sed porro quia rerum, dolores delectus. Sunt aut voluptas repellat ratione illo
+    numquam!
+  </div>
+
+  <!-- Для того чтобы найти спецсимвол мы используем таблицу спецсимволов html -->
 
 
-  <!--! тег span -->
-<p>Тег 'span' в HTML предназначен для <span style="color: red"> изменения стиля части текста</span>   </p>
 
 
-  <!-- Задание с картами -->
-  <h4> Player 1</h4>
-  <div class="card_black">2 &clubs;</div>
-  <div class="card_red">9  &hearts;</div>
-  <div class="card_red">6 &hearts;</div>
-  <div class="card_red" >A &diams;</div>
-  <div class="card_black">Q &spades;</div>
-  <div class="card_black">J &clubs;</div>
-  <!-- конец задания -->
-  <hr>
-
+  
+  
   <!-- Задание про Romeo and Juliet -->
   <h2 style="color: red; background-color: aqua; width: 220px; margin: 0 auto; ">Romeo and Juliet</h2>
   <h3>ACT 1</h3>
   <h3>PROLOGUE</h3>
-
+  
   <p>Two households, both alike in dignity,
     In fair Verona, where we lay our scene,
     From ancient grudge break to new mutiny,
@@ -145,10 +145,19 @@
 
   <h2>GREGORY</h2>
   <p>No, for then we should be colliers.</p>
-  <!-- конец задания -->
+  <!-- конец задания Romeo and Juliet -->
 
-  <button>Кнопка</button>
-  <input type="text">
+  
+  <!-- Задание с картами -->
+  <h4> Player 1</h4>
+  <div class="card_black">2 &clubs;</div>
+  <div class="card_red">9 &hearts;</div>
+  <div class="card_red">6 &hearts;</div>
+  <div class="card_red">A &diams;</div>
+  <div class="card_black">Q &spades;</div>
+  <div class="card_black">J &clubs;</div>
+  <!-- Конец задания с картами-->
+
 
 
 
@@ -168,49 +177,41 @@
     </tr>
   </table>
 
-  <div class="newText">
-    &#8364;
-    
-    Lorem ipsum dolor, первый способ подчеркивания <u>sit amet</u> второй способ подчеркивания <span
-      style="text-decoration: underline;">consectetur adipisicing elit.</span> Eaque repudiandae modi, nobis quaerat perspiciatis optio recusandae earum sed porro quia rerum, dolores delectus. Sunt aut voluptas repellat ratione illo numquam!
-  </div>
-<blockquote>цитата</blockquote>
-<div style="margin-top: 10px;">Обычный текст</div>
-<div style="margin-top: 10px;">Обычный текст</div>
-<div style="margin-top: 10px;">Обычный текст</div>
-<p>Текст через р</p>
-<p>Текст через р</p>
-<p>Текст через р</p>
-<!-- <p></p> -->
-  <!--! Для того чтобы найти спецсимвол мы используем таблицу спецсимволов html -->
-<!--Списки -->
-<p>Текст</p>
+
+  
+  
+  <p>Текст</p>
   <style>
     .newText {
-      white-space: pre-wrap; /* отвечает за отображение пробелов между словами. */
-      word-break:break-all;   /* отвечает за перенос строк внутри слов */
-      word-wrap:break-word;  /* определяет, нужно ли переносить слова, которые не помещаются внутри родительского контейнера п */
-      writing-mode: ; /* написание текста по горизонтали или вертикали */
-      word-spacing: 10px; /* расстояние между словами */
-      letter-spacing: 5px; /* расстояние между буквами */
-      text-transform: uppercase; /* приведение текста к внешнему или верхнему регистру */
-      text-decoration: underline; /* подчеркивание текста */
-      text-decoration-color:red; /* цвет линии */
-      text-shadow: 5px 10px 3px rgb(207, 24, 109); /* тень текста, параметры (по оси Х, по оси У, размытость, цвет ) */
+      white-space: pre-wrap;
+      /* отвечает за отображение пробелов между словами. */
+      word-break: break-all;
+      /* отвечает за перенос строк внутри слов */
+      word-wrap: break-word;
+      /* определяет, нужно ли переносить слова, которые не помещаются внутри родительского контейнера п */
+      writing-mode: ;
+      /* написание текста по горизонтали или вертикали */
+      word-spacing: 10px;
+      /* расстояние между словами */
+      letter-spacing: 5px;
+      /* расстояние между буквами */
+      text-transform: uppercase;
+      /* приведение текста к внешнему или верхнему регистру */
+      text-decoration: underline;
+      /* подчеркивание текста */
+      text-decoration-color: red;
+      /* цвет линии */
+      text-shadow: 5px 10px 3px rgb(207, 24, 109);
+      /* тень текста, параметры (по оси Х, по оси У, размытость, цвет ) */
 
     }
   </style>
 
 
-<header>Заголовок</header>
-<main>Основное меню</main>
-<footer>Нижняя часть сайта (подвал)</footer>
- 
-<!-- pre - это текст с сохранением всех пробелов, табуляций и переводы строк -->
-<pre>Lorem        ipsum dolor 
-  
-  
-  sit amet mar <span style="background-color: yellow;">consecteturadipisicing</span>consectetur        adipisicing 
+
+  <!-- pre - это текст с сохранением всех пробелов, табуляций и переводы строк -->
+  <pre>Lorem        ipsum dolor 
+    sit amet mar <span style="background-color: yellow;">consecteturadipisicing</span>consectetur        adipisicing 
   elit. Fugit aut beatae vel corrupti iste assumenda 
   omnis magnam temporibus voluptatem. Pariatur ipsam dicta 
   id adipisci aliquid consectetur illo nihil consequatur 
@@ -222,198 +223,121 @@
     <a href="#prices">Цены</a>
     <a href="#contact">Контакты</a>
   </nav>
-  
-
-<div>Lorem <small>ipsum dolor sit</small> ipsum <span style="font-size: big;">dolor sit amet</span>dolor sit amet consectetur adipisicing elit. Quibusdam, veniam dolorem, deserunt facilis natus quae officia excepturi libero odit nobis corporis quo reiciendis aspernatur doloribus aperiam in, odio quam deleniti.</div>
-
-<samp>Моноширинный шрифт </samp>
-
-
-	 <!--! остальные основные теги -->
-  <!-- <br> - тег отступа на следующую строку -->
-  <!-- <hr> - горизонтальная полоса -->
-  <!-- <b></b> <strong></strong> - жирный текст -->
-  <!-- <i></i> <em></em> - курсивный текст -->
- 
-  <!-- <blockquote>цитата</blockquote> -->
-  <!-- <del>Тег del перечеркивает текст</del> -->
-  <!-- <sub>нижний индекс</sub> -->
-  <!-- <sup>верхий индекс</sup> -->
-
-
-  <hr>
-
-  <p> Давайте посмотрим что делает тег 'br' <br> - все верно, переносит текст на следующую строку.. тег 'i' у
-    нас делает <i>текст курсивным</i>, а тег 'b' <b> делает текст жирным</b>  
-     <blockquote>тег 'blockquote'- цитирует текст</blockquote>
-     <del>Тег del перечеркивает текст</del>
-    Через тег sub мы пишем <sub>нижний индекс</sub>, через тег sup мы пишем <sup>верхний индекс</sup>
-  </p>
-
 
 
   
+
+
+
+
+
+
+
+  <!----------------- СПИСКИ --------------->
+
   <ul></ul> <!--! 1. Неупорядоченный список (проще говоря нет цифр или букв)-->
+  <ul>
+    <li>Элемент 1</li>
+    <li>Элемент 2</li>
+    <li>Элемент 3</li>
+  </ul>
+
   <ol></ol> <!--! 2. Упорядоченный список (есть цифры или буквы) -->
-<li></li> <!--! отдельный элемент в списке -->
+  <ol>
+    <li>Элемент 1</li>
+    <li>Элемент 2</li>
+    <li>Элемент 3</li>
+  </ol>
 
-<!-- схематичная структрура списков -->
-<ul>
-  <li>Элемент 1</li>
-  <li>Элемент 2</li>
-  <li>Элемент 3</li>
-</ul>
-
-<ol>
-  <li>Элемент 1</li>
-  <li>Элемент 2</li>
-  <li>Элемент 3</li>
-</ol>
-
-<dl></dl> <!--! 3. Список определений -->
-<!-- в этом списке вместо <li></li> мы используем: <dt></dt> и <dd></dd> -->
-
-<h5>1. Неупорядоченный список </h5>
-
-<h5>2. Упорядоченный список </h5>
-<ol start="20" reversed style="list-style-type:  ;"> <!--! упорядоченный список -->
-  
-  
-  <li value="10">Один</li>
-  <li>Два</li>
-  <li>Три</li>
-  <li>Четыре</li>
-  <li>Пять</li>
-</ol>
-
-<!--! список определений  -->
-<h5>3. Список определений </h5>
-<dl>
-  <dt>Город:</dt>
-  <dd>Сочи</dd>
-  <dd>Москва</dd>
-  <dd>Питер</dd>
-  <dt>Должность</dt>
-  <dd>Специалист</dd>
-  <dd>Директор</dd>
-  <dd>Управляющий</dd>
-</dl>
-
-<dl>
-  <dt></dt>
-  <dd></dd>
-  <dd></dd>
-</dl>
-
-<ol>
-  <li>
-    <ol>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ol>
-  </li>
-  <li></li>
-  <li></li>
-</ol>
+  <li></li> <!-- отдельный элемент в списке -->
 
 
-<ol id="list">
-  <li>Площади:
-    <ul>
-      <li>Дворцовая площадь</li>
-      <li>Рыночная площадь</li>
-    </ul>
-  </li>
-  <li>Замки:
-    <ul>
-      <li>Королевский замок</li>
-      <li>Президентский дворец</li>
-    </ul>
-  </li>
-  <li>Музеи:
-    <ul>
-      <li>Исторический музей</li>
-      <li>Музей карикатуры</li>
-      <li>Музей Шопена</li>
-    </ul>
-  </li>
-</ol>
-
-<style>
-  #list li {
-    list-style-type:upper-latin; /* отображает тип списка */
-    list-style-position: inside; /* размещает маркеры (цифры) внутри списка */
-    list-style-image: url(public/arrow_16.png); /* вставка изображения */
-    font-weight:bold; /* жирность шрифта */
- 
-  }
-
-  /* #list>li {
-    background-color: azure;
-    color: red;
-    color: yellowgreen;
+  <dl></dl> <!--! 3. Список определений -->
+  <!-- в этом списке вместо <li></li> мы используем: <dt></dt> и <dd></dd> -->
+  <dl>
+    <dt></dt>
+    <dd></dd>
+    <dd></dd>
+  </dl>
 
 
-  } */
 
 
-  
+
+  <!-- Вложенность списков -->
+  <ol id="list">
+    <li>Площади:
+      <ul>
+        <li>Дворцовая площадь</li>
+        <li>Рыночная площадь</li>
+      </ul>
+    </li>
+    <li>Замки:
+      <ul>
+        <li>Королевский замок</li>
+        <li>Президентский дворец</li>
+      </ul>
+    </li>
+    <li>Музеи:
+      <ul>
+        <li>Исторический музей</li>
+        <li>Музей карикатуры</li>
+        <li>Музей Шопена</li>
+      </ul>
+    </li>
+  </ol>
+
+
+
+  <style>
+    #list li {
+      list-style-type: upper-latin; /* отображает тип списка */
+      list-style-position: inside; /* размещает маркеры (цифры) внутри списка */
+      list-style-image: url(public/arrow_16.png); /* вставка изображения */
+      font-weight: bold; /* жирность шрифта */
+    }
   </style>
 
-<ol id="fruit_list">
-  <li>Apple</li>
-  <li>Orange</li>
-  <li>Pineapple</li>
-  <li>Pear</li>
-  <li>Chery</li>
-</ol>
+
+  <ol id="fruit_list">
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Pineapple</li>
+    <li>Pear</li>
+    <li>Chery</li>
+  </ol>
 
 
 
-<ul id="pseudo_list" > Наш с вами список
-  <li>один </li>
-  <li>два</li>
-  <li>три</li>
-  <li>четыре</li>
-  <li>пять</li>
-</ul>
+  <ul id="pseudo_list"> Наш с вами список
+    <li>один </li>
+    <li>два</li>
+    <li>три</li>
+    <li>четыре</li>
+    <li>пять</li>
+  </ul>
 
 
 
+  <ol>
+    <li id="winter">Зима
+      <ul>
+        <li>Декабрь</li>
+        <li>Январь</li>
+        <li>Февраль</li>
+      </ul>
+    </li>
+    <li id="spring">Весна
+      <ul>
+        <li>Март</li>
+        <li>Апрель</li>
+        <li>Май</li>
+      </ul>
+    </li>
+  </ol>
 
 
-<!-- <div id="lorem_text" style="margin-bottom: 45px;">Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</div> -->
-<div>Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</div>
-<div>Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</div>
-<div>Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</div>
-<p>Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</p>
-<p>Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</p>
-<p>Lorem ipsum dolio voluptates maxime odio cupiditate. Repellat assumenda fugit eligendi voluptatem iure sit amet. Perferendis quo omnis veniam animi provident libero.</p>
 
-
-<a href="" style="text-decoration: none;">Позвони мне</a>
-
-<ol>
-  <li id="winter">Зима
-    <ul>
-      <li>Декабрь</li>
-      <li>Январь</li>
-      <li>Февраль</li>
-    </ul>
-  </li>
-  <li id="spring">Весна
-    <ul>
-      <li>Март</li>
-      <li>Апрель</li>
-      <li>Май</li>
-    </ul>
-  </li>
-</ol>
-
-<div>
-  <div style="text-align: center; background-color: red; width: 120px; margin: auto;">hi</div>
-</div>
 
 
 

@@ -3,277 +3,32 @@ body {
 }
 
 
-
-#textId {
-    /* id мы обязательно пишем через '#' */
-    background: linear-gradient(blue, rgb(6, 130, 25));
-    text-align: center;
-    color: red;
-    /* width: 200px; */
-    transition: 1s;
-}
-
-
-#textId:hover {
-    /* :hover - изменяет стиль при наведении мышки */
-    color: yellow;
-    transition: 1s;
-}
-
-
-.changeDiv {
-    /* class мы обязательно пишем через '.' */
-    color: green;
-    margin-top: 20px;
-    /* верхний отступ */
-    margin-bottom: 10px;
-    /* нижний отступ */
-    text-decoration: underline;
-    /* подчеркивание текста */
-}
-
-
-/*! задание с картами */
-.card_red {
-    color: red;
-    /* цвет шрифта */
-    background-color: lightgrey;
-    /* цвет фона */
-    display: inline-block;
-    /* отображение  */
-    width: 37px;
-    /* ширина */
-    padding: 10px;
-    /* внутренний отступ */
-    margin: 2px;
-    /* внешний отступ */
-    font-size: 25px;
-    /* размер шрифта */
-}
-
-.card_black {
-    color: black;
-    background-color: lightgrey;
-    width: 38px;
-    display: inline-block;
-    font-size: 25px;
-    padding: 10px;
-    margin: 2px;
-}
-
-/*! конец задания */
-
-
-
-
-
-
-.header {
-    color: red;
-    /* цвет текста */
-
-    background-color: aqua;
-    text-align: center;
-    width: 220px;
-    border-radius: 30px;
-    cursor: pointer;
-    text-shadow: blue;
-    margin: 50px;
-    transition: 1s;
-    /* animation: anim5 1s alternate infinite; */
-    /* animation: anim5 3s alternate infinite; */
-}
-
-/* .header:hover {
-    rotate: 90deg;
-    transition: 1s;
-} */
-
-
-@keyframes anim5 {
-    from {
-        margin-left: 100px;
-        background-color: green;
-    }
-
-    to {
-        margin-left: 600px;
-        background-color: yellow;
-        /* rotate: 360deg; */
-
-    }
-
-}
-
-#spanId {
-    color: rgb(81, 17, 141);
-    background-color: yellow;
-}
-
-
-
-dt {
-    background-color: gray;
-    width: 120px;
-    text-align: center;
-    /* выравние текста по середине блока */
-    margin: auto;
-    /* выравние блока по середине страницы */
-}
-
-/* li {
-    background-color: yellow;
-    border: 1px solid red;
-} */
-
-/* ul {
-    color: blue;    
-} */
-
-
-
-
-#fruit_list {
-    background-color: pink;
-    padding: 20px;
-    font-weight: bold;
-    list-style-position: inside;
-}
-
-#fruit_list>li {
-    background-color: rgb(206, 86, 106);
-    border: 1px solid rgb(209, 212, 21);
-    margin-top: 10px;
-    padding: 10px;
-    /* width: 65px; */
-    /* text-align: center; */
-}
-
-#fruit_list>li::before {
-    content: url(public/arrow_16.png);
-    /* background-color: rgb(206, 117, 132); */
-    width: 20px;
-}
-
-#fruit_list>li::after {
-    content: '';
-    background-color: rgb(206, 117, 132);
-    width: 100px;
-    margin-left: 10px;
-    padding: 10px;
-    padding-left: 85%;
-    display: inline;
-
-}
-
-
-#pseudo_list>li {
-    list-style-type: none;
-    font-size: 24px;
-    /* размер шрифта */
-    font-style: italic;
-    /* курсивный текст */
-    background-color: gainsboro;
-    color: red;
-}
-
-#pseudo_list li::before {
-    content: '> ';
-    color: red;
-    background-color: gray;
-
-}
-
-/* Псевдоэлемент ::before у нас используется ДО тега li */
-/* Псевдоэлемент ::after у нас используется ПОСЛЕ тега li */
-
-
-
-#dog_img {
-    border: 5px solid blue;
-    padding: 10px;
-    margin: 50px;
-    margin-left: -10px;
-    /* position:fixed; */
-    /* float: right; */
-}
-
-
-
-#lorem_text {
-    width: 250px;
-    border: 5px solid yellow;
-    /* граница, параметры: толщина границы, вид границы, цвет */
-    border-bottom: 5px dashed red;
-    border-top: 5px double blue;
-    padding-bottom: 25px;
-    margin: 20px;
-    /* внешний отступ (отступ между элементами) */
-    margin-left: 100px;
-    margin-top: 2em;
-    /* padding-top: 105px; */
-    background-color: gray;
-    padding: 15px;
-    /* внутренний отступ (отступ в самом элементе) */
-    padding-left: 25px;
-    padding-right: 5px;
-    transition: 1s; /* длительность анимации */
-}
-
-
-#lorem_text:hover {
-    box-shadow: 10px 10px 10px red;
-
-}
-
-
-
-#winter {
-    top: 100px;
-    color: blue;
-    writing-mode: vertical-lr;
-}
-
-#winter>ul>li {
-    list-style-image: url(public/arrow_16.png);
-}
-
-#spring {
-    color: orange;
-}
-
-
-
-/*! Задание с прогресс баром */
-#container {
+    /*! Анимации */
+/*! Задание с прогресс баром (двигающийся квадратик) */
+#container { 
     border: 2px solid orange;
     height: 40px;
     width: 200px;
 }
 
-#square {
+#square {  /* двигающийся квадрат */
     background: red;
     width: 40px;
     height: 40px;
     position: absolute;
-    animation: anim 30s alternate infinite;
-    /*параметры анимации: её название , её продолжительсть, поведение анимации, количество повторений  */
-    
-    
+    animation: anim 30s; /* название анимации, её продолжительность  */
 }
 
-@keyframes anim {
-    from {
+@keyframes anim {   /* создание анимации */
+    from { /* начало анимации */
         margin-left: 0px;
     }
-    
-    to {
+    to {  /* конец анимации */
         margin-left: 160px;
     }
     
 }
-
-
+/*! Конец задания с прогресс баром */
 
 
 
@@ -281,16 +36,14 @@ dt {
 #heart {
     width: 150px;
     transition: 1s;
-    filter: grayscale(1) ;  /* отлично работает с изображениями */
-    
+    filter: grayscale(1) ;  /* filter отлично работает с изображениями */
 }
 
 #heart:hover {
     filter: grayscale(0);
     width: 250px;
-    
-    /* filter:drop-shadow(15px 15px 5px red) contrast(3); тень изображения, параметры: (ось Х, ось У, размытость, цвет) */
 }
+/*! Конец задания с сердцем */
 
 
 
@@ -304,34 +57,23 @@ dt {
 }
 
 #pencil {
-    border: 2px solid red;
     width: 150px;
     margin-top: 300px;
     position: absolute;
-    z-index: 1;
-    /* margin-left: 500px; */
-    
-    animation: movePencil 2s  ease forwards ;
-    /*параметры анимации: её название , её продолжительсть, поведение анимации, количество повторений  */
-    
-    
+    animation: movePencil 2s forwards ;
 }
-
 
 @keyframes movePencil {
     from {
-        /* margin-top: 300px; */
-        /* rotate: 0deg; */
+        margin-top: 300px;
+        rotate: 0deg;
     }
     to {
-        /* rotate: 360deg; */
-        /* margin-top: 0px; */
-        /* transform-origin: 0% 100%; */
-        /* transform-origin: top left; */
-        /* translate:  0% 100%; */
-    }
-    
+        margin-top: 0px;
+        rotate: 30deg;
+    }    
 }
+/*! Конец задания с летающими предметами */
 
 
 
@@ -410,4 +152,193 @@ dt {
 /* #callToMe:hover { */
     
 /* } */
+
+
+
+
+
+
+#textId {
+    /* id мы обязательно пишем через '#' */
+    background: linear-gradient(blue, rgb(6, 130, 25));
+    text-align: center;
+    color: red;
+    /* width: 200px; */
+    transition: 1s;
+}
+
+
+#textId:hover { /* :hover - изменяет стиль при наведении мышки */
+    color: yellow;
+    transition: 1s;
+}
+
+
+.changeDiv { /* class мы обязательно пишем через '.' */
+    color: green;
+    margin-top: 20px; /* верхний отступ */
+    margin-bottom: 10px; /* нижний отступ */
+    text-decoration: underline;  /* подчеркивание текста */
+}
+
+
+/*! задание с картами */
+.card_red {
+    color: red; /* цвет шрифта */
+    background-color: lightgrey; /* цвет фона */
+    display: inline-block;    /* блочное или строчное отображение  */
+    width: 37px; /* ширина */
+    padding: 10px;  /* внутренний отступ */
+    margin: 2px;  /* внешний отступ */
+    font-size: 25px;  /* размер шрифта */
+}
+
+.card_black {
+    color: black;
+    background-color: lightgrey;
+    width: 38px;
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px;
+    margin: 2px;
+}
+
+/*! конец задания */
+
+
+
+
+
+
+
+#spanId {
+    color: rgb(81, 17, 141);
+    background-color: yellow;
+}
+
+
+
+dt {
+    background-color: gray;
+    width: 120px;
+    text-align: center;  /* выравние текста по середине блока */
+    margin: auto; /* выравние блока по середине страницы */
+}
+
+
+
+
+
+
+#fruit_list {
+    background-color: pink;
+    padding: 20px;
+    font-weight: bold;
+    list-style-position: inside;
+}
+
+#fruit_list>li {
+    background-color: rgb(206, 86, 106);
+    border: 1px solid rgb(209, 212, 21);
+    margin-top: 10px;
+    padding: 10px;
+    /* width: 65px; */
+    /* text-align: center; */
+}
+
+#fruit_list>li::before {
+    content: url(public/arrow_16.png);
+    /* background-color: rgb(206, 117, 132); */
+    width: 20px;
+}
+
+#fruit_list>li::after {
+    content: '';
+    background-color: rgb(206, 117, 132);
+    width: 100px;
+    margin-left: 10px;
+    padding: 10px;
+    padding-left: 85%;
+    display: inline;
+
+}
+
+
+#pseudo_list>li {
+    list-style-type: none;
+    font-size: 24px;
+    /* размер шрифта */
+    font-style: italic;
+    /* курсивный текст */
+    background-color: gainsboro;
+    color: red;
+}
+
+#pseudo_list li::before {
+    content: '> ';
+    color: red;
+    background-color: gray;
+
+}
+
+/* Псевдоэлемент ::before у нас используется ДО тега li */
+/* Псевдоэлемент ::after у нас используется ПОСЛЕ тега li */
+
+
+
+#dog_img {
+    border: 5px solid blue;
+    padding: 10px;
+    margin: 50px;
+    margin-left: -10px;
+    /* position:fixed; */
+    /* float: right; */
+}
+
+
+
+#lorem_text {
+    width: 250px;
+    border: 5px solid yellow;
+    /* граница, параметры: толщина, вид границы, цвет */
+    border-bottom: 5px dashed red;
+    border-top: 5px double blue;
+    padding-bottom: 25px;
+    margin: 20px;
+    /* внешний отступ (отступ между элементами) */
+    margin-left: 100px;
+    margin-top: 2em;
+    /* padding-top: 105px; */
+    background-color: gray;
+    padding: 15px;
+    /* внутренний отступ (отступ в самом элементе) */
+    padding-left: 25px;
+    padding-right: 5px;
+    transition: 1s; /* длительность анимации */
+}
+
+
+#lorem_text:hover {
+    box-shadow: 10px 10px 10px red;
+
+}
+
+
+
+#winter {
+    top: 100px;
+    color: blue;
+    writing-mode: vertical-lr;
+}
+
+#winter>ul>li {
+    list-style-image: url(public/arrow_16.png);
+}
+
+#spring {
+    color: orange;
+}
+
+
+
 
