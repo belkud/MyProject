@@ -234,30 +234,19 @@ dt {
 }
 
 #fruit_list>li {
-    background-color: rgb(206, 86, 106);
-    border: 1px solid rgb(209, 212, 21);
+    background-color: rgb(238, 147, 163);
+    border: 2px solid rgb(209, 212, 21);
     margin-top: 10px;
     padding: 10px;
     /* width: 65px; */
     /* text-align: center; */
 }
-
-#fruit_list>li::before {
-    content: url(public/arrow_16.png);
-    /* background-color: rgb(206, 117, 132); */
-    width: 20px;
-}
-
-#fruit_list>li::after {
-    content: '';
-    background-color: rgb(206, 117, 132);
-    width: 100px;
-    margin-left: 10px;
+.background {
+    background-color: rgb(169, 69, 86);
     padding: 10px;
-    padding-left: 85%;
-    display: inline;
-
 }
+
+
 
 
 #pseudo_list>li {
@@ -268,15 +257,22 @@ dt {
     color: red;
 }
 
-#pseudo_list li::before {
-    content: '> ';
-    color: red;
-    background-color: gray;
 
+
+/* Псевдоэлемент ::before используется ДО тега */
+/* Псевдоэлемент ::after используется ПОСЛЕ тега */
+
+#pseudo_list li::before {
+    content: '> before ';
+    color: black;
 }
 
-/* Псевдоэлемент ::before у нас используется ДО тега li */
-/* Псевдоэлемент ::after у нас используется ПОСЛЕ тега li */
+#pseudo_list li::after {
+    content: ' > after ';
+    color: green;
+}
+
+
 
 
 
