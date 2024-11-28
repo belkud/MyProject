@@ -115,10 +115,6 @@ body {
 
 
 
-
-
-
-
 #callToMe {
     display: inline;
     background-color: blue;
@@ -266,10 +262,8 @@ dt {
 
 #pseudo_list>li {
     list-style-type: none;
-    font-size: 24px;
-    /* размер шрифта */
-    font-style: italic;
-    /* курсивный текст */
+    font-size: 24px; /* размер шрифта */
+    font-style: italic; /* курсивный текст */
     background-color: gainsboro;
     color: red;
 }
@@ -291,8 +285,6 @@ dt {
     padding: 10px;
     margin: 50px;
     margin-left: -10px;
-    /* position:fixed; */
-    /* float: right; */
 }
 
 
@@ -304,14 +296,11 @@ dt {
     border-bottom: 5px dashed red;
     border-top: 5px double blue;
     padding-bottom: 25px;
-    margin: 20px;
-    /* внешний отступ (отступ между элементами) */
+    margin: 20px; /* внешний отступ (отступ между элементами) */
     margin-left: 100px;
     margin-top: 2em;
-    /* padding-top: 105px; */
     background-color: gray;
-    padding: 15px;
-    /* внутренний отступ (отступ в самом элементе) */
+    padding: 15px; /* внутренний отступ (отступ в самом элементе) */
     padding-left: 25px;
     padding-right: 5px;
     transition: 1s; /* длительность анимации */
