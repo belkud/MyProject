@@ -14,7 +14,7 @@
   <br>
   <br>
 
-  <button id="callToMe">Позвони мне</button> <!-- создание кнопки -->
+  <button id="callToMe">Нажми меня</button> <!-- создание кнопки -->
 
   <!--! прогресс бар -->
   <div id="container">
@@ -73,11 +73,12 @@
   <!--! тег span -->
   <p>Тег 'span' в HTML предназначен для <span style="color: red"> изменения стиля части текста</span> </p>
 
+  <!--!  встраивание ссылки -->
+  <a href="https://www.yandex.ru/">Название нашей ссылки</a>
+
   <!--! встраивание изображения -->
   <img id="dog_img" src="public/dog.webp"> <!-- img- название тега, src - путь (расположение) изображения -->
 
-  <!--!  встраивание ссылки -->
-  <a href="https://www.yandex.ru/">Название нашей ссылки</a>
 
   <!--! 'текст рыба' -->
   <!-- p*5>lorem25 - первая цифра количество параграфов
@@ -118,7 +119,7 @@
   
   
   <!-- Задание про Romeo and Juliet -->
-  <h2 style="color: red; background-color: aqua; width: 220px; margin: 0 auto; ">Romeo and Juliet</h2>
+  <h2 style="color: red; background-color: aqua; width: 220px; margin: 0 auto; margin-top: 75px;">Romeo and Juliet</h2>
   <h3>ACT 1</h3>
   <h3>PROLOGUE</h3>
   
@@ -137,18 +138,19 @@
     The which if you with patient ears attend,
     What here shall miss, our toil shall strive to mend. </p>
 
-  <h2> SCENE I. Verona. A public place.</h2>
+  <h3> SCENE I. Verona. A public place.</h3>
   <p>Enter SAMPSON and GREGORY, of the house of Capulet, armed with swords and bucklers</p>
 
-  <h2> SAMPSON</h2>
+  <h3> SAMPSON</h3>
   <p>Gregory, o' my word, we'll not carry coals.</p>
 
-  <h2>GREGORY</h2>
+  <h3>GREGORY</h3>
   <p>No, for then we should be colliers.</p>
   <!-- конец задания Romeo and Juliet -->
 
   
   <!-- Задание с картами -->
+   <h2 style="margin-top: 75px;">Задание с картами</h2>
   <h4> Player 1</h4>
   <div class="card_black">2 &clubs;</div>
   <div class="card_red">9 &hearts;</div>
@@ -234,30 +236,35 @@
 
 
   <!----------------- СПИСКИ --------------->
+  <h2 style="margin-top: 100px; color: red;">Списки:</h2>
 
-  <ul></ul> <!--! 1. Неупорядоченный список (проще говоря нет цифр или букв)-->
+  <!--! 1. Неупорядоченный список (проще говоря нет цифр или букв)-->
+  <h3>1. Неупорядоченный список 'ul'</h3>
   <ul>
-    <li>Элемент 1</li>
-    <li>Элемент 2</li>
-    <li>Элемент 3</li>
+    <li>Элемент</li>
+    <li>Элемент</li>
+    <li>Элемент</li>
   </ul>
-
-  <ol></ol> <!--! 2. Упорядоченный список (есть цифры или буквы) -->
+  
+  <!--! 2. Упорядоченный список (есть цифры или буквы) -->
+  <h3>2. Упорядоченный список 'ol'</h3>
   <ol>
-    <li>Элемент 1</li>
-    <li>Элемент 2</li>
-    <li>Элемент 3</li>
+    <li>Элемент</li>
+    <li>Элемент</li>
+    <li>Элемент</li>
   </ol>
-
+  
   <li></li> <!-- отдельный элемент в списке -->
-
-
-  <dl></dl> <!--! 3. Список определений -->
+  
+  
+  <!--! 3. Список определений -->
+  <h3>3. Список определений 'dl'</h3>
   <!-- в этом списке вместо <li></li> мы используем: <dt></dt> и <dd></dd> -->
   <dl>
-    <dt></dt>
-    <dd></dd>
-    <dd></dd>
+    <dt>Термин 1</dt>
+      <dd>Определение 1</dd>
+    <dt>Термин 2</dt>
+      <dd>Определение 2</dd>
   </dl>
 
 
@@ -311,8 +318,8 @@
 <!-- конец задания с фруктами -->
 
 
-
-  <ul id="pseudo_list"> Наш с вами список
+<h3 style="margin-top: 50px;">Псевдоэлементы ::before и ::after</h3>
+  <ul id="pseudo_list">
     <li>один </li>
     <li>два</li>
     <li>три</li>

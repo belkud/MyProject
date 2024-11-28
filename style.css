@@ -127,8 +127,8 @@ body {
     opacity: 1; /* прозрачность, шкала от 0 до 1 */
     cursor: pointer; /* изменение курсора */
     transition: 1s; /* длительность анимации */
-    transition-delay: 1s; /* время задержки */
-    
+    /* transition-delay: 1s; время задержки */
+    margin-bottom: 50px;
 
 
 
@@ -317,7 +317,7 @@ dt {
 #winter {
     top: 100px;
     color: blue;
-    writing-mode: vertical-lr;
+    /* writing-mode: vertical-lr; */
 }
 
 #winter>ul>li {
