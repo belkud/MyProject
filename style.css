@@ -1,20 +1,12 @@
 body {
     background: lightblue;
-    background-image: url('public/cloud.png');
+    /* background-image: url('public/cloud.png'); */
     /* background-size:contain; */
-    animation: cloud 10s linear infinite;
+    /* animation: cloud 10s linear infinite; */
+
 }
 
-@keyframes cloud {
-    from{
-      /* margin-left: 0px; */
-      background-position-x: 500px;
-    }
-    to{
-        /* margin-left: 500px; */
-        background-position-x: 0px;
-    }
-  }
+
 
     /*! Анимации */
 /*! Задание с прогресс баром (двигающийся квадратик) */
