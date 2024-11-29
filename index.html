@@ -82,7 +82,7 @@
 
   <!--! 'текст рыба' -->
   <!-- p*5>lorem25 - первая цифра количество параграфов
-    вторая цифра - количество слов в каждом параграфе-->
+  вторая цифра - количество слов в каждом параграфе-->
 
   <!--! строчные теги -->
   <!-- <b></b> <strong></strong> - жирный текст -->
@@ -106,10 +106,45 @@
   
   <div class="newText">
     Lorem ipsum dolor, первый способ подчеркивания <u>sit amet</u> второй способ подчеркивания <span
-      style="text-decoration: underline;">consectetur adipisicing elit.</span> Eaque repudiandae modi, nobis quaerat
+    style="text-decoration: underline;">consectetur adipisicing elit.</span> Eaque repudiandae modi, nobis quaerat
     perspiciatis optio recusandae earum sed porro quia rerum, dolores delectus. Sunt aut voluptas repellat ratione illo
     numquam!
   </div>
+    
+    <style>
+      .newText {
+        white-space: pre-wrap;
+        /* отвечает за отображение пробелов между словами. */
+  
+        word-break: break-all;
+        /* отвечает за перенос строк внутри слов */
+        
+        word-wrap: break-word;
+        /* определяет, нужно ли переносить слова, которые не помещаются внутри родительского контейнера п */
+        
+        writing-mode: vertical-lr;
+        /* написание текста по горизонтали или вертикали */
+        
+        word-spacing: 10px;
+        /* расстояние между словами */
+        
+        letter-spacing: 5px;
+        /* расстояние между буквами */
+        
+        text-transform: uppercase;
+        /* все букву будут заглавными */
+        
+        text-decoration: underline;
+        /* подчеркивание текста */
+        
+        text-decoration-color: red;
+        /* цвет линии */
+        
+        text-shadow: 5px 10px 3px rgb(207, 24, 109);
+        /* тень текста, параметры (по оси Х, по оси У, размытость, цвет ) */
+  
+      }
+    </style>
 
   <!-- Для того чтобы найти спецсимвол мы используем таблицу спецсимволов html -->
 
@@ -182,41 +217,7 @@
 
   
   
-  <p>Текст</p>
-  <style>
-    .newText {
-      white-space: pre-wrap;
-      /* отвечает за отображение пробелов между словами. */
-
-      word-break: break-all;
-      /* отвечает за перенос строк внутри слов */
-      
-      word-wrap: break-word;
-      /* определяет, нужно ли переносить слова, которые не помещаются внутри родительского контейнера п */
-      
-      writing-mode: ;
-      /* написание текста по горизонтали или вертикали */
-      
-      word-spacing: 10px;
-      /* расстояние между словами */
-      
-      letter-spacing: 5px;
-      /* расстояние между буквами */
-      
-      text-transform: uppercase;
-      /* приведение текста к внешнему или верхнему регистру */
-      
-      text-decoration: underline;
-      /* подчеркивание текста */
-      
-      text-decoration-color: red;
-      /* цвет линии */
-      
-      text-shadow: 5px 10px 3px rgb(207, 24, 109);
-      /* тень текста, параметры (по оси Х, по оси У, размытость, цвет ) */
-
-    }
-  </style>
+ 
 
 
 
@@ -303,8 +304,6 @@
     </li>
   </ol>
 
-
-
   <style>
     #list li {
       list-style-type: upper-latin; /* отображает тип списка */
@@ -331,11 +330,11 @@
 
 <h3 style="margin-top: 50px;">Псевдоэлементы ::before и ::after</h3>
   <ul id="pseudo_list">
-    <li>один</span> </li>
-    <li>два</span></li>
-    <li>три</span></li>
-    <li>четыре</span></li>
-    <li>пять</span></li>
+    <li>один</li>
+    <li>два</li>
+    <li>три</li>
+    <li>четыре</li>
+    <li>пять</li>
   </ul>
 
 
