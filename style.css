@@ -1,7 +1,20 @@
 body {
-    background: rgb(0, 255, 98);
+    background: lightblue;
+    background-image: url('public/cloud.png');
+    /* background-size:contain; */
+    animation: cloud 10s linear infinite;
 }
 
+@keyframes cloud {
+    from{
+      /* margin-left: 0px; */
+      background-position-x: 500px;
+    }
+    to{
+        /* margin-left: 500px; */
+        background-position-x: 0px;
+    }
+  }
 
     /*! Анимации */
 /*! Задание с прогресс баром (двигающийся квадратик) */
@@ -16,7 +29,7 @@ body {
     width: 40px;
     height: 40px;
     position: absolute;
-    animation: anim 10s infinite; /* название анимации, её продолжительность  */
+    animation: anim 3s linear 1s infinite; /* название анимации, её продолжительность  */
 }
 
 @keyframes anim {   /* создание анимации */
@@ -37,6 +50,7 @@ body {
     width: 150px;
     transition: 1s;
     position: absolute;
+    z-index: -100;
     filter: grayscale(1) ;  /* filter отлично работает с изображениями */
 }
 
