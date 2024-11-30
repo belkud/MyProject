@@ -16,16 +16,18 @@
 
   <div id="clock">
 
-    <div style="rotate: 0deg   ; margin-top: 20px ; margin-left: 70px ;">0</div>
-    <div style="rotate: 30deg  ; margin-top: 50px ; margin-left: 20px ;">1</div>
-    <div style="rotate: 60deg  ; margin-top: 90px; margin-left: ;">2</div>
-    <div style="rotate: 90deg  ; margin-top: ; margin-left: ;">3</div>
-    <div style="rotate: 120deg ; margin-top: ; margin-left: ;">4</div>
-    <div style="rotate: 150deg ; margin-top: ; margin-left: ;">5</div>
-    <div style="rotate: 180deg ; margin-top: ; margin-left: ;">6</div>
-    <div style="rotate: 210deg ; margin-top: ; margin-left: ;">7</div>
-    <div style="rotate: 240deg ; margin-top: ; margin-left: ;">8</div>
-    <div style="rotate: 270deg ; margin-top: ; margin-left: ;">9</div>
+    <div style="margin-top: 35px; margin-left:190px;">1</div>
+    <div style="margin-top: 75px; margin-left: 235px;">2</div>
+    <div style="margin-top: 140px; margin-left: 260px;">3</div>
+    <div style="margin-top: 200px; margin-left: 235px;">4</div>
+    <div style="margin-top: 240px; margin-left: 190px;">5</div>
+    <div style="margin-top: 260px; margin-left: 130px;">6</div>
+    <div style="margin-top: 240px; margin-left: 70px;">7</div>
+    <div style="margin-top: 200px; margin-left: 30px;">8</div>
+    <div style="margin-top: 140px; margin-left: 10px;">9</div>
+    <div style="margin-top: 75px; margin-left: 30px;">10</div>
+    <div style="margin-top: 35px; margin-left: 70px;">11</div>
+    <div style="margin-top: 10px; margin-left:130px;">12</div>
     
   </div>
 
@@ -71,7 +73,6 @@ body {
 
 
   #clock {
-    text-align: center; 
     height: 50px; width: 50px;
     margin-bottom: 300px;
     border: 2px solid red;
@@ -79,13 +80,17 @@ body {
     height: 300px;
     border-radius: 50%;
   }
-
-#clock>div {
-    background-color: red;
+  
+  #clock>div {
+    /* background-color: red; */
     width: 30px;
     height: 30px;
     border-radius: 50%;
-   position: absolute;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 </style>
