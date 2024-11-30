@@ -29,49 +29,17 @@
     <div style="margin-top: 35px; margin-left: 70px;">11</div>
     <div style="margin-top: 10px; margin-left:130px;">12</div>
     
+    <div id="smallArrow"></div>
+    <div id="bigArrow"></div>
   </div>
-
-
-
-
-
-
-
-  <style>
-body {
-    /* background: lightblue; */
-    /* background-color: rgb(0, 0, 0);   */
-    /* background-image: url('public/cloud.png'); */
-    /* background-size:contain; */
-    /* animation: cloud 10s linear infinite; */
-  }
-  body:hover {
-    /* transition: 3s; */
-    /* filter:brightness(0.3); */
-  
-    /* opacity: 0.2; */
-}
-
-@keyframes cloud {
-    from{
-      /* margin-left: 0px; */
-      background-position-x: 500px;
-    }
-    to{
-        /* margin-left: 500px; */
-        background-position-x: 0px;
-    }
-  }
-  </style>
-
-
-
 
 
 
 <style>
 
+/* часы */
 
+/* делаем окружность */
   #clock {
     height: 50px; width: 50px;
     margin-bottom: 300px;
@@ -91,6 +59,35 @@ body {
     align-items: center;
     justify-content: center;
     
+}
+
+#smallArrow {
+  width: 100px !important;
+  height: 5px !important;
+  background-color: orange;
+  margin-top: 150px;
+  margin-left: 150px;
+  transform-origin: 0px;
+  animation: rotation 180s;
+}
+
+#bigArrow {
+  width: 120px !important;
+  height: 3px !important;
+  background-color: red;
+  margin-top: 150px;
+  margin-left: 150px;
+  transform-origin: 0px;
+  animation: rotation 60s;
+}
+
+@keyframes rotation {
+  from{
+
+  }
+  to {
+    rotate: 360deg;
+  }
 }
 
 </style>
