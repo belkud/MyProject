@@ -13,97 +13,21 @@
   <br>
   <br>
   <br>
-
-   <!--! Задание с часами -->
-   <div id="clock">
-     
-     <div style="margin-top: 35px; margin-left:190px;">1</div>
-    <div style="margin-top: 75px; margin-left: 235px;">2</div>
-    <div style="margin-top: 140px; margin-left: 260px;">3</div>
-    <div style="margin-top: 200px; margin-left: 235px;">4</div>
-    <div style="margin-top: 240px; margin-left: 190px;">5</div>
-    <div style="margin-top: 260px; margin-left: 130px;">6</div>
-    <div style="margin-top: 240px; margin-left: 70px;">7</div>
-    <div style="margin-top: 200px; margin-left: 30px;">8</div>
-    <div style="margin-top: 140px; margin-left: 10px;">9</div>
-    <div style="margin-top: 75px; margin-left: 30px;">10</div>
-    <div style="margin-top: 35px; margin-left: 70px;">11</div>
-    <div style="margin-top: 10px; margin-left:130px;">12</div>
-    
-    <div id="smallArrow"></div>
-    <div id="bigArrow"></div>
-  </div>
-  <!--! Конец задания с часами -->
-
-
-
-<style>
-
-/* часы */
-
-/* делаем окружность */
-  #clock {
-    height: 50px; width: 50px;
-    margin-bottom: 300px;
-    border: 2px solid red;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-  }
   
-  #clock>div {
-    /* background-color: red; */
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-#smallArrow {
-  width: 100px !important;
-  height: 5px !important;
-  background-color: orange;
-  margin-top: 150px;
-  margin-left: 150px;
-  transform-origin: 0px;
-  animation: rotation 180s linear infinite;
-}
-
-#bigArrow {
-  width: 120px !important;
-  height: 3px !important;
-  background-color: red;
-  margin-top: 150px;
-  margin-left: 150px;
-  transform-origin: 0px;
-  animation: rotation 60s linear infinite;
-}
-
-@keyframes rotation {
-  from{
-
-  }
-  to {
-    rotate: 360deg;
-  }
-}
-
-</style>
 
 
+<h3>Анимация в веб-дизайне</h3>
 
-
-
-<ol>Движущиеся элементы можно создать с помощью
+<ol>Движущиеся элементы можно создать с помощью:
   <li> переход — transition (изменение свойства во временим)</li>
   <li> трансформации — transform (перемещает, вращает, увеличивает) элемент</li>
   <li> анимация — animation</li>
 </ol>
 
+<br>
+
+
+<!--! кнопки -->
 <button class="btn btn1">1</button>
 <button class="btn btn2">2</button>
 <button class="btn btn3">3</button>
@@ -111,110 +35,36 @@
 
 
 
-<style>
+
+
+
   
-.btn { /* стилизуем кнопки через class */
-  background-color: red;
-  color: aliceblue;
-  width: 150px;
-  border-radius: 5px;
-}
-  
-.btn1:hover {
-
-  /* 1. СВОЙСТВО TRANSITION */
-
-  /*! transition состоит из 4-х отдельных свойств:  */
-  /* - transition-property -изменяемое свойство */
-  /* - transition-duration - длительность перехода*/
-  /* - transition-timing-function, - временная функция */
-  /* - transition delay - время задержки перехода  */
-  
-  
-  /*! Все свойства указывать необязательно */
-  /* варианты написания: *
-  /
-  /* transition:  1s; */
-  /* длительность перехода */
-  
-  /* transition:  1s  2s; */
-  /* первая цифра длительность, вторая задержка */
-
-  /* transition: 1s 2s ease;  */
-  /* первая цифра длительность, вторая задержка, третья временная функция */
-
-  /* для временной функции можем использовать кубик бейзер */
-  /*! https://cubic-bezier.com/#.17,.67,.83,.67/ */
-
-  transition:  1s;
-  background-color: blue;
-  font-size: 50px;
-}
-
-
-.btn2 {
-
-    /* 2. СВОЙСТВО TRANSFORM */
-
-transform: scale(1.2);  /* Масштабирует элемент */
-transform: rotate(45deg); /* Поворачивает */
-transform: skew(30deg); /* Наклоняет */
-transform: translate(0px); /* Смещает */
-
-/* transform: rotate(45deg) scale(1.5); */
-/* Задание нескольких параметров одновременно */
-
-/* transform-origin: 100% 100%; (первая цифра ось Х, вторая ось У)*/
-/*! можем смещать центр нашего с вами блока */
-    
-/* в transform положение элемента остается неизменным, при этом мы можем менять его свойства  */
-        
-}
-  
-.btn2:hover {
-    transform: translate(90%, -85%);
-    transition: 1s;
-  }
-
-
-       /* 3. ANIMATION */
-  
-/*! animation состоит из нескольких свойств:  */
-
-/* - animation-name - имя анимации */
-/* - animation-duration - длительность перехода*/
-/* - animation-timing-function, - временная функция */
-/* - animation delay - время задержки перехода  */
-/* (есть еще другие свойства) */
-
-  .btn3 {
-/* можно записывать свойства как по отдельности так и в одну строчку */
-animation: anim3 3s ease 2s;
-/* простой вариант записи анимации (имя и её время) */
-/* animation: anim3 1s; */
-}
-
-
-
-  @keyframes anim3 {   /* создание анимации */
-    from { /* начало анимации */
-      margin-left: 0px;
-    }
-    to {  /* конец анимации */
-      margin-left: 160px;
-    }
-    
-  }
+     <!--! Задание с часами -->
+     <div id="clock">
+                            <!-- написание цифр        -->
+      <div style="margin-top: 35px; margin-left:190px;">1</div>
+      <div style="margin-top: 80px; margin-left: 235px;">2</div>
+      <div style="margin-top: 140px; margin-left: 260px;">3</div>
+      <div style="margin-top: 200px; margin-left: 235px;">4</div>
+      <div style="margin-top: 240px; margin-left: 190px;">5</div>
+      <div style="margin-top: 260px; margin-left: 130px;">6</div>
+      <div style="margin-top: 240px; margin-left: 70px;">7</div>
+      <div style="margin-top: 200px; margin-left: 30px;">8</div>
+      <div style="margin-top: 140px; margin-left: 10px;">9</div>
+      <div style="margin-top: 80px; margin-left: 30px;">10</div>
+      <div style="margin-top: 35px; margin-left: 70px;">11</div>
+      <div style="margin-top: 10px; margin-left:130px;">12</div>
+      
+      <div id="smallArrow"></div>
+      <div id="bigArrow"></div>
+    </div>
+    <!--! Конец задания с часами -->
   
   
   
-  
+  <style>
 
-</style>
-
-
-
-
+  </style>
 
 
 <br>
