@@ -100,8 +100,7 @@ body {
       
     }
     
-    
-    
+
     
 
     /*! Анимации */
@@ -243,35 +242,6 @@ body {
 /*! Конец задания с часами */
 
 
-
-
-#test {
-    width: 100px;
-    height: 100px;
-    background-color: green;
-    animation: test 5s  ease forwards ;
-    position: absolute;
-    margin-left: 200px;
-}
-
-@keyframes test {
-    from {
-
-    }
-    to {
-        rotate: -360deg;
-        /* transform-origin: top left; */
-        /* transform: translate(-50px, -50px); смещение центра по осям Х и У */
-      
-        /* transform: scale(.1);  */
-        /* масштабирует элемент, если меньше 1 то уменьшает, если больше то увеличивает элемент */
-    
-        transform: scaleX(5);  /* меняем размеры элемента по оси  */
-        transform: scaleY(.5);  /* меняем размеры элемента по оси У */
-
-    }
-    
-}
 
 
 
