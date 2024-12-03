@@ -3,8 +3,28 @@ body {
     /* background-image: url('public/cloud.png'); */
     /* background-size:contain; */
     /* animation: cloud 10s linear infinite; */
-
+    
 }
+
+                                        /*! ТЕМА С ИЗОБРАЖЕНИЯМИ! */
+#car {
+    width: 250px; /* ширина */
+    border: 2px solid red;
+    border-radius: 10px 60px; /* скругляем углы */
+    box-shadow: 0px 0px 10px red; /* тень от блока (осьХ, осьУ, размытие и цвет) */
+    transition: 1s;
+    position: absolute;
+    margin-bottom: 250px;
+}
+#car:hover {
+    margin-top: -10px;
+    margin-left: 10px;
+    box-shadow: -20px 20px 10px red;
+}
+
+
+
+
 
   
 .btn { /* стилизуем кнопки через class */
@@ -85,7 +105,8 @@ body {
   
     .btn3 {
   /* можно записывать свойства как по отдельности так и в одну строчку */
-  animation: anim3 3s ease 2s;
+  animation: anim3 3s ease 12s;
+
   /* простой вариант записи анимации (имя и её время) */
   /* animation: anim3 1s; */
   }
