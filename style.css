@@ -15,7 +15,9 @@ body {
 }
     
   .btn1:hover {
-  
+
+                                        /*! ТЕМА С АНИМАЦИЯМИ! */
+
     /*! 1. СВОЙСТВО TRANSITION */
   
     /*! transition состоит из 4-х отдельных свойств:  */
@@ -71,7 +73,7 @@ body {
     }
   
   
-         /*! 3. ANIMATION */
+         /*! 3. СВОЙСТВО ANIMATION */
     
   /*! animation состоит из нескольких свойств:  */
   
@@ -180,6 +182,7 @@ body {
 .cat:hover, .dog:hover{
     transform: scale(1.25);
     transition: 1s;
+    padding-bottom: 0px !important;
     /* transform:rotateX(90deg); */
 }
 
