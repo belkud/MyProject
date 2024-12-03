@@ -104,6 +104,92 @@ body {
     
 
     /*! Анимации */
+
+/*! Задание с воротами */
+
+#container3 {
+    margin-top: 50px;
+    perspective: 800px; /* глубина блока (для открытия ворот во внутрь блока) */
+    width: 500px;
+}
+#hello {
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 30px;
+    z-index: -1;
+}
+
+#left, #right {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: purple;
+    border: 1px solid red;
+}
+#left{
+    transform-origin: 0%;
+}
+#right{
+    transform-origin: 100%;
+}
+#container3:hover>#left {
+    transition: 2s;
+    transform: rotateY(27deg);
+    
+}
+#container3:hover #right {
+    transition: 2s;
+    transform: rotateY(-27deg);
+    
+}
+/*! Конец задания с воротами */
+
+
+
+
+  /*! Реализовать html-страницу с несколькими блоками текст + картинка */
+  .cat, .dog {
+    border: 1px solid red;
+    width: 250px;
+    height: 100px;
+    margin: 0px;
+    transition: 1s;
+    margin-top: 0px;
+}
+
+
+.text {
+    position: absolute;
+    width: 100px;
+    transform: translate(90px, -70px);
+    color: red;
+    font-size: 2em;
+}
+
+#container5 {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 504px;
+    height: 313px;
+}
+
+#container5>div {
+    overflow: hidden !important;
+}
+.cat:hover, .dog:hover{
+    transform: scale(1.25);
+    transition: 1s;
+    /* transform:rotateX(90deg); */
+}
+
+#container5>div:hover {
+    filter: grayscale(.9);
+}
+/*! Конец задания */
+
+
+
 /*! Задание с прогресс баром (двигающийся квадратик) */
 #container { 
     border: 2px solid orange;
