@@ -14,12 +14,15 @@ body {
     box-shadow: 0px 0px 5px gray; /* тень от блока (осьХ, осьУ, размытие и цвет) */
     transition: 1s;
     position: absolute;
-    margin-bottom: 250px;
+    float: left;
+    cursor: pointer; /* меняем курсор */
+    box-sizing: ; /* изменение алгоритма расчёта ширины и высоты элемента.  */
 }
 #car:hover {
     margin-top: -10px;
     margin-left: 10px;
     box-shadow: -20px 20px 5px gray;
+    opacity: 0.8;  /* прозрачность изображения */
 }
 
 
