@@ -232,13 +232,101 @@ body {
 /*! Конец задания */
 
 
+/*! Задание с часами */
+
+/* делаем окружность */
+#clock {
+  height: 50px; width: 50px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  border: 2px solid red;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+/* расположение цифр */
+#clock>div {
+    /* background-color: red; */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* стрелки */
+#smallArrow {
+width: 100px !important;
+height: 5px !important;
+background-color: orange;
+margin-top: 150px;
+margin-left: 150px;
+transform-origin: 0px;
+animation: rotation 180s linear infinite;
+}
+
+#bigArrow {
+width: 120px !important;
+height: 3px !important;
+background-color: red;
+margin-top: 150px;
+margin-left: 150px;
+transform-origin: 0px;
+animation: rotation 60s linear infinite;
+}
+
+/* анимация для стрелок */
+@keyframes rotation {
+  from{
+      
+  }
+  to {
+      rotate: 360deg;
+  }
+}
+
+/*! Конец задания с часами */
+
+
+
+
+/*! кнопка 'нажми меня' */
+
+#callToMe {
+  display: inline;
+  background-color: blue;
+  color: white;
+  border: 2px solid transparent;
+  width: 120px;
+  border-radius: 5px; /* скругляет углы */
+  /* border-radius: 50%; в основном используется чтобы сделать круг из квадрата */
+  padding: 5px; /* внутренний отступ */
+  opacity: 1; /* прозрачность, шкала от 0 до 1 */
+  cursor: pointer; /* изменение курсора */
+  transition: 1s; /* длительность анимации */
+  /* transition-delay: 1s; время задержки перехода */
+  margin-bottom: 50px;
+}
+
+#callToMe:hover {  /* действие при нажатие мышки */
+  background-color: red;
+}
+
+/*! кнопка 'нажми меня' */
+
+
+
 
 /*! Задание с прогресс баром (двигающийся квадратик) */
 #container { 
     border: 2px solid orange;
     height: 40px;
     width: 200px;
-}
+}    
 
 #square {  /* двигающийся квадрат */
     background: red;
@@ -246,36 +334,41 @@ body {
     height: 40px;
     position: absolute;
     animation: anim 3s linear 1s infinite; /* название анимации, её продолжительность  */
-}
+}    
 
 @keyframes anim {   /* создание анимации */
     from { /* начало анимации */
         margin-left: 0px;
-    }
+    }    
     to {  /* конец анимации */
         margin-left: 160px;
-    }
+    }    
     
-}
+}    
 /*! Конец задания с прогресс баром */
 
 
 
+
 /*! Задание с сердцем */
+
+#heart_container {
+    height: 100px;
+}    
+
 #heart {
     width: 150px;
     transition: 1s;
-    position: absolute;
+    /* position: absolute; */
     z-index: -100;
     filter: grayscale(1) ;  /* filter отлично работает с изображениями */
-}
+}    
 
 #heart:hover {
     filter: grayscale(0);
-    width: 250px;
-}
+    width: 250px !important;
+}    
 /*! Конец задания с сердцем */
-
 
 
 
@@ -286,148 +379,44 @@ body {
     border: 2px solid red;
     height: 500px;
     margin-top: 150px;
-}
+}    
 
 #pencil {
     width: 150px;
     margin-top: 300px;
     position: absolute;
     animation: movePencil 2s forwards ;
-}
+}    
 
 @keyframes movePencil {
     from {
         margin-top: 300px;
         rotate: 0deg;
-    }
+    }    
     to {
         margin-top: 0px;
         rotate: 30deg;
-    }    
-}
+    }        
+}    
 /*! Конец задания с летающими предметами */
 
 
 
 
   
-  /*! Задание с часами */
-  
-  /* делаем окружность */
-  #clock {
-    height: 50px; width: 50px;
-    margin-bottom: 100px;
-    margin-top: 100px;
-    border: 2px solid red;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-  }
-  
-/* расположение цифр */
-  #clock>div {
-      /* background-color: red; */
-      width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    position: absolute;
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
-    
-}
-
-/* стрелки */
-#smallArrow {
-  width: 100px !important;
-  height: 5px !important;
-  background-color: orange;
-  margin-top: 150px;
-  margin-left: 150px;
-  transform-origin: 0px;
-  animation: rotation 180s linear infinite;
-}
-
-#bigArrow {
-  width: 120px !important;
-  height: 3px !important;
-  background-color: red;
-  margin-top: 150px;
-  margin-left: 150px;
-  transform-origin: 0px;
-  animation: rotation 60s linear infinite;
-}
-
-/* анимация для стрелок */
-@keyframes rotation {
-    from{
-        
-    }
-    to {
-        rotate: 360deg;
-    }
-}
-
-/*! Конец задания с часами */
 
 
-
-
-
-
-
-
-
-#callToMe {
-    display: inline;
-    background-color: blue;
-    color: white;
-    border: 2px solid transparent;
-    width: 120px;
-    /* border-radius: 50%;  используется чтобы сделать круг из квадрата */
-    border-radius: 5px; /* скругляет углы */
-    padding: 5px; /* внутренний отступ */
-    opacity: 1; /* прозрачность, шкала от 0 до 1 */
-    cursor: pointer; /* изменение курсора */
-    transition: 1s; /* длительность анимации */
-    /* transition-delay: 1s; время задержки */
-    margin-bottom: 50px;
-
-
-
-    /* transition-delay: 0s; время задержки анимации */
-    /* transition-property: color ;
-    transition-timing-function: ;
-    transition-delay: ; */
-    /* transition-duration: 10s ; */
-
-}
-
-#callToMe:hover {  /* действие при нажатие мышки */
-
-    background-color: red;
-}
-
-/* #callToMe:hover { */
-    
-/* } */
-
-
-
-
-
-
-#textId {
+#text-id {
     /* id мы обязательно пишем через '#' */
-    background: linear-gradient(blue, rgb(6, 130, 25));
+    background: linear-gradient(rgb(3, 3, 72), rgb(3, 52, 10)); /* плавный переход цвета (градиенты) */
     text-align: center;
     color: red;
-    /* width: 200px; */
+    width: 300px;
     transition: 1s;
 }
 
 
-#textId:hover { /* :hover - изменяет стиль при наведении мышки */
+#text-id:hover { /* :hover - изменяет стиль при наведении мышки */
     color: yellow;
     transition: 1s;
 }
@@ -488,9 +477,11 @@ dt {
 
 
 
+/*! задание с фруктами */
 
 #fruit_list {
     background-color: pink;
+    width: 500px;
     padding: 20px;
     font-weight: bold;
     list-style-position: inside;
@@ -498,26 +489,25 @@ dt {
 
 #fruit_list>li {
     background-color: rgb(238, 147, 163);
-    border: 2px solid rgb(209, 212, 21);
     margin-top: 10px;
     padding: 10px;
-    /* width: 65px; */
-    /* text-align: center; */
 }
 .background {
     background-color: rgb(169, 69, 86);
     padding: 10px;
 }
 
+/*! Конец задания с фруктами */
 
 
 
 #pseudo_list>li {
-    list-style-type: none;
+    list-style-type: none; /* отменяет маркеры списка */
     font-size: 24px; /* размер шрифта */
     font-style: italic; /* курсивный текст */
     background-color: gainsboro;
     color: red;
+    width: 300px;
 }
 
 
@@ -589,4 +579,12 @@ dt {
 
 
 
+
+
+
+
+.new-title {
+    margin-top: 100px; 
+    color: red;
+}
 

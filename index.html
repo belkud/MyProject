@@ -11,17 +11,17 @@
 <body>
 
   <div id="container8">
-      <div  style="display: flex;">
-        <div style="height: 100px;">1.1____ </div>
-        <div style="height: 100px;">1.2____ </div>
-        <div style="height: 100px;">1.3____ </div>
-        <div style="height: 100px;">1.4____ </div>
-        <div style="height: 100px;">1.5____ </div>
-      </div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
+    <div style="display: flex;">
+      <div style="height: 100px;">1.1____ </div>
+      <div style="height: 100px;">1.2____ </div>
+      <div style="height: 100px;">1.3____ </div>
+      <div style="height: 100px;">1.4____ </div>
+      <div style="height: 100px;">1.5____ </div>
+    </div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
   </div>
 
   <br>
@@ -644,15 +644,15 @@
     possimus esse doloremque excepturi dolorem. Ducimus nobis iste atque minus ratione ea voluptatibus, nesciunt soluta!
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eum, dolore exercitationem natus commodi ullam
     possimus esse doloremque excepturi dolorem. Ducimus nobis iste atque minus ratione ea voluptatibus, nesciunt soluta!
-    
-    
+
+
     <div style="float: right; margin: 10px; margin-right: 30px; height: 140px; width: 254px;">
       <img id="car" src="public/porshe.webp" alt="">
     </div>
 
 
 
-    
+
     Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Quibusdam dolores alias porro natus qui? Voluptatem,
     tenetur provident nesciunt praesentium iste illum! Assumenda corrupti, at eum nulla non quos sed sit?
     tenetur provident nesciunt praesentium iste illum! Assumenda corrupti, at eum nulla non quos sed sit?
@@ -697,7 +697,7 @@
 
 
 
-  <!--! Задание с створками ворот -->
+  <!--! Задание со створками ворот -->
   <div id="container3">
     <div id="hello">HELLO</div>
     <div id="left"></div>
@@ -779,7 +779,9 @@
 
 
   <!--! Задание с сердцем -->
-  <img id="heart" src="public/favorites.png" alt="Картинка не загрузилась">
+  <div id="heart_container">
+    <img id="heart" src="public/favorites.png" alt="Картинка не загрузилась">
+  </div>
 
 
 
@@ -799,8 +801,9 @@
 
 
 
-
-
+<h2 class="new-title">
+  Знакомство с HTML (основные теги), знакомство с CSS (основные CSS свойства)
+</h2>
 
   <!--! Заголовки  -->
   <h1>Заголовок 1 уровня</h1>
@@ -818,7 +821,7 @@
   <div></div>
 
   <!--! id - уникальный номер (может быть использован только один раз) -->
-  <div id="textId">id используется только один раз</div>
+  <div id="text-id">id используется только один раз</div>
 
   <!--! class - может быть использован много раз -->
   <div class="changeDiv">class используется много раз</div>
@@ -899,7 +902,7 @@
       /* тень текста, параметры (по оси Х, по оси У, размытость, цвет ) */
 
     }
-  </stylle>
+  </style>
 
   <!-- Для того чтобы найти спецсимвол мы используем таблицу спецсимволов html -->
 
@@ -1001,7 +1004,8 @@
 
 
   <!----------------- СПИСКИ --------------->
-  <h2 style="margin-top: 100px; color: red;">Списки:</h2>
+  
+  <h2 class="new-title">Списки:</h2>
 
   <!--! 1. Неупорядоченный список (проще говоря нет цифр или букв)-->
   <h3>1. Неупорядоченный список 'ul'</h3>
@@ -1074,7 +1078,7 @@
 
 
 
-  <!-- задание с фруктами -->
+  <!--! задание с фруктами -->
 
   <h3 style="margin-top: 50px;">Задание с фруктами</h3>
   <ol id="fruit_list">
@@ -1084,10 +1088,15 @@
     <li><span class="background">Pear</span></li>
     <li><span class="background">Cherry</span></li>
   </ol>
-  <!-- конец задания с фруктами -->
+  <!--! конец задания с фруктами -->
 
 
-  <h3 style="margin-top: 50px;">Псевдоэлементы ::before и ::after</h3>
+
+
+  <!----------------- ПСЕВДОЭЛЕМЕНТЫ --------------->
+
+  <h2 class="new-title">Псевдоэлементы ::before и ::after</h2>
+
   <ul id="pseudo_list">
     <li>один</li>
     <li>два</li>
@@ -1116,12 +1125,13 @@
   </ol>
 
 
+<!--! Выдвижное меню  с псевдоэлементом 'after' (ориентир вертикальная надпись 'нажми меня')-->
 
-  <div id="moveDiv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea ab veniam, saepe, odit beatae
-    aspernatur dicta
-    tenetur adipisci tempore, aperiam et. Ipsa quasi magnam accusamus dolor velit, ratione tempora labore!</div>
+<div id="moveDiv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea ab veniam, saepe, odit beatae
+    aspernatur dicta tenetur adipisci tempore, aperiam et. Ipsa quasi magnam accusamus dolor velit, ratione tempora
+    labore!</div>
 
-  <style>
+    <style>
     #moveDiv {
       background-color: pink;
       width: 250px;
@@ -1139,7 +1149,8 @@
       text-align: center;
       margin-top: -97px;
       margin-left: 30px;
-      border-radius: 10px 25px 10px 25px;
+      color: orangered;
+      border-radius: 0px 10px 10px 0px;
     }
 
     #moveDiv:hover {
@@ -1147,15 +1158,9 @@
     }
   </style>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+<!--! Конец выдвижного меню  с псевдоэлементом 'after'-->
+
+
 
 
 
