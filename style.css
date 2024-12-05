@@ -675,14 +675,18 @@ dt {
 
 .new-title {
     margin-top: 100px; 
-    color: red;
     text-shadow: 2px 0px 3px white;
+    color: red;
 
 }
 
+
+
+
 @media screen and (max-width: 768px) {
     #car_letter {
-    border: 5px solid red;
+    border: 5px solid greenyellow;
+    max-height: 50%;
      /* width: 100%; */
      font-size: 0.4em;
      
