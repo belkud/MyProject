@@ -20,15 +20,17 @@ body {
 #car_container {
     /* background:linear-gradient(white, blue, red) ; */
     background-color: black;
-    width: 800px; 
+    width: 600px; 
     border-radius: 20px 200px;
 }
 
 #car_letter {
     background-image: url('public/porshe.webp'); 
-    font-size: .5em;  
+    font-size: .6em;  
     background-size: contain;
     border-radius: 20px 200px;
+    word-spacing: -1px;
+    font-weight: 900;
 
     /* нижние три свойства делают изображение из букв */
     background-clip: text;
@@ -39,6 +41,7 @@ body {
 
 #car {
     width: 250px; /* ширина */
+    min-width: 200px;
     border: 2px solid red;
     padding: 5px;
     border-radius: 10px 60px 30px 50px; /* скругляем углы */
@@ -274,7 +277,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  color: white;
+  font-size: 1.5em;
 }
 
 /* стрелки */
