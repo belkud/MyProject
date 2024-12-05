@@ -3,9 +3,9 @@ body {
     /* background-size:contain; */
     /* animation: cloud 10s linear infinite; */
     
-    background: url(public/mountain.jpeg)  fixed;
+    background: url(public/mountain.jpeg) ;
     /* background-image: url(public/mountain.jpeg); */
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     /* background-position: top right; */
     /* background: lightblue; */
@@ -671,5 +671,7 @@ dt {
 .new-title {
     margin-top: 100px; 
     color: red;
+    text-shadow: 2px 0px 3px white;
+
 }
 
