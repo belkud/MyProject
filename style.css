@@ -683,12 +683,18 @@ dt {
 
 
 
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
     #car_letter {
-    border: 5px solid greenyellow;
-    max-height: 50%;
+    /* border: 5px solid greenyellow; */
+    /* max-height: 50%; */
      /* width: 100%; */
-     font-size: 0.2em;
+     /* font-size: 0.2em; */
      
    }
 }
