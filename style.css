@@ -3,21 +3,39 @@ body {
     /* background-size:contain; */
     /* animation: cloud 10s linear infinite; */
     
+    background: url(public/mountain.jpeg)  fixed;
     /* background-image: url(public/mountain.jpeg); */
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     /* background-position: top right; */
     /* background: lightblue; */
     background-attachment:fixed;
-    color: aliceblue;
-
-    background-clip: ;
-    /* background: url(public/mountain.jpeg)  fixed; */
     background-color: black;
 
 }
 
                                         /*! ТЕМА С ИЗОБРАЖЕНИЯМИ! */
+
+
+#car_container {
+    background-color: black;
+    width: 800px; 
+    border-radius: 20px 200px;
+}
+
+#car_letter {
+    background-image: url('public/porshe.webp'); 
+    font-size: .5em;  
+    background-size: contain;
+    border-radius: 20px 200px;
+
+    /* нижние три свойства делают изображение из букв */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; /* цвет текста обязательно прозрачный */
+}
+
+
 #car {
     width: 250px; /* ширина */
     border: 2px solid red;
@@ -485,6 +503,7 @@ dt {
     padding: 20px;
     font-weight: bold;
     list-style-position: inside;
+    margin-top: 50px;
 }
 
 #fruit_list>li {
