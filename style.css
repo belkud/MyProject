@@ -22,6 +22,7 @@ body {
     background-color: black;
     width: 600px; 
     border-radius: 20px 200px;
+    overflow: hidden !important;
 }
 
 #car_letter {
@@ -679,3 +680,11 @@ dt {
 
 }
 
+@media screen and (max-width: 768px) {
+    #car_letter {
+    border: 5px solid red;
+     /* width: 100%; */
+     font-size: 0.4em;
+     
+   }
+}
