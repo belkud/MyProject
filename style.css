@@ -18,6 +18,7 @@ body {
 
 
 #car_container {
+    /* background:linear-gradient(white, blue, red) ; */
     background-color: black;
     width: 800px; 
     border-radius: 20px 200px;
@@ -265,7 +266,7 @@ body {
 
 /* расположение цифр */
 #clock>div {
-    /* background-color: red; */
+  /* background-color: red; */
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -393,29 +394,94 @@ animation: rotation 60s linear infinite;
 
 
 /*! задание с летающими предметами */
-#container2 {
-    border: 2px solid red;
+#school_container {
     height: 500px;
     margin-top: 150px;
 }    
 
-#pencil {
-    width: 150px;
+#school_container>img {
+    width: 100px;
     margin-top: 300px;
     position: absolute;
-    animation: movePencil 2s forwards ;
-}    
+}
 
-@keyframes movePencil {
+#book {
+    margin-left: 200px;
+    animation: book 2s 0s forwards ;
+}
+#calc {
+    margin-left: 400px;
+    animation: calc 2s 1s forwards ;
+}
+#pallete {
+    margin-left: 600px;
+    animation: pallete 2s 2s forwards ;
+}
+#paper {
+    margin-left: 20px;
+    animation: paper 2s 3s forwards ;
+}
+#pencil {
+    margin-left: 300px;
+    animation: pencil 2s 4s forwards ;
+}
+
+
+@keyframes book {
     from {
         margin-top: 300px;
         rotate: 0deg;
     }    
     to {
         margin-top: 0px;
-        rotate: 30deg;
+        rotate: 60deg;
     }        
-}    
+}
+
+@keyframes calc {
+    from {
+        margin-top: 300px;
+        rotate: 0deg;
+    }    
+    to {
+        margin-top: 0px;
+        rotate: 120deg;
+    }        
+}
+
+@keyframes pallete {
+    from {
+        margin-top: 300px;
+        rotate: 0deg;
+    }    
+    to {
+        margin-top: 50px;
+        rotate: 80deg;
+    }        
+}
+
+@keyframes paper {
+    from {
+        margin-top: 300px;
+        rotate: 0deg;
+    }    
+    to {
+        margin-top: 50px;
+        rotate: 60deg;
+    }        
+}
+
+@keyframes pencil {
+    from {
+        margin-top: 300px;
+        rotate: 0deg;
+    }    
+    to {
+        margin-top: 90px;
+        rotate: 250deg;
+    }        
+}
+
 /*! Конец задания с летающими предметами */
 
 
