@@ -1,27 +1,45 @@
 body {
+    /*! Двигаем фон с помощью анимации*/
     /* background-image: url('public/cloud.png'); */
     /* background-size:contain; */
     /* animation: cloud 10s linear infinite; */
+
+
+    /* background: url(public/mountain.jpeg); ..., ..., ... */
+    /* общее свойство, можно перечислить несколько */
     
-    background: url(public/mountain.jpeg) ;
-    /* background-image: url(public/mountain.jpeg); */
-    background-size: cover;
+    
+    background-image: url(public/mountain.jpeg); 
+    /* вставляем изображение */
+
     background-repeat: no-repeat;
-    /* background-position: top right; */
-    /* background: lightblue; */
-    background-attachment:fixed;
-    background-color: black;
+    /* количество изображений */
+
+    background-position: 0px 0px;
+    /* перемещаем изображение по оси Х и оси У */
+
+    background-size: cover;
+    /* размеры фонового изображения */
+
+    background-attachment: fixed;
+    /* фиксируем или прокручиваем фон */
+
+    background-color: ; /* цвет фона (вместо изображения) */
 
 }
 
-                                        /*! ТЕМА С ИЗОБРАЖЕНИЯМИ! */
+/*! ТЕМА С ИЗОБРАЖЕНИЯМИ! */
+
+
+
 
 
 #small-cat {
-/* width: 100px; */
-z-index: 5;
-position: absolute;
+    /* width: 100px; */
+    z-index: 5;
+    position: absolute;
 }
+
 #small-cat:hover {
     border: 2px solid red;
     /* box-sizing: border-box; */
@@ -34,7 +52,7 @@ position: absolute;
 #car_container {
     /* background:linear-gradient(white, blue, red) ; */
     background-color: black;
-    width: 600px; 
+    width: 600px;
     min-width: 500px;
     border-radius: 20px 200px;
     overflow: hidden !important;
@@ -42,161 +60,196 @@ position: absolute;
 }
 
 #car_letter {
-    background-image: url('public/porshe.webp'); 
-    font-size: .6em; 
+    background-image: url('public/porshe.webp');
+    font-size: .6em;
     background-position: -50px -50px;
     background-size: cover;
     border-radius: 20px 200px;
     word-spacing: -1px;
     font-weight: 900;
 
-    
+
     /* нижние три свойства делают изображение из букв */
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent; /* цвет текста обязательно прозрачный */
+    color: transparent;
+    /* цвет текста обязательно прозрачный */
 }
+
 /*! машинка из букв, завершение */
 
 
+/*! второе изображение (вторая машинка) */
 
-#car {
-    width: 300px; /* ширина */
+#small-car-container {    /* контейнер с изображением */
+    float: left;  /* обтекание текста сбоку изображения */
+    margin-right: 80px;
+    margin-bottom: 30px; 
+    height: 140px; 
+    width: 254px;
+}
+
+#car { /* id изображения машины */
+    width: 300px;
     min-width: 200px;
+    /* минимальная ширина */
+    
     border: 2px solid red;
     padding: 5px;
-    border-radius: 10px 60px 30px 50px; /* скругляем углы */
-    box-shadow: 0px 0px 5px gray; /* тень от блока (осьХ, осьУ, размытие и цвет) */
+    border-radius: 10px 60px 30px 50px;
+    /* скругляем углы */
+    
+    box-shadow: 0px 0px 5px gray;
+    /* тень от блока (осьХ, осьУ, размытие и цвет) */
+    
     transition: 1s;
-    /* float: left; */
-    cursor: pointer; /* меняем курсор */
-
-    box-sizing: ; /* изменение алгоритма расчёта ширины и высоты элемента.  */
+    
+    cursor: pointer;
+    /* меняем курсор */
+    
+    box-sizing:;
+    /* изменение алгоритма расчёта ширины и высоты элемента.  */
 }
+
 #car:hover {
     margin-top: -10px;
     margin-left: 10px;
     box-shadow: -20px 20px 5px gray;
-    opacity: .3; /* прозрачность изображения */
+    opacity: .8;
+    /* прозрачность изображения */
 }
 
+/*! второе изображение, завершение */
 
 
 
 
-  
-.btn { /* стилизуем кнопки через class */
+
+.btn {
+    /* стилизуем кнопки через class */
     background-color: red;
     color: aliceblue;
     width: 150px;
     border-radius: 5px;
 }
-    
-  .btn1:hover {
 
-                                        /*! ТЕМА С АНИМАЦИЯМИ! */
+.btn1:hover {
+
+    /*! ТЕМА С АНИМАЦИЯМИ! */
 
     /*! 1. СВОЙСТВО TRANSITION */
-  
+
     /*! transition состоит из 4-х отдельных свойств:  */
     /* - transition-property -изменяемое свойство */
     /* - transition-duration - длительность перехода*/
     /* - transition-timing-function, - временная функция */
     /* - transition delay - время задержки перехода  */
-    
-    
+
+
     /*! Все свойства указывать необязательно */
     /* варианты написания: *
     /
     /* transition:  1s; */
     /* длительность перехода */
-    
+
     /* transition:  1s  2s; */
     /* первая цифра длительность, вторая задержка */
-  
+
     /* transition: 1s 2s ease;  */
     /* первая цифра длительность, вторая задержка, третья временная функция */
-  
+
     /* для временной функции можем использовать кубик бейзер */
     /*! https://cubic-bezier.com/#.17,.67,.83,.67/ */
-  
-    transition:  1s;
+
+    transition: 1s;
     background-color: blue;
     font-size: 50px;
-  }
-  
-  
-  .btn2 {
-  
-      /*! 2. СВОЙСТВО TRANSFORM */
-  
-  transform: scale(1.2);  /* Масштабирует элемент */
-  transform: rotate(45deg); /* Поворачивает */
-  transform: skew(30deg); /* Наклоняет */
-  transform: translate(0px); /* Смещает */
-  
-  /* transform: rotate(45deg) scale(1.5); */
-  /* Задание нескольких параметров одновременно */
-  
-  /* transform-origin: 100% 100%; (первая цифра ось Х, вторая ось У)*/
-  /*! можем смещать центр нашего с вами блока */
-      
-  /* в transform положение элемента остается неизменным, при этом мы можем менять его свойства  */
-          
-  }
-    
-  .btn2:hover {
-      transform: translate(90%, -85%);
-      transition: 1s;
-    }
-  
-  
-         /*! 3. СВОЙСТВО ANIMATION */
-    
-  /*! animation состоит из нескольких свойств:  */
-  
-  /* - animation-name - имя анимации */
-  /* - animation-duration - длительность перехода*/
-  /* - animation-timing-function, - временная функция */
-  /* - animation delay - время задержки перехода  */
-  /* (есть еще другие свойства) */
-  
-    .btn3 {
-  /* можно записывать свойства как по отдельности так и в одну строчку */
-  /* animation: anim3 3s ease 12s; */
+}
 
-  /* простой вариант записи анимации (имя и её время) */
-  /* animation: anim3 1s; */
-  }
-  .btn3:hover {
+
+.btn2 {
+
+    /*! 2. СВОЙСТВО TRANSFORM */
+
+    transform: scale(1.2);
+    /* Масштабирует элемент */
+    transform: rotate(45deg);
+    /* Поворачивает */
+    transform: skew(30deg);
+    /* Наклоняет */
+    transform: translate(0px);
+    /* Смещает */
+
+    /* transform: rotate(45deg) scale(1.5); */
+    /* Задание нескольких параметров одновременно */
+
+    /* transform-origin: 100% 100%; (первая цифра ось Х, вторая ось У)*/
+    /*! можем смещать центр нашего с вами блока */
+
+    /* в transform положение элемента остается неизменным, при этом мы можем менять его свойства  */
+
+}
+
+.btn2:hover {
+    transform: translate(90%, -85%);
+    transition: 1s;
+}
+
+
+/*! 3. СВОЙСТВО ANIMATION */
+
+/*! animation состоит из нескольких свойств:  */
+
+/* - animation-name - имя анимации */
+/* - animation-duration - длительность перехода*/
+/* - animation-timing-function, - временная функция */
+/* - animation delay - время задержки перехода  */
+/* (есть еще другие свойства) */
+
+.btn3 {
+    /* можно записывать свойства как по отдельности так и в одну строчку */
+    /* animation: anim3 3s ease 12s; */
+
+    /* простой вариант записи анимации (имя и её время) */
+    /* animation: anim3 1s; */
+}
+
+.btn3:hover {
     font-size: 2em;
     /* font-size: 28px; */
-  }
-  
-  
-  
-    @keyframes anim3 {   /* создание анимации */
-      from { /* начало анимации */
+}
+
+
+
+@keyframes anim3 {
+
+    /* создание анимации */
+    from {
+        /* начало анимации */
         margin-left: 0px;
-      }
-      to {  /* конец анимации */
-        margin-left: 160px;
-      }
-      
     }
-    
 
-    
+    to {
+        /* конец анимации */
+        margin-left: 160px;
+    }
 
-    /*! Анимации */
+}
+
+
+
+
+/*! Анимации */
 
 /*! Задание с воротами */
 
 #container3 {
     margin-top: 50px;
-    perspective: 800px; /* глубина блока (для открытия ворот во внутрь блока) */
+    perspective: 800px;
+    /* глубина блока (для открытия ворот во внутрь блока) */
     width: 500px;
 }
+
 #hello {
     position: absolute;
     margin-left: 130px;
@@ -204,36 +257,43 @@ position: absolute;
     z-index: -1;
 }
 
-#left, #right {
+#left,
+#right {
     display: inline-block;
     width: 150px;
     height: 100px;
     background-color: purple;
     border: 1px solid red;
 }
-#left{
+
+#left {
     transform-origin: 0%;
 }
-#right{
+
+#right {
     transform-origin: 100%;
 }
+
 #container3:hover>#left {
     transition: 2s;
     transform: rotateY(27deg);
-    
+
 }
+
 #container3:hover #right {
     transition: 2s;
     transform: rotateY(-27deg);
-    
+
 }
+
 /*! Конец задания с воротами */
 
 
 
 
-  /*! Реализовать html-страницу с несколькими блоками текст + картинка */
-  .cat, .dog {
+/*! Реализовать html-страницу с несколькими блоками текст + картинка */
+.cat,
+.dog {
     border: 1px solid red;
     width: 250px;
     height: 100px;
@@ -262,7 +322,9 @@ position: absolute;
 #container5>div {
     overflow: hidden !important;
 }
-.cat:hover, .dog:hover{
+
+.cat:hover,
+.dog:hover {
     transform: scale(1.25);
     transition: 1s;
     padding-bottom: 0px !important;
@@ -272,6 +334,7 @@ position: absolute;
 #container5>div:hover {
     filter: grayscale(.9);
 }
+
 /*! Конец задания */
 
 
@@ -279,58 +342,58 @@ position: absolute;
 
 /* делаем окружность */
 #clock {
-  height: 50px; width: 50px;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  border: 2px solid red;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    border: 2px solid red;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
 }
 
 /* расположение цифр */
 #clock>div {
-  /* background-color: red; */
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.5em;
+    /* background-color: red; */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
 }
 
 /* стрелки */
 #smallArrow {
-width: 100px !important;
-height: 5px !important;
-background-color: orange;
-margin-top: 150px;
-margin-left: 150px;
-transform-origin: 0px;
-animation: rotation 180s linear infinite;
+    width: 100px !important;
+    height: 5px !important;
+    background-color: orange;
+    margin-top: 150px;
+    margin-left: 150px;
+    transform-origin: 0px;
+    animation: rotation 180s linear infinite;
 }
 
 #bigArrow {
-width: 120px !important;
-height: 3px !important;
-background-color: red;
-margin-top: 150px;
-margin-left: 150px;
-transform-origin: 0px;
-animation: rotation 60s linear infinite;
+    width: 120px !important;
+    height: 3px !important;
+    background-color: red;
+    margin-top: 150px;
+    margin-left: 150px;
+    transform-origin: 0px;
+    animation: rotation 60s linear infinite;
 }
 
 /* анимация для стрелок */
 @keyframes rotation {
-  from{
-      
-  }
-  to {
-      rotate: 360deg;
-  }
+    from {}
+
+    to {
+        rotate: 360deg;
+    }
 }
 
 /*! Конец задания с часами */
@@ -341,23 +404,29 @@ animation: rotation 60s linear infinite;
 /*! кнопка 'нажми меня' */
 
 #callToMe {
-  display: inline;
-  background-color: blue;
-  color: white;
-  border: 2px solid transparent;
-  width: 120px;
-  border-radius: 5px; /* скругляет углы */
-  /* border-radius: 50%; в основном используется чтобы сделать круг из квадрата */
-  padding: 5px; /* внутренний отступ */
-  opacity: 1; /* прозрачность, шкала от 0 до 1 */
-  cursor: pointer; /* изменение курсора */
-  transition: 1s; /* длительность анимации */
-  /* transition-delay: 1s; время задержки перехода */
-  margin-bottom: 50px;
+    display: inline;
+    background-color: blue;
+    color: white;
+    border: 2px solid transparent;
+    width: 120px;
+    border-radius: 5px;
+    /* скругляет углы */
+    /* border-radius: 50%; в основном используется чтобы сделать круг из квадрата */
+    padding: 5px;
+    /* внутренний отступ */
+    opacity: 1;
+    /* прозрачность, шкала от 0 до 1 */
+    cursor: pointer;
+    /* изменение курсора */
+    transition: 1s;
+    /* длительность анимации */
+    /* transition-delay: 1s; время задержки перехода */
+    margin-bottom: 50px;
 }
 
-#callToMe:hover {  /* действие при нажатие мышки */
-  background-color: red;
+#callToMe:hover {
+    /* действие при нажатие мышки */
+    background-color: red;
 }
 
 /*! кнопка 'нажми меня' */
@@ -366,29 +435,37 @@ animation: rotation 60s linear infinite;
 
 
 /*! Задание с прогресс баром (двигающийся квадратик) */
-#container { 
+#container {
     border: 2px solid orange;
     height: 40px;
     width: 200px;
-}    
+}
 
-#square {  /* двигающийся квадрат */
+#square {
+    /* двигающийся квадрат */
     background: red;
     width: 40px;
     height: 40px;
     position: absolute;
-    animation: anim 3s linear 1s infinite; /* название анимации, её продолжительность  */
-}    
+    animation: anim 3s linear 1s infinite;
+    /* название анимации, её продолжительность  */
+}
 
-@keyframes anim {   /* создание анимации */
-    from { /* начало анимации */
+@keyframes anim {
+
+    /* создание анимации */
+    from {
+        /* начало анимации */
         margin-left: 0px;
-    }    
-    to {  /* конец анимации */
+    }
+
+    to {
+        /* конец анимации */
         margin-left: 160px;
-    }    
-    
-}    
+    }
+
+}
+
 /*! Конец задания с прогресс баром */
 
 
@@ -398,20 +475,22 @@ animation: rotation 60s linear infinite;
 
 #heart_container {
     height: 100px;
-}    
+}
 
 #heart {
     width: 150px;
     transition: 1s;
     /* position: absolute; */
     z-index: -100;
-    filter: grayscale(1) ;  /* filter отлично работает с изображениями */
-}    
+    filter: grayscale(1);
+    /* filter отлично работает с изображениями */
+}
 
 #heart:hover {
     filter: grayscale(0);
     width: 250px !important;
-}    
+}
+
 /*! Конец задания с сердцем */
 
 
@@ -422,7 +501,7 @@ animation: rotation 60s linear infinite;
 #school_container {
     height: 500px;
     margin-top: 150px;
-}    
+}
 
 #school_container>img {
     width: 100px;
@@ -432,23 +511,27 @@ animation: rotation 60s linear infinite;
 
 #book {
     margin-left: 200px;
-    animation: book 2s 0s forwards ;
+    animation: book 2s 0s forwards;
 }
+
 #calc {
     margin-left: 400px;
-    animation: calc 2s 1s forwards ;
+    animation: calc 2s 1s forwards;
 }
+
 #pallete {
     margin-left: 600px;
-    animation: pallete 2s 2s forwards ;
+    animation: pallete 2s 2s forwards;
 }
+
 #paper {
     margin-left: 20px;
-    animation: paper 2s 3s forwards ;
+    animation: paper 2s 3s forwards;
 }
+
 #pencil {
     margin-left: 300px;
-    animation: pencil 2s 4s forwards ;
+    animation: pencil 2s 4s forwards;
 }
 
 
@@ -456,55 +539,60 @@ animation: rotation 60s linear infinite;
     from {
         margin-top: 300px;
         rotate: 0deg;
-    }    
+    }
+
     to {
         margin-top: 0px;
         rotate: 60deg;
-    }        
+    }
 }
 
 @keyframes calc {
     from {
         margin-top: 300px;
         rotate: 0deg;
-    }    
+    }
+
     to {
         margin-top: 0px;
         rotate: 120deg;
-    }        
+    }
 }
 
 @keyframes pallete {
     from {
         margin-top: 300px;
         rotate: 0deg;
-    }    
+    }
+
     to {
         margin-top: 50px;
         rotate: 80deg;
-    }        
+    }
 }
 
 @keyframes paper {
     from {
         margin-top: 300px;
         rotate: 0deg;
-    }    
+    }
+
     to {
         margin-top: 50px;
         rotate: 60deg;
-    }        
+    }
 }
 
 @keyframes pencil {
     from {
         margin-top: 300px;
         rotate: 0deg;
-    }    
+    }
+
     to {
         margin-top: 90px;
         rotate: 250deg;
-    }        
+    }
 }
 
 /*! Конец задания с летающими предметами */
@@ -512,12 +600,13 @@ animation: rotation 60s linear infinite;
 
 
 
-  
+
 
 
 #text-id {
     /* id мы обязательно пишем через '#' */
-    background: linear-gradient(rgb(3, 3, 72), rgb(3, 52, 10)); /* плавный переход цвета (градиенты) */
+    background: linear-gradient(rgb(3, 3, 72), rgb(3, 52, 10));
+    /* плавный переход цвета (градиенты) */
     text-align: center;
     color: red;
     width: 300px;
@@ -525,29 +614,41 @@ animation: rotation 60s linear infinite;
 }
 
 
-#text-id:hover { /* :hover - изменяет стиль при наведении мышки */
+#text-id:hover {
+    /* :hover - изменяет стиль при наведении мышки */
     color: yellow;
     transition: 1s;
 }
 
 
-.changeDiv { /* class мы обязательно пишем через '.' */
+.changeDiv {
+    /* class мы обязательно пишем через '.' */
     color: green;
-    margin-top: 20px; /* верхний отступ */
-    margin-bottom: 10px; /* нижний отступ */
-    text-decoration: underline;  /* подчеркивание текста */
+    margin-top: 20px;
+    /* верхний отступ */
+    margin-bottom: 10px;
+    /* нижний отступ */
+    text-decoration: underline;
+    /* подчеркивание текста */
 }
 
 
 /*! задание с картами */
 .card_red {
-    color: red; /* цвет шрифта */
-    background-color: lightgrey; /* цвет фона */
-    display: inline-block;    /* блочное или строчное отображение  */
-    width: 37px; /* ширина */
-    padding: 10px;  /* внутренний отступ */
-    margin: 2px;  /* внешний отступ */
-    font-size: 25px;  /* размер шрифта */
+    color: red;
+    /* цвет шрифта */
+    background-color: lightgrey;
+    /* цвет фона */
+    display: inline-block;
+    /* блочное или строчное отображение  */
+    width: 37px;
+    /* ширина */
+    padding: 10px;
+    /* внутренний отступ */
+    margin: 2px;
+    /* внешний отступ */
+    font-size: 25px;
+    /* размер шрифта */
 }
 
 .card_black {
@@ -578,8 +679,10 @@ animation: rotation 60s linear infinite;
 dt {
     background-color: gray;
     width: 120px;
-    text-align: center;  /* выравние текста по середине блока */
-    margin: auto; /* выравние блока по середине страницы */
+    text-align: center;
+    /* выравние текста по середине блока */
+    margin: auto;
+    /* выравние блока по середине страницы */
 }
 
 
@@ -602,6 +705,7 @@ dt {
     margin-top: 10px;
     padding: 10px;
 }
+
 .background {
     background-color: rgb(169, 69, 86);
     padding: 10px;
@@ -612,9 +716,12 @@ dt {
 
 
 #pseudo_list>li {
-    list-style-type: none; /* отменяет маркеры списка */
-    font-size: 24px; /* размер шрифта */
-    font-style: italic; /* курсивный текст */
+    list-style-type: none;
+    /* отменяет маркеры списка */
+    font-size: 24px;
+    /* размер шрифта */
+    font-style: italic;
+    /* курсивный текст */
     background-color: gainsboro;
     color: red;
     width: 300px;
@@ -655,14 +762,17 @@ dt {
     border-bottom: 5px dashed red;
     border-top: 5px double blue;
     padding-bottom: 25px;
-    margin: 20px; /* внешний отступ (отступ между элементами) */
+    margin: 20px;
+    /* внешний отступ (отступ между элементами) */
     margin-left: 100px;
     margin-top: 2em;
     background-color: gray;
-    padding: 15px; /* внутренний отступ (отступ в самом элементе) */
+    padding: 15px;
+    /* внутренний отступ (отступ в самом элементе) */
     padding-left: 25px;
     padding-right: 5px;
-    transition: 1s; /* длительность анимации */
+    transition: 1s;
+    /* длительность анимации */
 }
 
 
@@ -694,7 +804,7 @@ dt {
 
 
 .new-title {
-    margin-top: 100px; 
+    margin-top: 100px;
     text-shadow: 2px 0px 3px white;
     color: red;
 
@@ -711,15 +821,13 @@ dt {
 
 
 
-@media screen and (max-width: 768px) {
-    #hidden-block { /* скрываю блок для маленького экрана  */
-        /* display: none; */
+@media screen and (max-width: 768px) {/* — медиа-запрос, который будет 
+применяться только для экранных устройств с шириной области просмотра не более 768px.  */
+
+
+    #car_letter {
+        /* background-image: url('public/porshe.webp');  */
+        /* font-size: .6em;  */
+        background-position: -250px -50px;
     }
-    
-    
-#car_letter {
-    /* background-image: url('public/porshe.webp');  */
-    /* font-size: .6em;  */
-    background-position: -250px -50px;
-}
 }
