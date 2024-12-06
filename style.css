@@ -42,10 +42,11 @@ position: absolute;
 #car_letter {
     background-image: url('public/porshe.webp'); 
     font-size: .6em;  
-    background-size: contain;
+    background-size: cover;
     border-radius: 20px 200px;
     word-spacing: -1px;
     font-weight: 900;
+
 
     /* нижние три свойства делают изображение из букв */
     background-clip: text;
@@ -696,7 +697,7 @@ dt {
 
 
 #hidden-block {
-    display: block;
+    /* display: block; */
 }
 
 
@@ -707,7 +708,7 @@ dt {
 
 @media screen and (max-width: 768px) {
     #hidden-block { /* скрываю блок для маленького экрана  */
-        display: none;
+        /* display: none; */
     }
     #car_letter {
     /* border: 5px solid greenyellow; */
