@@ -695,7 +695,9 @@ dt {
 }
 
 
-
+#hidden-block {
+    display: block;
+}
 
 
 
@@ -704,6 +706,9 @@ dt {
 
 
 @media screen and (max-width: 768px) {
+    #hidden-block { /* скрываю блок для маленького экрана  */
+        display: none;
+    }
     #car_letter {
     /* border: 5px solid greenyellow; */
     /* max-height: 50%; */
