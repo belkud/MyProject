@@ -17,10 +17,24 @@ body {
                                         /*! ТЕМА С ИЗОБРАЖЕНИЯМИ! */
 
 
+#small-cat {
+/* width: 100px; */
+z-index: 5;
+position: absolute;
+}
+#small-cat:hover {
+    border: 2px solid red;
+    /* box-sizing: border-box; */
+}
+
+
+
+
 #car_container {
     /* background:linear-gradient(white, blue, red) ; */
     background-color: black;
     width: 600px; 
+    min-width: 500px;
     border-radius: 20px 200px;
     overflow: hidden !important;
 }
