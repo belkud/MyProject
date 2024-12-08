@@ -33,20 +33,6 @@ body {
 
 
 
-
-#small-cat {
-    /* width: 100px; */
-    z-index: 5;
-    position: absolute;
-}
-
-#small-cat:hover {
-    border: 2px solid red;
-    /* box-sizing: border-box; */
-}
-
-
-
 /*! машинка из букв */
 
 #car_container {
@@ -79,12 +65,14 @@ body {
 /*! машинка из букв, завершение */
 
 
-/*! второе изображение (вторая машинка) */
+
+
+/*! Вторая машинка (выдвигается при нажатии мышки) */
 
 #small-car-container {    /* контейнер с изображением */
     float: left;  /* обтекание текста сбоку изображения */
     margin-right: 80px;
-    margin-bottom: 30px; 
+    margin-bottom: 50px; 
     height: 140px; 
     width: 254px;
 }
@@ -111,7 +99,7 @@ body {
     /* изменение алгоритма расчёта ширины и высоты элемента.  */
 }
 
-#car:hover {
+#car:hover { /* действие при наведении мыши на изображение с машиной */
     margin-top: -10px;
     margin-left: 10px;
     box-shadow: -20px 20px 5px gray;
@@ -119,7 +107,34 @@ body {
     /* прозрачность изображения */
 }
 
-/*! второе изображение, завершение */
+/*! Вторая машинка, завершение */
+
+
+
+
+/*! Движущееся небо */
+#alive-sky {
+    /* background-color: blue; */
+    background-image: url('public/cloud.png');
+    animation: cloud 10s linear infinite;
+    border: 1px solid #000;
+    height: 300px;
+    animation: moveSky 10s linear infinite;
+}
+
+@keyframes moveSky { /* анимация, чтобы небо двигалось */
+    from {
+        transform: translateX(0px);
+        background-position-x: 0px;
+    }
+    to {
+        background-position-x: 500px;
+        
+    }
+}
+/*! Движущееся небо, завершение */
+
+
 
 
 
