@@ -114,7 +114,7 @@ body {
 
 /*! Движущиеся облака */
 #alive-sky {
-    background-color: rgb(17, 17, 107, .2);
+    /* background-color: rgb(17, 17, 107, .2); */
     background-color:linear-gradient(white, blue, red) ;
     background-image: url('public/cloud.png');
     animation: cloud 10s linear infinite;
