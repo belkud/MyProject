@@ -117,9 +117,10 @@ body {
     /* background-color: blue; */
     background-image: url('public/cloud.png');
     animation: cloud 10s linear infinite;
-    border: 1px solid #000;
-    height: 300px;
-    animation: moveSky 10s linear infinite;
+    height: 280px;
+    animation: moveSky 20s linear infinite;
+    filter: drop-shadow(0px 0px 10px aqua)
+
 }
 
 @keyframes moveSky { /* анимация, чтобы небо двигалось */
@@ -843,6 +844,10 @@ dt {
     #car_letter {
         /* background-image: url('public/porshe.webp');  */
         /* font-size: .6em;  */
-        background-position: -250px -50px;
+        background-position: -550px -50px;
+    }
+
+    #car {
+        width: 500px;
     }
 }
