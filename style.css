@@ -24,9 +24,35 @@ body {
     background-attachment: fixed;
     /* фиксируем или прокручиваем фон */
 
-    background-color: ; /* цвет фона (вместо изображения) */
+    /* cursor: url('public/cats/cat_clean_64.png'), auto; */
+    
+
+
 
 }
+
+html {
+    /* scroll-behavior:smooth; */
+}
+
+
+
+
+#container-text {
+    background-color: rgb(95, 168, 160, .5);
+    padding: 20px;
+    color: aliceblue;
+
+    width: 50%;
+    
+    /* margin: auto; */
+
+    /* margin: auto; */
+}
+
+
+
+
 
 /*! ТЕМА С ИЗОБРАЖЕНИЯМИ! */
 
@@ -70,7 +96,7 @@ body {
 /*! Вторая машинка (выдвигается при нажатии мышки) */
 
 #small-car-container {    /* контейнер с изображением */
-    float: left;  /* обтекание текста сбоку изображения */
+    /* float: right;  обтекание текста сбоку изображения */
     margin-right: 80px;
     margin-bottom: 50px; 
     height: 140px; 
