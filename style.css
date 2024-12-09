@@ -112,12 +112,14 @@ body {
 
 
 
-/*! Движущееся небо */
+/*! Движущиеся облака */
 #alive-sky {
-    /* background-color: blue; */
+    background-color: rgb(17, 17, 107, .2);
+    background-color:linear-gradient(white, blue, red) ;
     background-image: url('public/cloud.png');
     animation: cloud 10s linear infinite;
     height: 280px;
+    margin: -8px;
     animation: moveSky 20s linear infinite;
     filter: drop-shadow(0px 0px 10px aqua)
 
@@ -133,7 +135,7 @@ body {
         
     }
 }
-/*! Движущееся небо, завершение */
+/*! Движущиеся облака, завершение */
 
 
 
@@ -827,9 +829,7 @@ dt {
 }
 
 
-#hidden-block {
-    /* display: block; */
-}
+
 
 
 
@@ -844,10 +844,10 @@ dt {
     #car_letter {
         /* background-image: url('public/porshe.webp');  */
         /* font-size: .6em;  */
-        background-position: -550px -50px;
+        background-position: -850px -50px;
     }
 
     #car {
-        width: 500px;
+        /* width: 500px; */
     }
 }
