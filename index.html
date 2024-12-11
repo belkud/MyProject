@@ -18,7 +18,7 @@
 
     <aside id="aside_left">
       <aside>Aside 1</aside>
-      <aside>Aside 2</aside>
+      <aside style="margin-top: 10px;">Aside 2</aside>
     </aside>
 
     <main> main content
@@ -38,11 +38,15 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-
     text-transform: uppercase;
     color: aliceblue;
     width: 80%;
     margin: auto;
+  }
+  
+  #site>div {
+    display: flex;
+    gap: 10px;
   }
 
   header {
@@ -57,35 +61,36 @@
     padding-left: 50px;
   }
 
-  #site>div {
-    display: flex;
-    gap: 10px;
-  }
-  #aside_left, main, #aside_right  {
+  main, #aside_right  {
     background-color: rgb(148, 46, 80);
     text-align: center;
-    /* padding: 10px;  */
   }
 
   #aside_right {
-    /* rotate: -90deg; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     writing-mode:vertical-lr;
+    text-orientation: upright;
     width: 20%;
   }
-
+  
 main {
   width: 50%;
   text-align: left;
   padding: 25px;
 }
 
-  #aside_left{
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    width: 30%;
+#aside_left{
+  width: 30%;
+}
 
-  }
+#aside_left>aside{
+background-color: rgb(148, 46, 80);
+padding: 30px;
+}
+
+
 main>section {
   background-color: pink;
   padding: 20px;
