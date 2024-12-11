@@ -10,6 +10,57 @@
 
 <body>
 
+<div id="cats_gallery">
+    <h3 style="text-align: center;">CATS GALLERY</h3>
+    <hr style="border-color: lightgray;">
+    <iframe name="bigCat" style="height: 256px;" src="public/cats/cat_tied_256.png" frameborder="0"></iframe>
+    <div>
+      <a target="bigCat" href="public/cats/cat_box_256.png"><img src="public/cats/cat_box_64.png" alt=""></a>
+      <a target="bigCat" href="public/cats/cat_cage_256.png"><img src="public/cats/cat_cage_64.png" alt=""></a>
+      <a target="bigCat" href="public/cats/cat_clean_256.png"><img src="public/cats/cat_clean_64.png" alt=""></a>
+      <a target="bigCat" href="public/cats/cat_eyes_256.png"><img src="public/cats/cat_eyes_64.png" alt=""></a>
+      <a target="bigCat" href="public/cats/cat_purr_256.png"><img src="public/cats/cat_purr_64.png" alt=""></a>
+      <a target="bigCat" href="public/cats/cat_tied_256.png"><img src="public/cats/cat_tied_64.png" alt=""></a>
+
+    </div>
+</div>
+
+
+<style>
+  #cats_gallery {
+    border:  2px solid gray;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    background-color: lightgrey;
+    height: 420px;
+    width: 428px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+  }
+  
+  #cats_gallery a {
+    display: inline-block;
+    border:  2px solid gray;
+  }
+  
+  #cats_gallery a:hover {
+    display: inline-block;
+    border:  2px solid rgb(19, 238, 30);
+  }
+
+
+
+</style>
+
+
+
+
+
+
+
 <div id="site">
   <header>Header</header>
   <nav>Menu</nav>
@@ -26,7 +77,15 @@
       <section>section 2</section>
     </main>
 
-    <aside id="aside_right">Aside 3</aside>
+    <aside id="aside_right">
+      <div>A</div>
+      <div>s</div>
+      <div>i</div>
+      <div>d</div>
+      <div>e</div>
+      <!-- <div style="color: transparent;">k</div> -->
+      <div style="margin-top: 20px;">3</div>
+    </aside>
   </div>
 
 <footer>Footer</footer>
@@ -68,11 +127,14 @@
 
   #aside_right {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    writing-mode:vertical-lr;
-    text-orientation: upright;
     width: 20%;
+    flex-direction: column;
+    justify-content: start;
+    /* justify-content:center;
+    align-items: center; */
+
+    /* writing-mode:vertical-lr;
+    text-orientation: upright; */
   }
   
 main {
