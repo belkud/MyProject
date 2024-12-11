@@ -37,18 +37,34 @@ html {
 
 
 
-
+/*! текст с полупрозрачным фоном (Computer programming) */
 #container-text {
-    background-color: rgb(95, 168, 160, .5);
+    background-color: rgb(95, 168, 160, .8);
     padding: 20px;
     color: aliceblue;
-
     width: 50%;
-    
-    /* margin: auto; */
-
-    /* margin: auto; */
+    margin: auto;
 }
+
+#contents {
+    background-color: rgb(174, 153, 231);
+    border: 3px solid lightgrey;
+    width: 300px;
+    padding: 30px;
+  }
+
+  #contents>li>a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  #contents>li:hover {
+    text-decoration: underline red;
+  }
+
+  #contents>li:hover li{
+    text-decoration: underline rgb(174, 153, 231);;    
+  }
 
 
 

@@ -12,23 +12,23 @@
 
 <div id="site">
   <header>Header</header>
-  <menu>Menu</menu>
-  <main>
+  <nav>Menu</nav>
+
+  <div>
 
     <aside id="aside_left">
       <aside>Aside 1</aside>
       <aside>Aside 2</aside>
     </aside>
 
-    <div id="main_content"> main content
+    <main> main content
       <section>section 1</section>
       <section>section 2</section>
-    </div>
-
-
+    </main>
 
     <aside id="aside_right">Aside 3</aside>
-  </main>
+
+  </div>
 
 
 <footer>Footer</footer>
@@ -46,23 +46,24 @@
     padding: 10px;
   }
   
-  menu, footer {
+  nav, footer {
     background-color: rgb(99, 18, 45);
     padding: 10px;
     
   }
-  main {
+
+  #site>div {
     display: flex;
     gap: 10px;
     /* width: 50%; */
   }
-  #aside_left, #main_content, #aside_right  {
+  #aside_left, main, #aside_right  {
     background-color: rgb(148, 46, 80);
     padding: 10px; 
   }
   #aside_right {
     /* rotate: -90deg; */
-    writing-mode:vertical-rl;
+    writing-mode:vertical-lr;
     width: 20%;
   }
 
@@ -83,7 +84,7 @@
 
 
 
-  <iframe style="margin-top:100px; width:500px; height:500px"  width="500px" height="500px" src="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" frameborder="0"></iframe>
+  <iframe style="margin-top:100px; width:500px; height:500px;"  width="500px" height="500px" src="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" frameborder="0"></iframe>
 
 
 <div id="container-text">
@@ -122,40 +123,6 @@
     <li> <a href="">Programmers</a></li>
   </ol>
   
-
-
-
-
-<style>
-  #contents {
-    background-color: rgb(174, 153, 231);
-    border: 3px solid lightgrey;
-    width: 300px;
-    padding: 30px;
-    /* margin: 100px;
-    margin-bottom: 300px; */
-    /* position:fixed; */
-    /* top: 100px; */
-    /* left: 100px; */
-  }
-
-
-  #contents>li>a {
-    text-decoration: none;
-    color: aliceblue;
-  }
-  #contents>li:hover {
-    text-decoration: underline red;
-  }
-
- 
-  
-
-
-
-</style>
-
-
 
 
   <h2 id="history">History</h2>
@@ -223,51 +190,23 @@
     </li>
   </ul>
 
-<h2>Readability of source code</h2>
-  In computer programming, readability refers to the ease with which a human reader can comprehend the purpose, control
+<h3>Readability of source code</h3>
+<p>In computer programming, readability refers to the ease with which a human reader can comprehend the purpose, control
   flow, and operation of source code. It affects the aspects of quality above, including portability, usability and most
-  importantly maintainability.
+  importantly maintainability.</p>
 
-  Readability is important because programmers spend the majority of their time reading, trying to understand and
+  <p>Readability is important because programmers spend the majority of their time reading, trying to understand and
   modifying existing source code, rather than writing new source code. Unreadable code often leads to bugs,
   inefficiencies, and duplicated code. A study[25] found that a few simple readability transformations made code shorter
-  and drastically reduced the time to understand it.
+  and drastically reduced the time to understand it.</p>
 
-  Algorithmic complexity
-  The academic field and the engineering practice of computer programming are both largely concerned with discovering
+  <h3>Algorithmic complexity</h3>
+  <p>The academic field and the engineering practice of computer programming are both largely concerned with discovering
   and implementing the most efficient algorithms for a given class of problem. For this purpose, algorithms are
   classified into orders using so-called Big O notation, which expresses resource use, such as execution time or memory
   consumption, in terms of the size of an input. Expert programmers are familiar with a variety of well-established
   algorithms and their respective complexities and use this knowledge to choose algorithms that are best suited to the
-  circumstances.
-
-  Chess algorithms as an example
-  "Programming a Computer for Playing Chess" was a 1950 paper that evaluated a "minimax" algorithm that is part of the
-  history of algorithmic complexity; a course on IBM's Deep Blue (chess computer) is part of the computer science
-  curriculum at Stanford University.[27]
-
-  Programming languages
-  Different programming languages support different styles of programming (called programming paradigms). The choice of
-  language used is subject to many considerations, such as company policy, suitability to task, availability of
-  third-party packages, or individual preference. Ideally, the programming language best suited for the task at hand
-  will be selected. Trade-offs from this ideal involve finding enough programmers who know the language to build a team,
-  the availability of compilers for that language, and the efficiency with which programs written in a given language
-  execute. Languages form an approximate spectrum from "low-level" to "high-level"; "low-level" languages are typically
-  more machine-oriented and faster to execute, whereas "high-level" languages are more abstract and easier to use but
-  execute less quickly. It is usually easier to code in "high-level" languages than in "low-level" ones.
-
-  Programmers
-  Computer programmers are those who write computer software. Their jobs usually involve:
-
-  Coding
-  Debugging
-  Documentation
-  Integration
-  Maintenance
-  Requirements analysis
-  Software architecture
-  Software testing
-  Specification
+  circumstances.</p>
 
 </div>
 
