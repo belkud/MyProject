@@ -19,6 +19,12 @@
 
 <table id="table2">
   <caption>Название таблицы</caption>
+  <colgroup>
+    <!-- <col span="1" style="background-image: url(public/cat.jpg);background-size: 80%;"> -->
+    <col span="1" style="background-color: goldenrod;">
+    <col span="1" style="background-color: red;">
+    <col span="1" style="background-color: orange;">
+  </colgroup>
 <tr>
   <th>Column 1</th>
   <th>Column 2</th>
@@ -78,41 +84,38 @@
 
 <thead>
   <tr>
-    <td>12121</td>
-    <td>12342342</td>
-    <td>3345345</td>
+    <td>Header</td>
+    <td>Header</td>
+    <td>Header</td>
   </tr>
   
 </thead>
 
 <tfoot>
   <tr>
-    <td> foot</td>
-    <td> foot342</td>
-    <td> foot45</td>
+    <td>Footer</td>
+    <td>Footer</td>
+    <td>Footer</td>
   </tr>
 </tfoot>
 
 <tbody>
   <tr>
-    <td> tbody</td>
-    <td> tbody342</td>
-    <td> tbody45</td>
+    <td>tbody</td>
+    <td>tbody</td>
+    <td>tbody</td>
   </tr>
   <tr>
-    <td> tbody</td>
-    <td> tbody342</td>
-    <td> tbody45</td>
+    <td>tbody</td>
+    <td>tbody</td>
+    <td>tbody</td>
   </tr>
   <tr>
-    <td> tbody</td>
-    <td> tbody342</td>
-    <td> tbody45</td>
+    <td>tbody</td>
+    <td>tbody</td>
+    <td>tbody</td>
   </tr>
 </tbody>
-
-
-
 
 
 
@@ -130,7 +133,7 @@
 <style>
   #table2 {
    border: 2px solid red;
-   /* border-collapse: collapse; */
+   border-collapse: collapse;
    border-spacing: 10px;
    text-align: center;
    vertical-align:bottom;
@@ -138,6 +141,15 @@
    background-image: url(public/dog.webp);
    empty-cells: hide;
   }
+  #table2:hover td{
+    transition-property: background-color, rotate;
+    transition-duration: 5s, 3s;
+    background-color: greenyellow;
+    /* transition: 5s; */
+    rotate: 360deg;
+    transition-timing-function: linear;
+  }
+
   th {
     border: 2px solid green;
     width: 100px;
@@ -145,7 +157,7 @@
   }
   td {
     border: 2px solid yellow;
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
     /* background-image: url(public/cats/cat_cage_64.png);  */
     background-size: contain;
  }
