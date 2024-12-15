@@ -9,8 +9,45 @@
 </head>
 
 <body>
+
+  <div id="container_menu">
+    <div><img src="public/menu/edit.png" alt="">edit</div>
+    <div><img src="public/menu/favorites.png" alt="">favorites</div>
+    <div><img src="public/menu/history.png" alt="">history</div>
+    <div><img style="width: 30px; margin-left: 10px;" src="public/menu/insta.png" alt=""><span style="height: 30px; margin-left: 10px; padding-top: 20px;">instagram</span></div>
+    <div><img src="public/menu/settings.png" alt="">settings</div>
+  </div>
+
+  <style>
+    #container_menu {
+      background-color: rgb(148, 139, 139);
+      width: 300px;
+      text-transform: uppercase;
+      color: aliceblue;
+    }
+
+    #container_menu img {
+        max-width: 50px;
+    }
+
+    #container_menu div {
+      display: flex;
+      align-items: center;
+
+    }
+
+    #container_menu div:hover {
+        background-color: rgb(69, 67, 67);
+        transition: .3s;
+  
+    }
+
+  </style>
+
+
+<h1 class="new-title">Таблицы</h1>
   <table id="tast_table">
-    <caption style="text-transform: uppercase; text-align: right;">Тестовая таблица</caption>
+    <caption style="text-transform: uppercase; text-align: right; color: aliceblue;">Тестовая таблица</caption>
     <colgroup>
       <col span="1" style="background-color: lightgray;">
       <col span="1" style="background-color: aqua;">
@@ -79,7 +116,9 @@
 <style>
   #tast_table {
     text-align: center;
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
+    border-spacing: 3px;
+    /* margin-top: 100p/; */
   }
 
   #tast_table thead {
@@ -91,7 +130,7 @@
   }
   
   #tast_table th {
-    padding: 5px;
+    padding: 10px;
     color: aliceblue;
     text-transform: uppercase;
   }
@@ -119,8 +158,9 @@
 
 #tast_table td:hover, th:hover{
   background-color: greenyellow;
+  transition: .5s;
+  cursor: pointer;
 }
-
 
 </style>
 
@@ -189,13 +229,6 @@
   #table1 th {
     background-color: green;
   }
-
-  #table1 td:hover, th:hover{
-    /* background-color: transparent !important; */
-    /* opacity: 0 !important; */
-    /* display: none; */
-  }
- 
   
   .col-1 {
     background-color: pink;
