@@ -12,7 +12,11 @@
 
   
 
+
+ <!--! -----------------------ТАБЛИЦЫ----------------------- -->  
+
 <h1 class="new-title">Таблицы</h1>
+
   <table id="tast_table">
     <caption style="text-transform: uppercase; text-align: right; color: aliceblue;">Тестовая таблица</caption>
     <colgroup>
@@ -81,48 +85,44 @@
   </table>
 
 <style>
-  #tast_table {
-    text-align: center;
-    /* border-collapse: collapse; */
-    border-spacing: 3px;
-  }
+#tast_table {
+  text-align: center;
+  /* border-collapse: collapse; */
+  border-spacing: 3px;
+}
 
-  #tast_table thead {
-    border-bottom: 1px solid white;
-  }
-  
-  #tast_table tfoot {
-    border-top: 1px solid white;
-  }
-  
-  #tast_table th {
-    padding: 10px;
-    color: aliceblue;
-    text-transform: uppercase;
-  }
+#tast_table thead {
+  border-bottom: 1px solid white;
+}
 
-  #tast_table tr td:nth-child(1){
-    text-align: left;
-    padding-left: 5px;
-    color: #000;
-  }
-    
-  #tast_table td::after{
-    content: '+';
-    border: 1px solid white;
-    border-radius: 50%;
-    padding-left: 3px;
-    padding-right:3px;
-    font-size: small;
-  }
-/*   
-  #task_table td {
-    color: red;
-  } */
+#tast_table tfoot {
+  border-top: 1px solid white;
+}
+
+#tast_table th {
+  padding: 10px;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+#tast_table tr td:nth-child(1){
+  text-align: left;
+  padding-left: 5px;
+  color: #000;
+}
   
-  #tast_table tr>td:nth-child(1)::after {
-    color: transparent;
-    border-color: transparent;
+#tast_table td::after{
+  content: '+';
+  border: 1px solid white;
+  border-radius: 50%;
+  padding-left: 3px;
+  padding-right:3px;
+  font-size: small;
+}
+  
+#tast_table tr>td:nth-child(1)::after {
+  color: transparent;
+  border-color: transparent;
 }
 
 #tast_table td:hover, th:hover{
