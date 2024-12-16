@@ -10,50 +10,7 @@
 
 <body>
 
-  <div id="container_menu">
-    <div><img src="public/menu/edit.png" alt="">edit</div>
-    <div><img src="public/menu/favorites.png" alt="">favorites</div>
-    <div><img src="public/menu/history.png" alt="">history</div>
-    <div><img style="width: 30px; margin-left: 10px;" src="public/menu/insta.png" alt=""><span style="height: 30px; margin-left: 10px; padding-top: 20px;">instagram</span></div>
-    <div><img src="public/menu/settings.png" alt="">settings</div>
-  </div>
-
-  <style>
-    #container_menu {
-      background-color: rgb(148, 139, 139);
-      width: 50px;
-      text-transform: uppercase;
-      color: transparent;
-      transition: 1s;
-      height: 100%;
-      position: fixed;
-      top: 0px;
-      left: 0px;
-    }
-    #container_menu:hover {
-      width: 200px;
-      transition: 1s;
-      color: aliceblue;
-    }
-
-    #container_menu img {
-        max-width: 50px;
-    }
-
-    #container_menu div {
-      display: flex;
-      align-items: center;
-
-    }
-
-    #container_menu div:hover {
-        background-color: rgb(69, 67, 67);
-        transition: .3s;
   
-    }
-
-  </style>
-
 
 <h1 class="new-title">Таблицы</h1>
   <table id="tast_table">
@@ -158,11 +115,14 @@
     padding-right:3px;
     font-size: small;
   }
-
+/*   
+  #task_table td {
+    color: red;
+  } */
   
-#tast_table tr>td:nth-child(1)::after {
-  color: transparent;
-  border-color: transparent;
+  #tast_table tr>td:nth-child(1)::after {
+    color: transparent;
+    border-color: transparent;
 }
 
 #tast_table td:hover, th:hover{
@@ -175,180 +135,6 @@
 
 
 
-
-
-
-<table id="table3">
-  <caption style="font-size: 1.5em;">Таблица 3</caption>
-  <colgroup>
-    <!-- <col span="1" class="col-1">
-    <col span="4" class="col-2"> -->
-  </colgroup>
-  <tr>
-    <th></th>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
-    <th>Header 4</th>
-  </tr>
-  <tr>
-    <td>Line 1</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 2</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 3</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 4</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 5</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 6</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 7</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 8</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 9</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 10</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 10</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 10</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 10</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 10</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 10</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-  <tr>
-    <td>Line 10</td>
-    <td>Ячейка 2</td>
-    <td>Ячейка 3</td>
-    <td>Ячейка 4</td>
-    <td>Ячейка 5</td>
-  </tr>
-</table>
- 
-<style>
-
-#table3 {
-  margin-top: 150px;
-  margin-bottom: 150px;
-  color: aliceblue;
-  text-align: center;
-  display: block;
-  height: 300px;
-  
-  /* overflow-x:scroll; */
-  /* overflow-y: scroll; */
-  width: 500px;
-  overflow:scroll;
-}
-
-#table3 th {
-  background-color: green;
-  position:sticky; 
-  top: 0px; 
-  font-size: 1.2em;
-}
-
-#table3 tr td:nth-child(1){    
-  background-color: green;
-  position:sticky; 
-  left: 0px;
-}
-  
-#table3 th, #table3 td {
-  padding: 10px;
-  width: 800px;
-}
-  
-#table3 tr:nth-child(even) {
-  background-color: gray;
-}
-
-#table3 tr:nth-child(odd) {
-  background-color: rgb(98, 98, 98);
-}
-
-
-</style>
 
 
 
