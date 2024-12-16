@@ -143,7 +143,7 @@
 
 
 <table id="table2">
-  <caption>Название таблицы</caption>
+  <caption style="margin: auto; text-transform: uppercase; color: aliceblue; background-color: gray; padding: 10px;">Таблица с крутящимися ячейками</caption>
   <colgroup>
     <!-- <col span="1" style="background-image: url(public/cat.jpg);background-size: contain;"> -->
     <col span="1" style="background-color: goldenrod;">
@@ -256,44 +256,6 @@
 
 
 
-<style>
-  #table2 {
-   border: 2px solid red;
-   /* border-collapse: collapse; */
-   border-spacing: 10px;
-   text-align: center;
-   vertical-align:bottom;
-   background-color: gray;
-   background-image: url(public/dog.webp);
-   empty-cells: hide;
-  }
-  #table2:hover td{
-    transition-property: background-color, rotate;
-    transition-duration: 5s, 10s;
-    background-color: greenyellow;
-    /* transition: 5s; */
-    rotate: 360deg;
-    transition-timing-function: linear;
-  }
-
-  #table2 th {
-    border: 2px solid green;
-    width: 100px;
-    background-color: lightgrey;
-  }
-  #table2 td {
-    border: 2px solid yellow;
-    
-    /* background-color: lightsalmon; */
-    
-
-    /* height: 100px; */
-    /* background-image: url(public/cats/cat_cage_64.png);  */
-    /* background-size: contain; */
- }
-
-
-</style>
 
 
 
@@ -311,24 +273,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--! Галерея котиков (6 миниатюрок и один большой кот)-->
 <div id="cats_gallery">
-    <h3 style="text-align: center;">CATS GALLERY</h3>
+  <h3 style="text-align: center;">CATS GALLERY</h3>
     <hr style="border-color: lightgray;">
     <iframe name="bigCat" style="height: 256px;" src="public/cats/cat_tied_256.png" frameborder="0"></iframe>
     <div>
@@ -342,34 +289,11 @@
     </div>
 </div>
 
+<!--! Галерея котиков, завершение -->
+
 
 <style>
-  #cats_gallery {
-    border:  2px solid gray;
-    margin-top: 300px;
-    margin-bottom: 300px;
-    background-color: lightgrey;
-    height: 420px;
-    width: 428px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-
-  }
   
-  #cats_gallery a {
-    display: inline-block;
-    border:  2px solid gray;
-  }
-  
-  #cats_gallery a:hover {
-    display: inline-block;
-    border:  2px solid rgb(19, 238, 30);
-  }
-
-
-
 </style>
 
 
@@ -485,7 +409,9 @@ main>section {
   <iframe style="margin-top:100px; width:500px; height:500px;"  width="500px" height="500px" src="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" frameborder="0"></iframe>
 
 
-<div id="container-text">
+  <!--! /*! текст с полупрозрачным фоном (Computer programming) */ -->
+
+  <div id="container-text">
 
   <h2 style="border-bottom: 2px solid gray; padding-bottom: 20px;">Computer programming</h2>
   <!-- <hr> -->
@@ -607,6 +533,10 @@ main>section {
   circumstances.</p>
 
 </div>
+
+
+<!--! /*! Завершение текста с полупрозрачным фоном (Computer programming) */ -->
+
 
 
 

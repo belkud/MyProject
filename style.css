@@ -36,14 +36,81 @@ html {
 }
 
 
+#table2 {
+    border: 2px solid red;
+    /* border-collapse: collapse; */
+    border-spacing: 10px;
+    text-align: center;
+    vertical-align:bottom;
+    background-color: gray;
+    background-image: url(public/dog.webp);
+    empty-cells: hide;
+    margin-top: 100px;
+   }
+   #table2:hover td{
+     transition-property: background-color, rotate;
+     transition-duration: 5s, 10s;
+     background-color: greenyellow;
+     /* transition: 5s; */
+     rotate: 360deg;
+     transition-timing-function: linear;
+   }
+ 
+   #table2 th {
+     border: 2px solid green;
+     width: 100px;
+     background-color: lightgrey;
+   }
+   #table2 td {
+     border: 2px solid yellow;
+     
+     /* background-color: lightsalmon; */
+     
+ 
+     /* height: 100px; */
+     /* background-image: url(public/cats/cat_cage_64.png);  */
+     /* background-size: contain; */
+  }
+ 
+
+
+  /*! Галерея котиков (6 миниатюрок и один большой кот) */
+  
+  #cats_gallery {
+    border:  2px solid gray;
+    margin-top: 150px;
+    margin-bottom: 300px;
+    background-color: lightgrey;
+    height: 420px;
+    width: 428px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #cats_gallery a {
+    display: inline-block;
+    border:  2px solid gray;
+  }
+  
+  #cats_gallery a:hover {
+    display: inline-block;
+    border:  2px solid rgb(19, 238, 30);
+  }
+
+  /*! Галерея котиков, завершение  */
+
+
+
+
 
 /*! текст с полупрозрачным фоном (Computer programming) */
 #container-text {
     background-color: rgb(95, 168, 160, .8);
     padding: 20px;
     color: aliceblue;
-    width: 50%;
-    margin: auto;
+    /* width: 50%; */
+    margin: 100px auto ;
 }
 
 #contents {
@@ -894,7 +961,7 @@ dt {
     #car_letter {
         /* background-image: url('public/porshe.webp');  */
         /* font-size: .6em;  */
-        background-position: -850px -50px;
+        /* background-position: -850px -50px; */
     }
 
     #car {
