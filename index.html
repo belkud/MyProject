@@ -15,6 +15,146 @@
 
  <!--! -----------------------ТАБЛИЦЫ----------------------- -->  
 
+
+
+<table id="home_table" style="margin-top: 300px;">
+    <tr>
+      <th></th>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+      <th>Header 4</th>
+      <th>Header 5</th>
+    </tr>
+    <tr>
+      <td>Line 1</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+    <tr>
+      <td>Line 2</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+    <tr>
+      <td>Line 3</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+    <tr>
+      <td>Line 4</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+    <tr>
+      <td>Line 5</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+    <tr>
+      <td>Line 6</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+    <tr>
+      <td>Line 7</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+    <tr>
+      <td>Line 8</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+    <tr>
+      <td>Line 9</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+    <tr>
+      <td>Line 10</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+</table>
+
+
+
+
+<style>
+ #home_table { /* сама таблица */
+   background-color: rgb(224, 221, 221);
+   border-collapse: collapse;/* убираем отступы между ячейками */
+   
+   overflow:scroll;
+   display: block;
+
+   width: 300px;
+   height: 200px;
+  }
+  
+  #home_table tr:nth-child(even) { /* изменяем четных строк */
+    background-color: rgb(160, 159, 159);
+  }
+
+  #home_table tr th{ /* подсветка заголовков */
+    background-color: aqua;
+    padding: 5px;
+  }
+  
+  #home_table tr td:nth-child(1) { /* подсветка вертикального столбика */
+    background-color: aqua;
+    
+  }
+
+  #home_table tr td { /* работаем непосредственно с ячейками */
+    padding: 5px;
+  }
+
+  /*! Подсветка столбиков таблицы с помощью :nth-child() */
+  /* #home_table tr td:nth-child(4n) {
+    background-color: gray;
+  } */
+
+
+
+</style>
+
+
+
+
+
+
 <h1 class="new-title">Таблицы</h1>
 
   <table id="tast_table">
@@ -126,7 +266,9 @@
 }
 
 #tast_table td:hover, th:hover{
-  background-color: greenyellow;
+
+  /* background-color: greenyellow; */
+
   transition: .5s;
   cursor: pointer;
 }
