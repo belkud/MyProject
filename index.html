@@ -10,10 +10,84 @@
 
 <body>
 
-  
+  <button>Кнопка</button>
 
 
  <!--! -----------------------ТАБЛИЦЫ----------------------- -->  
+
+
+ <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum obcaecati, alias cumque rerum ut ipsam est incidunt! Maiores unde quibusdam quod mollitia deserunt, animi vero, voluptatum est, consequuntur doloribus ex?
+ Provident voluptatum saepe sed rerum odit est omnis, voluptatem quaerat placeat quia rem? Harum, sunt corrupti? Iste quam quibusdam, repellat suscipit error excepturi facilis magni eos fugiat recusandae porro. Voluptate!
+ Maxime, sequi corrupti quasi officiis officia perspiciatis molestias, quis laudantium, doloremque quae impedit eveniet modi repellendus hic sapiente similique perferendis quidem quas dicta exercitationem velit debitis quo magnam? Beatae, nam!
+ Labore dolor eaque quo consequuntur vel ut, inventore molestiae incidunt quos, ducimus voluptatum consequatur, commodi reprehenderit illo numquam assumenda amet officia iusto ullam aut veritatis. Quas similique voluptates eaque nihil?
+ Magnam perspiciatis natus delectus qui ab laborum error nam odio, expedita possimus, fugit dicta necessitatibus voluptatibus sint nostrum dolorem ullam sunt quae. Voluptate alias a tempore, dolorem veniam asperiores sequi.</div>
+
+
+<div>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic doloremque similique cupiditate ducimus quibusdam sint, eum, quas illum, consequuntur praesentium voluptatibus quos explicabo dolorum veritatis maiores accusamus iure quam?
+  Odit iste beatae, esse aut pariatur earum nisi. Sunt perferendis voluptate quia nulla ducimus nobis a inventore in tenetur assumenda praesentium dolorem mollitia, labore, eligendi doloremque reprehenderit laborum recusandae qui.
+  Ea ratione nemo, quaerat ullam laboriosam nisi fugit aspernatur impedit! Expedita error alias doloremque facere iure, corrupti maxime debitis quam pariatur suscipit? Magni in necessitatibus ab porro delectus veritatis. Excepturi.
+  Harum, saepe voluptates sapiente iste optio nihil! Eius, error? Voluptatem eum accusantium dolor quibusdam numquam necessitatibus rem corporis consequatur laboriosam dolorem est odit temporibus, animi odio fugit corrupti saepe id!
+  Provident odit nemo voluptates, reprehenderit fuga deleniti et consequuntur sed pariatur tempora atque aut impedit in quam sapiente natus veritatis iusto porro, fugit autem est, itaque vitae! Recusandae, quibusdam eveniet!
+  Possimus odio nihil distinctio placeat fuga tenetur dicta alias animi quod dolorum debitis tempore quo, non quisquam, inventore repellendus laboriosam porro, neque explicabo! Corporis dolore labore delectus, fuga fugiat repellendus.
+  Deleniti obcaecati accusantium ex atque! Ut doloribus soluta doloremque porro rem accusantium consectetur ea expedita assumenda vero iste tempore veritatis, exercitationem minus non eos atque iure ipsa molestias dicta id!
+  Doloribus optio impedit reprehenderit cupiditate dolores natus ratione, rem pariatur laborum! Deleniti enim totam in error iste, cum tenetur provident beatae odio laudantium dolorum eligendi ipsum optio hic dignissimos. Unde!
+  Architecto neque nostrum quas minima aliquid rerum voluptate dolorem provident corporis quisquam nisi cum est, deserunt, aliquam fugit repellat labore fugiat vero modi delectus? Corporis culpa architecto dignissimos quae repellat.
+  Dolorum enim voluptatem saepe. Provident, veniam praesentium, sapiente nostrum, itaque voluptates ipsam quasi assumenda corporis a corrupti? Inventore reprehenderit voluptates consectetur, nisi suscipit accusantium amet commodi nam! Quisquam, pariatur reiciendis?
+</div>
+
+<div id="container_menu">
+  <div>menu</div>
+  <div>edit</div>
+  <div>favorites</div>
+  <div>history</div>
+  <div>security</div>
+  <div>settings</div>
+</div>
+
+
+<style>
+  #container_menu {
+    background-color: gray;
+    width: 50px;
+    height: 100%;
+    display: block;
+    position: fixed;
+    margin-left: -50px;
+    margin-top: -300px;
+    color: aliceblue;
+    text-transform: uppercase;
+    z-index: 1;
+    transition: 1s;
+    color: transparent;
+  }
+
+  #container_menu:hover {
+    width: 150px;
+    color: white;
+  }
+  #container_menu div {
+    /* border: 2px solid #000; */
+    padding: 10px;
+  }
+
+  #container_menu div:hover {
+    background-color: #000;
+  }
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -112,28 +186,35 @@
 
 
 <style>
+
  #home_table { /* сама таблица */
    background-color: rgb(224, 221, 221);
    border-collapse: collapse;/* убираем отступы между ячейками */
    
-   overflow:scroll;
+   overflow:scroll; /* создание скролла */
    display: block;
 
    width: 300px;
-   height: 200px;
+   height: 300px;
   }
   
   #home_table tr:nth-child(even) { /* изменяем четных строк */
     background-color: rgb(160, 159, 159);
   }
 
-  #home_table tr th{ /* подсветка заголовков */
-    background-color: aqua;
+  #home_table tr th{ 
+    background-color: aqua; /* подсветка заголовков */
     padding: 5px;
+
+    position: sticky; /* фиксируем верхнюю строку */
+    top: 0px;
   }
   
-  #home_table tr td:nth-child(1) { /* подсветка вертикального столбика */
-    background-color: aqua;
+  #home_table tr td:nth-child(1) { 
+    background-color: aqua; /* подсветка вертикального столбика */
+    
+    position: sticky; /* фиксируем верхнюю строку */
+    left: 0px;
     
   }
 
