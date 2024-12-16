@@ -26,7 +26,7 @@ body {
 
     /* cursor: url('public/cats/cat_clean_64.png'), auto; */
     
-
+margin-left: 50px;
 
 
 }
@@ -51,6 +51,8 @@ html {
     border: 3px solid lightgrey;
     width: 300px;
     padding: 30px;
+    /* position: sticky;
+    top: 100px; */
   }
 
   #contents>li>a {
@@ -104,6 +106,8 @@ html {
     -webkit-background-clip: text;
     color: transparent;
     /* цвет текста обязательно прозрачный */
+
+    overflow: hidden;
 }
 
 /*! машинка из букв, завершение */
