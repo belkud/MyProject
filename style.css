@@ -5,6 +5,7 @@ body {
     /* animation: cloud 10s linear infinite; */
 
 
+
     /* background: url(public/mountain.jpeg); ..., ..., ... */
     /* общее свойство, можно перечислить несколько */
     
@@ -32,7 +33,7 @@ margin-left: 100px;
 }
 
 html {
-    scroll-behavior:smooth;
+    scroll-behavior:smooth;  /* плавный скрол при нажатии */
 }
 
 
@@ -330,8 +331,8 @@ main>section {
   
   #cats_gallery {
     border:  2px solid gray;
-    margin-top: 150px;
-    margin-bottom: 300px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     background-color: lightgrey;
     height: 420px;
     width: 428px;
