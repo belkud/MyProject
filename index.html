@@ -11,81 +11,34 @@
 <body>
   
   <button>Кнопка</button>
+
   
+<!--! выпадающее меню при наведении -->
 
 <ul id="nav_menu">
   <li>Home</li>
   <li>Categories
+
     <ul id="categories">
       <li>Man</li>
       <li>Woman
+        
         <ul id="woman">
           <li>Dress</li>
           <li>Pants</li>
           <li>Shoes</li>
         </ul>
+        
       </li>
       <li>Kids</li>
     </ul>
+
   </li>
   <li>About</li>
   <li>Contacts</li>
 </ul>
 
-
-<style>
-  #nav_menu {
-    list-style-type: none;
-    color: aliceblue;
-    display: flex;
-    cursor: pointer;
-  }
-
-  #nav_menu li{
-    background-color: green;
-    padding: 10px 30px;
-    border:  1px solid red;
-    max-height: 20px;
-    transition: 2.5;
-  }
-
-  #nav_menu li:hover{
-    background-color: rgb(3, 68, 3);
-  }
-
-  #nav_menu li:hover #categories {
-    display: block;
-    width: 130px;
-  }
-
-  #categories{
-    list-style-type: none;
-    position: absolute;
-    width: 110px;
-    margin-left: -71px;
-    margin-top: 10px;
-    display: none;
-  }
-  
-  #woman{
-    list-style-type: none;
-    position: absolute;
-    width: 110px;
-    margin-left: 58px;
-    margin-top: -30px;
-    display: none;
-  }
-  
-  #woman li{
-    width: 60px;
-  
-  }
-
-  #categories li:hover #woman{
-      display: block;
-  }
-
-</style>
+<!--! выпадающее меню при наведении, завершение -->
 
 
 

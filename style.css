@@ -1,35 +1,14 @@
 body {
-    /*! Двигаем фон с помощью анимации*/
-    /* background-image: url('public/cloud.png'); */
-    /* background-size:contain; */
-    /* animation: cloud 10s linear infinite; */
-
-
-
     /* background: url(public/mountain.jpeg); ..., ..., ... */
-    /* общее свойство, можно перечислить несколько */
+    /* общий параметр, можно перечислить несколько свойств*/
     
-    
-    background-image: url(public/mountain.jpeg); 
-    /* вставляем изображение */
-
-    background-repeat: no-repeat;
-    /* количество изображений */
-
-    background-position: 0px 0px;
-    /* перемещаем изображение по оси Х и оси У */
-
-    background-size: cover;
-    /* размеры фонового изображения */
-
-    background-attachment: fixed;
-    /* фиксируем или прокручиваем фон */
-
+    background-image: url(public/mountain.jpeg); /* вставляем изображение */
+    background-repeat: no-repeat; /* количество изображений */
+    background-position: 0px 0px; /* перемещаем изображение по оси Х и оси У */
+    background-size: cover; /* размеры фонового изображения */
+    background-attachment: fixed; /* фиксируем или прокручиваем фон */
+    margin-left: 100px;
     /* cursor: url('public/cats/cat_clean_64.png'), auto; */
-    
-margin-left: 100px;
-
-
 }
 
 html {
@@ -38,11 +17,60 @@ html {
 
 
 
+/* ! выпадающее меню при наведении */
+#nav_menu {
+    list-style-type: none; /* убираем маркеры (точки) в списках */
+    color: aliceblue;
+    display: flex; /* делаем меню горизонтальным */
+    cursor: pointer; /* меняем курсор (стрелку на руку) */
+}
 
-/*!----------------- ТЕМА С ТАБЛИЦАМИ! -----------------*/
+#nav_menu li{
+    background-color: green; /* делаем зелёный фон всех тегов li */
+    padding: 10px 30px;
+    border:  1px solid red; /* задаём границу тегам li */
+}
+
+#nav_menu li:hover{
+    background-color: rgb(3, 68, 3); /* изменение фона при наведении мышки */
+}
+
+#categories{
+  list-style-type: none;
+  position: absolute; /* абсолютное позиционирование */
+  width: 110px;
+  margin-left: -71px;
+  margin-top: 10px;
+  display: none;  /* убираем список (man, woman, kids) */
+}
+
+#nav_menu li:hover #categories {
+  display: block; /* появление списка при наведении */
+  width: 130px;
+}
 
 
-/* ! выдвижное меню (левая вертикальная полоса) */
+#woman{
+  list-style-type: none;
+  position: absolute;
+  width: 110px;
+  margin-left: 58px;
+  margin-top: -30px;
+  display: none;  /* убираем список dress, pants, shoes */
+}
+
+#woman li{
+  width: 60px;
+}
+
+#categories li:hover #woman{
+    display: block; /* появление списка при наведении */
+}
+  /* ! выпадающее меню при наведении, завершение */
+
+
+  
+  /* ! выдвижное меню (левая вертикальная полоса) */
 #container_menu {
     background-color: gray;
     width: 50px;
@@ -50,7 +78,7 @@ html {
     display: block;
     position: fixed;
     margin-left: -100px;
-    margin-top: -187px;
+    margin-top: -245px;
     color: aliceblue;
     text-transform: uppercase;
     z-index: 1;
@@ -59,7 +87,7 @@ html {
   }
 
   #container_menu:hover {
-    width: 150px;
+      width: 150px;
     color: white;
   }
   #container_menu div {
@@ -72,6 +100,12 @@ html {
     background-color: #000;
   }
   /* ! выдвижное меню, завершение */
+
+
+
+  /*!----------------- ТЕМА С ТАБЛИЦАМИ! -----------------*/
+
+
 
 
   
