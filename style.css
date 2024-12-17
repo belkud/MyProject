@@ -32,7 +32,7 @@ margin-left: 100px;
 }
 
 html {
-    /* scroll-behavior:smooth; */
+    scroll-behavior:smooth;
 }
 
 
@@ -73,9 +73,100 @@ html {
   /* ! выдвижное меню, завершение */
 
 
+  
+  /* ! таблица с вертикальным и горизонтальным скроллом */
+
+  #home_table { /* id самой таблицы */
+    background-color: rgb(224, 221, 221);
+    border-collapse: collapse;/* убираем отступы между ячейками */
+    margin-top: 50px;
+ 
+    overflow:scroll; /* создание скролла */
+    display: block;
+ 
+    width: 300px;
+    height: 300px;
+   }
+   
+   #home_table tr:nth-child(even) { /* изменяем четных строк */
+     background-color: rgb(160, 159, 159);
+   }
+ 
+   #home_table tr th{ 
+     background-color: aqua; /* подсветка заголовков */
+     padding: 5px;
+ 
+     position: sticky; /* фиксируем верхнюю строку */
+     top: 0px;
+   }
+   
+   #home_table tr td:nth-child(1) { 
+     background-color: aqua; /* подсветка вертикального столбика */
+     
+     position: sticky; /* фиксируем верхнюю строку */
+     left: 0px;
+     
+   }
+ 
+   #home_table tr td { /* работаем непосредственно с ячейками */
+     padding: 5px;
+   }
+ 
+   /* Подсветка столбиков таблицы с помощью :nth-child() */
+   /* #home_table tr td:nth-child(4n) {
+     background-color: gray;
+   } */
+ 
+   /*! таблица с вертикальным и горизонтальным скроллом, завершение  */
 
 
 
+/*! таблица с учебника */
+
+   #tast_table { /* стилизация самой таблицы */
+    text-align: center; /* текст по центру */
+    border-spacing: 3px; /* расстояние между ячейками  */
+    margin-top: 50px;  /* отступ от верхней таблицы*/
+  }
+  
+  #tast_table th {  /* стилизация заголовка (первая строка) */
+    padding: 10px; /* внутренний отступ */
+    color: aliceblue; /* цвет шрифта */
+    text-transform: uppercase; /* когда буквы все заглавные */
+  }
+  
+  #tast_table tr td:nth-child(1){ /* оформление первого столбика */
+    text-align: left;
+    padding-left: 5px;
+    color: #000;
+  }
+    
+  #tast_table td::after{ /* заполнение ячеек через псевдоэлемент after */
+    content: '+';
+    border: 1px solid white;
+    border-radius: 50%;
+    padding-left: 3px;
+    padding-right:3px;
+    font-size: small;
+  }
+    
+  #tast_table tr>td:nth-child(1)::after {
+    color: transparent;
+    border-color: transparent;
+  }
+  
+  #tast_table td:hover, th:hover{ /* hover - действие при наведении мыши */
+    background-color: greenyellow;
+    transition: .5s;
+    cursor: pointer;
+  }
+
+  /* ! таблица с учебника, завершение */
+
+
+
+  /* ! Таблица с крутящимися ячейками */
+  
 #table2 {
     border: 2px solid red;
     /* border-collapse: collapse; */
@@ -89,7 +180,7 @@ html {
    }
    #table2:hover td{
      transition-property: background-color, rotate;
-     transition-duration: 5s, 10s;
+     transition-duration: 2s, 5s;
      background-color: greenyellow;
      /* transition: 5s; */
      rotate: 360deg;
@@ -105,13 +196,13 @@ html {
      border: 2px solid yellow;
      
      /* background-color: lightsalmon; */
-     
- 
      /* height: 100px; */
      /* background-image: url(public/cats/cat_cage_64.png);  */
      /* background-size: contain; */
   }
- 
+
+  /* ! Таблица с крутящимися ячейками, завершение */
+
 
 
   /*! Галерея котиков (6 миниатюрок и один большой кот) */

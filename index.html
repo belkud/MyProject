@@ -34,6 +34,7 @@
 <!--! таблица с вертикальным и горизонтальным скроллом -->
 
 <table id="home_table">
+  <caption>Таблица с вертикальным и горизонтальным скроллом</caption>
   <tr>
       <th></th>
       <th>Header 1</th>
@@ -112,61 +113,11 @@
 
 
 
-<style>
 
- #home_table { /* id самой таблицы */
-   background-color: rgb(224, 221, 221);
-   border-collapse: collapse;/* убираем отступы между ячейками */
-   margin-top: 50px;
+<!--! таблица с учебника -->
 
-   overflow:scroll; /* создание скролла */
-   display: block;
-
-   width: 300px;
-   height: 300px;
-  }
-  
-  #home_table tr:nth-child(even) { /* изменяем четных строк */
-    background-color: rgb(160, 159, 159);
-  }
-
-  #home_table tr th{ 
-    background-color: aqua; /* подсветка заголовков */
-    padding: 5px;
-
-    position: sticky; /* фиксируем верхнюю строку */
-    top: 0px;
-  }
-  
-  #home_table tr td:nth-child(1) { 
-    background-color: aqua; /* подсветка вертикального столбика */
-    
-    position: sticky; /* фиксируем верхнюю строку */
-    left: 0px;
-    
-  }
-
-  #home_table tr td { /* работаем непосредственно с ячейками */
-    padding: 5px;
-  }
-
-  /*! Подсветка столбиков таблицы с помощью :nth-child() */
-  /* #home_table tr td:nth-child(4n) {
-    background-color: gray;
-  } */
-
-
-
-</style>
-
-
-
-
-
-
-
-  <table id="tast_table">
-    <caption style="text-transform: uppercase; text-align: right; color: aliceblue;">Тестовая таблица</caption>
+<table id="tast_table">
+    <caption style="text-transform: uppercase; text-align: right; color: aliceblue; background: gray; padding: 5px;">таблица с учебника</caption>
     <colgroup>
       <col span="1" style="background-color: lightgray;">
       <col span="1" style="background-color: aqua;">
@@ -229,59 +180,9 @@
         <td></td>
       </tr>
     </tbody>
-
   </table>
 
-<style>
-#tast_table {
-  text-align: center;
-  /* border-collapse: collapse; */
-  border-spacing: 3px;
-}
-
-#tast_table thead {
-  border-bottom: 1px solid white;
-}
-
-#tast_table tfoot {
-  border-top: 1px solid white;
-}
-
-#tast_table th {
-  padding: 10px;
-  color: aliceblue;
-  text-transform: uppercase;
-}
-
-#tast_table tr td:nth-child(1){
-  text-align: left;
-  padding-left: 5px;
-  color: #000;
-}
-  
-#tast_table td::after{
-  content: '+';
-  border: 1px solid white;
-  border-radius: 50%;
-  padding-left: 3px;
-  padding-right:3px;
-  font-size: small;
-}
-  
-#tast_table tr>td:nth-child(1)::after {
-  color: transparent;
-  border-color: transparent;
-}
-
-#tast_table td:hover, th:hover{
-
-  /* background-color: greenyellow; */
-
-  transition: .5s;
-  cursor: pointer;
-}
-
-</style>
+  <!--! таблица с учебника, завершение -->
 
 
 
@@ -289,8 +190,7 @@
 
 
 
-
-
+  <!--! Таблица с крутящимися ячейками -->
 
 <table id="table2">
   <caption style="margin: auto; text-transform: uppercase; color: aliceblue; background-color: gray; padding: 10px;">Таблица с крутящимися ячейками</caption>
@@ -391,23 +291,10 @@
     <td>tbody</td>
     <td>tbody</td>
   </tr>
-</tbody>
-
-
-
+ </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
+<!--! Таблица с крутящимися ячейками, завершение -->
 
 
 
@@ -442,11 +329,6 @@
 <!--! Галерея котиков, завершение -->
 
 
-<style>
-  
-</style>
-
-
 
 
 
@@ -467,6 +349,7 @@
       <section>section 1</section>
       <section>section 2</section>
     </main>
+
 
     <aside id="aside_right">
       <div>A</div>
@@ -551,7 +434,7 @@ main>section {
   margin-top: 10px;
 }
 
-</style>
+</st>
 
 
 
