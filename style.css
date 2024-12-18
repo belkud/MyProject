@@ -12,7 +12,7 @@ body {
 }
 
 html {
-    scroll-behavior:smooth;  /* плавный скрол при нажатии */
+    /* scroll-behavior:smooth;  плавный скрол при нажатии */
 }
 
 
@@ -33,6 +33,9 @@ html {
 
 #nav_menu li:hover{
     background-color: rgb(3, 68, 3); /* изменение фона при наведении мышки */
+    /* height: 200px; */
+    /* scale:(2, 1); */
+    transform: scale(2, 1);
 }
 
 #categories{
@@ -44,7 +47,7 @@ html {
   display: none;  /* убираем список (man, woman, kids) */
 }
 
-#nav_menu li:hover #categories {
+#nav_menu :hover #categories {
   display: block; /* появление списка при наведении */
   width: 130px;
 }
@@ -76,7 +79,7 @@ html {
     width: 50px;
     height: 100%;
     display: block;
-    position: fixed;
+    position: absolute;
     margin-left: -100px;
     margin-top: -245px;
     color: aliceblue;
@@ -1115,13 +1118,20 @@ dt {
 /* Псевдоэлемент ::after используется ПОСЛЕ тега */
 
 #pseudo_list li::before {
-    content: '> before ';
+    content: '';
+    background-image: url(public/dog.jpg);
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-size: cover;
+    left: 75px;
     color: black;
 }
 
 #pseudo_list li::after {
-    content: ' > after ';
+    content: url(public/arrow_16.png);
     color: green;
+    width: 10px;
 }
 
 
