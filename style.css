@@ -12,7 +12,8 @@ body {
 }
 
 html {
-    scroll-behavior:smooth; /*  плавный скрол при нажатии */
+    /* scroll-behavior:smooth;  */
+    /*  плавный скрол при нажатии */
 }
 
 /* ! задание с карточками при наведении */
@@ -173,6 +174,66 @@ html {
   /*!----------------- ТЕМА С ТАБЛИЦАМИ! -----------------*/
 
   
+  
+  /* ! таблица с подпиской */
+  
+  #subscribe_plan {
+    text-align: center;
+    padding: 10px;
+    border-collapse: collapse;
+  }
+  
+  #subscribe_plan td, #subscribe_plan th {
+    padding: 10px 20px;
+  }
+  
+  #subscribe_plan span{
+    display: inline-block; 
+    margin-top: 10px;
+    font-size: 2em;
+  }
+  #subscribe_plan tr:first-child {
+    color: aliceblue;
+  }
+  
+  #subscribe_plan tr:nth-child(even) {
+    background-color: rgb(179, 176, 176);
+  }
+  #subscribe_plan tr:nth-child(odd) {
+    background-color: rgb(227, 223, 223);
+  }
+  
+  #subscribe_plan td:nth-child(2n) {
+    background-color: rgba(214, 211, 211, 0.5);
+  }
+  
+  #plan_0 {
+    background: linear-gradient(90deg, rgb(131, 131, 208), rgb(189, 189, 194));
+    border-top-left-radius: 15px;
+  }
+  #plan_1 {
+    background: linear-gradient(90deg, rgb(107, 107, 183), rgb(189, 189, 194));
+  }
+  #plan_2 {
+    background: linear-gradient(90deg, rgb(97, 97, 204), rgb(189, 189, 194));
+  }
+  #plan_3 {
+    background: linear-gradient(90deg, rgb(55, 55, 207), rgb(189, 189, 194));
+  }
+  #plan_4 {
+    background: linear-gradient(90deg, rgb(10, 10, 193), rgb(189, 189, 194));
+    border-top-right-radius: 15px;
+  }
+
+  /* ! таблица с подпиской, завершение */
+  
+
+
+
+
+
+
+
   /* ! таблица с вертикальным и горизонтальным скроллом */
 
   #home_table { /* id самой таблицы */
