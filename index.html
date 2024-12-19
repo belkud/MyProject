@@ -59,6 +59,7 @@
     #bok img {
       width: 100px;
     }
+
   </style>
 
 
@@ -71,7 +72,7 @@
 
 
 
-  <div style="display: flex">
+  <div style="display: flex; margin-left: -50px; flex-wrap: wrap;">
 
     <div class="container_card">
       <div style="border-bottom: 2px solid red; padding: 10px;">ENTERPRICE</div>
@@ -157,8 +158,8 @@
   <style>
     .container_card {
       background-color: rgba(247, 244, 244);
-      height: 250px;
-      width: 150px;
+      height: 230px;
+      width: 160px;
       border-radius: 20px;
       box-shadow: 0px 0px 5px black;
       text-align: center;
@@ -168,8 +169,14 @@
       transition: 1s;
     }
 
+    .container_card button:hover {
+      cursor: pointer;
+      background: #000 !important;
+      transition: 1s;
+    }
+
     .container_card:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
 
     .card_text {
