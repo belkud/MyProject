@@ -12,7 +12,7 @@ body {
 }
 
 html {
-    /* scroll-behavior:smooth;  плавный скрол при нажатии */
+    scroll-behavior:smooth; /*  плавный скрол при нажатии */
 }
 
 /* ! задание с карточками при наведении */
@@ -80,9 +80,7 @@ html {
 
 #nav_menu li:hover{
     background-color: rgb(3, 68, 3); /* изменение фона при наведении мышки */
-    /* height: 200px; */
-    /* scale:(2, 1); */
-    transform: scale(2, 1);
+    /* transform: scale(2, 1); */
 }
 
 #categories{
@@ -121,29 +119,45 @@ html {
 
   
   /* ! выдвижное меню (левая вертикальная полоса) */
-#container_menu {
+#container_menu{
     background-color: gray;
     width: 50px;
-    height: 100%;
-    display: block;
-    position: absolute;
+    height: 100%; /* высота во всю шириню экрана */
+    position: fixed;
+    top: 0px; /* задаем отступ  от верхней части экрана */
     margin-left: -100px;
-    margin-top: -245px;
     color: aliceblue;
     text-transform: uppercase;
     z-index: 1;
     transition: 1s;
     color: transparent;
   }
+#container_menu:hover{
+  width: 175px;
+  color: white;
+}
+  
+#container_menu a{
+    color: transparent;
+    padding: 0px;
+    transition: 1s;
+    text-decoration: none;
+}
 
-  #container_menu:hover {
-      width: 150px;
-    color: white;
-  }
-  #container_menu div {
-    /* border: 2px solid #000; */
+#container_menu:hover a{
+  color: white;
+}
+
+#container_menu div {
     padding: 10px;
     cursor: pointer;
+    /* color: transparent; */
+}
+
+
+#container_menu a:hover {
+      color: white;
+
   }
 
   #container_menu div:hover {
