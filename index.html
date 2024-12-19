@@ -71,11 +71,32 @@
 
 
 
+<!--! задание с карточками при наведении -->
 
-  <div style="display: flex; margin-left: -50px; flex-wrap: wrap;">
+<div id="container_card"> <!--контейнер с карточками -->
+  
+<!--первая карточка -->
+<div class="cards">
+  <div style="border-bottom: 2px solid red; padding: 10px;">ENTERPRICE</div>
+  
+      <div><span style="font-size: 1.5em; font-weight: 900;">$69</span> <br>
+        <span style="color: rgb(182, 180, 180);">per month</span> <br>
+        <div class="card_text">
+          <div>dsgfsdf</div>
+          <div>ssdfdsfsdf</div>
+          <div>sdfdsf</div>
+          <div>ghffdsgfght</div>
+        </div>
+      </div>
 
-    <div class="container_card">
-      <div style="border-bottom: 2px solid red; padding: 10px;">ENTERPRICE</div>
+      <button  style="background-color: red;">buy</button>
+    </div>
+  <!--первая карточка, завершение -->
+
+
+  <!--вторая карточка (дубляж первой) -->
+  <div class="cards">
+    <div style="border-bottom: 2px solid orange; padding: 10px;">ENTERPRICE</div>
 
       <div><span style="font-size: 1.5em; font-weight: 900;">$69</span> <br>
         <span style="color: rgb(182, 180, 180);">per month</span> <br>
@@ -87,29 +108,15 @@
         </div>
       </div>
 
-      <button class="buy" style="background-color: red;">buy</button>
+      <button  style="background-color: orange;">buy</button>
     </div>
-
-    <div class="container_card">
-      <div style="border-bottom: 2px solid orange; padding: 10px;">ENTERPRICE</div>
-
-      <div><span style="font-size: 1.5em; font-weight: 900;">$69</span> <br>
-        <span style="color: rgb(182, 180, 180);">per month</span> <br>
-        <div class="card_text">
-          <div>dsgfsdf</div>
-          <div>ssdfdsfsdf</div>
-          <div>sdfdsf</div>
-          <div>ghffdsgfght</div>
-        </div>
-      </div>
-
-      <button class="buy" style="background-color: orange;">buy</button>
-    </div>
-
-
-    <div class="container_card">
+    <!--вторая карточка (дубляж первой), завершение -->
+    
+    
+    <!--третья карточка (дубляж первой) -->
+    <div class="cards">
       <div style="border-bottom: 2px solid blue; padding: 10px;">ENTERPRICE</div>
-
+      
       <div><span style="font-size: 1.5em; font-weight: 900;">$69</span> <br>
         <span style="color: rgb(182, 180, 180);">per month</span> <br>
         <div class="card_text">
@@ -119,14 +126,16 @@
           <div>ghffdsgfght</div>
         </div>
       </div>
-
-      <button class="buy" style="background-color: blue;">buy</button>
+      
+      <button  style="background-color: blue;">buy</button>
     </div>
-
-
-    <div class="container_card">
+    <!--третья карточка (дубляж первой), завершение -->
+    
+    
+    <!--четвертая карточка (дубляж первой) -->
+    <div class="cards">
       <div style="border-bottom: 2px solid green; padding: 10px;">ENTERPRICE</div>
-
+      
       <div><span style="font-size: 1.5em; font-weight: 900;">$69</span> <br>
         <span style="color: rgb(182, 180, 180);">per month</span> <br>
         <div class="card_text">
@@ -136,80 +145,23 @@
           <div>ghffdsgfght</div>
         </div>
       </div>
-
-      <button class="buy" style="background-color: green;">buy</button>
+      
+      <button  style="background-color: green;">buy</button>
     </div>
-
-
-
-
+    <!--четвертая карточка (дубляж первой), завершение -->
+    
   </div>
 
+  <!--! задание с карточками при наведении, завершение -->
+  
+  
+  
+  
+  
 
 
 
-
-
-
-
-
-
-
-  <style>
-    .container_card {
-      background-color: rgba(247, 244, 244);
-      height: 230px;
-      width: 160px;
-      border-radius: 20px;
-      box-shadow: 0px 0px 5px black;
-      text-align: center;
-      margin-top: 100px;
-      margin-bottom: 100px;
-      margin-left: 20px;
-      transition: 1s;
-    }
-
-    .container_card button:hover {
-      cursor: pointer;
-      background: #000 !important;
-      transition: 1s;
-    }
-
-    .container_card:hover {
-      transform: scale(1.1);
-    }
-
-    .card_text {
-      font-weight: 800;
-    }
-
-    .card_text div {
-      margin-top: 5px;
-      word-spacing: 50px;
-      /* line-height: 10px; */
-    }
-
-    .buy {
-      padding: 5px 20px;
-      color: aliceblue;
-      border-radius: 5px;
-      margin-top: 15px;
-      border: none;
-    }
-  </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
 

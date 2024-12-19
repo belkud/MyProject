@@ -15,6 +15,53 @@ html {
     /* scroll-behavior:smooth;  плавный скрол при нажатии */
 }
 
+/* ! задание с карточками при наведении */
+#container_card {
+    display: flex; 
+    margin-left: -50px; 
+    flex-wrap: wrap;
+}
+
+.cards { /* стилизация самих карточек */
+  background-color: rgba(247, 244, 244);
+  height: 230px;
+  width: 160px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgb(195, 191, 191); /* создаем тень от блока */
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  transition: 1s;
+  border: 2px solid black;
+}
+
+.cards:hover {  /* (действие при наведении мышки на карточку) */
+  transform: scale(1.1);  /* увеличение карточки */
+}
+
+.cards button { /* стилизация кнопок 'BUY' */
+  padding: 5px 20px;
+  color: aliceblue;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.cards button:hover { /* (действие при наведении мышки на кнопку) */
+  cursor: pointer;
+  background: #000 !important;
+  transition: 1s;
+}
+
+.card_text div {
+    margin-top: 5px;
+    font-weight: 800;
+}
+
+/* ! задание с карточками при наведении, завершение */
+
 
 
 /* ! выпадающее меню при наведении */
