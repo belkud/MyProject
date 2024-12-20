@@ -174,11 +174,11 @@ html {
   /*!----------------- ТЕМА С ТАБЛИЦАМИ! -----------------*/
 
   
-  
+
   /* ! таблица с подпиской */
   
-  #subscribe_plan {
-    text-align: center;
+  #subscribe_plan {  /* сама таблица */
+    text-align: center; /* текст по центру */
     padding: 10px;
     border-collapse: collapse;
   }
@@ -188,6 +188,8 @@ html {
   }
   
   #subscribe_plan span{
+  
+    
     display: inline-block; 
     margin-top: 10px;
     font-size: 2em;
