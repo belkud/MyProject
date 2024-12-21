@@ -65,7 +65,7 @@ html {
 
 
 
-/* ! выпадающее меню при наведении */
+/* ! выпадающее меню при наведении (home, categories, about, contacts) */
 #nav_menu {
     list-style-type: none; /* убираем маркеры (точки) в списках */
     color: aliceblue;
@@ -136,6 +136,11 @@ html {
 #container_menu:hover{
   width: 175px;
   color: white;
+}
+
+#container_menu:hover img{
+opacity: 1 !important;
+transition: 5s !important;
 }
   
 #container_menu a{
