@@ -16,6 +16,57 @@ html {
     /*  плавный скрол при нажатии */
 }
 
+
+/* ! Машинка с оранжевой крутящейся рамкой */
+  #car_border {
+    width:200px;
+    height: 200px;
+    border:  10px solid orange; /* крутящаяся рамка за машинкой */
+    margin-top: 100px;
+    margin-left: 100px;
+    rotate: 45deg;
+    animation: rotateBorder linear 2000s infinite;
+}
+    
+  #car_border div{
+  width:200px;
+  height: 200px;
+  margin-left: -10px;
+  border-right:  10px solid orange; /* крутящаяся рамка перед машинкой */
+  border-left:  10px solid orange; /* крутящаяся рамка перед машинкой */
+}
+
+#car_border div img {
+  width:200px;
+  height: 200px;
+  position: absolute;
+  rotate: -45deg;
+  z-index: -2;
+  animation: rotateCar linear 2000s infinite;
+}
+
+@keyframes rotateBorder{
+  from {
+    
+  }
+  to {
+    rotate: 36000deg; /* рамка крутится вместе с машинкой */
+  }
+}
+
+@keyframes rotateCar{
+  from {
+    
+  }
+  to {
+    rotate: -36000deg; /* машину крутим обратно и она как бы стоит на месте */
+  }
+}
+      
+  /* ! Машинка с оранжевой крутящейся рамкой, завершение */
+  
+
+
 /* ! задание с карточками при наведении */
 #container_card {
     display: flex; 
