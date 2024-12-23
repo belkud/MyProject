@@ -10,28 +10,170 @@
 
 <body>
 
-<!--! Машинка с оранжевой крутящейся рамкой -->
-<div id="car_border">
-  <div>
-    <img   src="public/porshe.webp" alt="">
+
+  <div id="container_autors">
+    <div id="nav"> <!-- лучше использовать тег nav (навигация)-->
+      <div>WRITERS</div>
+      <div>Discussions</div>
+      <div>Books</div>
+      <div>The authors</div>
+      <div>Readers</div>
+    </div>
+
+    <div id="info_about_autor">
+      <div> <!-- лучше использовать тег main -->
+        <h3>William Shakespeare</h3>
+        <hr>
+        
+        <p style="font-size: 14px;">From Wikipedia, the free encyclopedia</p>
+        <p>William Shakespeare (bapt. 26 April 1564 – 23 April 1616) was an English poet, playwright and actor, widely regarded
+        as the greatest writer in the English language and the world's greatest dramatist. He is often called England's
+        national poet and the "Bard of Avon". His extant works, including collaborations, consist of approximately 39 plays,
+        154 sonnets, two long narrative poems, and a few other verses, some of uncertain authorship. His plays have been
+        translated into every major living language and are performed more often than those of any other playwright.</p>
+      
+        <p>Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with
+        whom he had three children: Susanna and twins Hamnet and Judith. Sometime between 1585 and 1592, he began a successful
+        career in London as an actor, writer, and part-owner of a playing company called the Lord Chamberlain's Men, later
+        known as the King's Men. At age 49 (around 1613), he appears to have retired to Stratford, where he died three years
+        later. Few records of Shakespeare's private life survive; this has stimulated considerable speculation about such
+        matters as his physical appearance, his sexuality, his religious beliefs, and whether the works attributed to him were
+        written by others. Such theories are often criticised for failing to adequately note that few records survive of most
+        commoners of the period.</p>
+      
+        <p>Shakespeare produced most of his known works between 1589 and 1613. His early plays were primarily comedies and
+        histories and are regarded as some of the best work produced in these genres. Until about 1608, he wrote mainly
+        tragedies, among them Hamlet, Othello, King Lear, and Macbeth, all considered to be among the finest works in the
+        English language. In the last phase of his life, he wrote tragicomedies (also known as romances) and collaborated with
+        other playwrights.</p>
+      
+        <p>Many of Shakespeare's plays were published in editions of varying quality and accuracy in his lifetime. However, in
+        1623, two fellow actors and friends of Shakespeare's, John Heminges and Henry Condell, published a more definitive
+        text known as the First Folio, a posthumous collected edition of Shakespeare's dramatic works that included all but
+        two of his plays. The volume was prefaced with a poem by Ben Jonson, in which Jonson presciently hails Shakespeare in
+        a now-famous quote as "not of an age, but for all time".</p>
+      
+        <p>Throughout the 20th and 21st centuries, Shakespeare's works have been continually adapted and rediscovered by new
+        movements in scholarship and performance. His plays remain popular and are studied, performed, and reinterpreted
+        through various cultural and political contexts around the world.</p>
+      </div>
+
+      <aside style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px; background-color: rgb(194, 189, 189); height: 480px; padding: 10px;"> <!-- боковое меню (семантический аналог div) -->
+          <div><img style="width: 180px;" src="public/autors/Cervantes_Jauregui.jpg" alt=""></div>
+          <div><b>Born</b> 26 April 1564</div>
+          <div><b>Died</b> 23 April 1616</div>
+          <div><b>Spouse</b> Anne Hathaway (m. 1582)</div>
+          <div><b>Children</b> Susanna Hall <br> Hamnet Shakespeare  <br>            Judith Quiney</div>
+          <div><b>Parents</b> John Shakespeare (father) <br> Mary Arden (mother)</div>
+      </aside>
+
+
+      
+      
+      
+
+      
+    
+      
+    </div>
+    
+    <h3 style="margin-left: 30px;">Similar authors</h3>
+    <div id="box_photos">
+<!-- для нижних фоток -->
+        <div><img src="public/autors/Anne_Hathaway.jpg" alt="">dfsdfg</div>
+        <div><img src="public/autors/Cervantes_Jauregui.jpg" alt="">fghfgh</div>
+        <div><img src="public/autors/Dickens_Gurney.jpg" alt="">fghfgh</div>
+        <div><img src="public/autors/Edgar_Allan_Poe.jpg" alt="">ghjghjghj</div>
+        <div><img src="public/autors/Oscar_Wilde_Sarony.jpg" alt="">asdasdfs</div>
+        <div><img src="public/autors/Anne_Hathaway.jpg" alt="">dfgdfgd</div>
+    </div>
+
+
+
   </div>
-</div>
-<!--! Машинка с оранжевой крутящейся рамкой, завершение -->
+
+
+
+
 
 
 <style>
-      
-  </style>
-
-
-<!--! задание с карточками при наведении -->
-
-<div id="container_card"> <!--контейнер с карточками -->
+  #container_autors {
+      background-color: lightgray;
+      width: 900px;
+      margin: auto;
+      padding-bottom: 20px;
   
-<!--первая карточка -->
-<div class="cards">
-  <div style="border-bottom: 2px solid red; padding: 10px;">ENTERPRICE</div>
+  }
+  #nav {
+    background-color:rgb(119, 12, 12);
+    color: white;
+    display: flex;
+  }
   
+  #nav div {
+    padding: 10px;
+  }
+
+  #nav div:hover {
+    background-color:rgb(75, 6, 6);
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  #info_about_autor {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
+  }
+
+  #box_photos img{
+    width: 100px;
+    height: 150px;
+    margin-top: 15px;
+  }
+  
+  #box_photos {
+    display: flex;
+    border: 2px solid gray;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+  }
+
+
+
+</style>
+
+
+
+
+ 
+
+
+
+
+
+  <!--! Машинка с оранжевой крутящейся рамкой -->
+  <div id="car_border">
+    <div>
+      <img src="public/porshe.webp" alt="">
+    </div>
+  </div>
+  <!--! Машинка с оранжевой крутящейся рамкой, завершение -->
+
+
+
+
+  <!--! задание с карточками при наведении -->
+
+  <div id="container_card"> <!--контейнер с карточками -->
+
+    <!--первая карточка -->
+    <div class="cards">
+      <div style="border-bottom: 2px solid red; padding: 10px;">ENTERPRICE</div>
+
       <div><span style="font-size: 1.5em; font-weight: 900;">$39</span> <br>
         <span style="color: rgb(182, 180, 180);">per month</span> <br>
         <div class="card_text">
@@ -42,14 +184,14 @@
         </div>
       </div>
 
-      <button  style="background-color: red;">buy</button>
+      <button style="background-color: red;">buy</button>
     </div>
-  <!--первая карточка, завершение -->
+    <!--первая карточка, завершение -->
 
 
-  <!--вторая карточка (дубляж первой) -->
-  <div class="cards">
-    <div style="border-bottom: 2px solid orange; padding: 10px;">ENTERPRICE</div>
+    <!--вторая карточка (дубляж первой) -->
+    <div class="cards">
+      <div style="border-bottom: 2px solid orange; padding: 10px;">ENTERPRICE</div>
 
       <div><span style="font-size: 1.5em; font-weight: 900;">$49</span> <br>
         <span style="color: rgb(182, 180, 180);">per month</span> <br>
@@ -61,15 +203,15 @@
         </div>
       </div>
 
-      <button  style="background-color: orange;">buy</button>
+      <button style="background-color: orange;">buy</button>
     </div>
     <!--вторая карточка (дубляж первой), завершение -->
-    
-    
+
+
     <!--третья карточка (дубляж первой) -->
     <div class="cards">
       <div style="border-bottom: 2px solid blue; padding: 10px;">ENTERPRICE</div>
-      
+
       <div><span style="font-size: 1.5em; font-weight: 900;">$59</span> <br>
         <span style="color: rgb(182, 180, 180);">per month</span> <br>
         <div class="card_text">
@@ -79,16 +221,16 @@
           <div>ghffdsgfght</div>
         </div>
       </div>
-      
-      <button  style="background-color: blue;">buy</button>
+
+      <button style="background-color: blue;">buy</button>
     </div>
     <!--третья карточка (дубляж первой), завершение -->
-    
-    
+
+
     <!--четвертая карточка (дубляж первой) -->
     <div class="cards">
       <div style="border-bottom: 2px solid green; padding: 10px;">ENTERPRICE</div>
-      
+
       <div><span style="font-size: 1.5em; font-weight: 900;">$69</span> <br>
         <span style="color: rgb(182, 180, 180);">per month</span> <br>
         <div class="card_text">
@@ -98,19 +240,19 @@
           <div>ghffdsgfght</div>
         </div>
       </div>
-      
-      <button  style="background-color: green;">buy</button>
+
+      <button style="background-color: green;">buy</button>
     </div>
     <!--четвертая карточка (дубляж первой), завершение -->
-    
+
   </div>
 
   <!--! задание с карточками при наведении, завершение -->
-  
-  
-  
-  
-  
+
+
+
+
+
 
 
 
@@ -153,96 +295,98 @@
 
 
 
-  
+
   <!--! выдвижное меню (левая вертикальная полоса)  -->
   <div id="container_menu">
     <div>menu</div>
     <div><a href="#table_id">Таблицы</a></div>
     <div><a href="#structure">Структура<span style="color: transparent;">_</span>сайта</a></div>
     <div><a href="#picture">Изображения</a></div>
-    <div><a href="#animation">Анимации<img src="public/dino.gif" style="width: 150px; opacity:0; padding-left: 3px;padding-top: 5px; transition: 1s;" alt=""></a></div>
-    <div><a href="#start">Знакомство<span style="color: transparent;">_</span>с HTML<span style="color: transparent;">_</span>И<span style="color: transparent;">_</span>CSS</a></div>
+    <div><a href="#animation">Анимации<img src="public/dino.gif"
+          style="width: 150px; opacity:0; padding-left: 3px;padding-top: 5px; transition: 1s;" alt=""></a></div>
+    <div><a href="#start">Знакомство<span style="color: transparent;">_</span>с HTML<span
+          style="color: transparent;">_</span>И<span style="color: transparent;">_</span>CSS</a></div>
     <div><a href="#list_id">Списки</a></div>
   </div>
   <!--! выдвижное меню, завершение  -->
-  
-  
+
+
 
 
 
 
 
   <!--! -----------------------ТАБЛИЦЫ----------------------- -->
-  
-  
-  
+
+
+
   <h1 id="table_id" class="new-title">Таблицы</h1>
 
 
 
-<!--! таблица с подпиской -->
-  
-<table id="subscribe_plan">
-  <tr>
-  <th id="plan_0">Choose your plan</th>
-  <th id="plan_1">starter <br> <span>$10</span> <br> per mounth</th>
-  <th id="plan_2">econom <br> <span>$10</span> <br> per mounth</th>
-  <th id="plan_3">standard <br> <span>$10</span> <br> per mounth</th>
-  <th id="plan_4">professional<br> <span>$10</span> <br> per mounth</th>
-</tr>
-<tr>
-  <td>Amount of space</td>
-  <td>10</td>
-  <td>20</td>
-  <td>30</td>
-  <td>40</td>
-</tr>
-<tr>
-  <td>Amount of space</td>
-  <td>10</td>
-  <td>20</td>
-  <td>30</td>
-  <td>40</td>
-</tr>
-<tr>
-  <td>Amount of space</td>
-  <td>10</td>
-  <td>20</td>
-  <td>30</td>
-  <td>40</td>
-</tr>
-<tr>
-  <td>Amount of space</td>
-  <td>10</td>
-  <td>20</td>
-  <td>30</td>
-  <td>40</td>
-</tr>
-<tr>
-  <td>Amount of space</td>
-  <td>10</td>
-  <td>20</td>
-  <td>30</td>
-  <td>40</td>
-</tr>
-<tr>
-  <td>Amount of space</td>
-  <td>10</td>
-  <td>20</td>
-  <td>30</td>
-  <td>40</td>
-</tr>
-<tr>
-  <td style="border-bottom-left-radius: 15px;"></td>
-  <td><button>START</button></td>
-  <td><button>START</button></td>
-  <td><button>START</button></td>
-  <td style="border-bottom-right-radius: 15px;"><button>START</button></td>
-</tr>
+  <!--! таблица с подпиской -->
 
-</table>
+  <table id="subscribe_plan">
+    <tr>
+      <th id="plan_0">Choose your plan</th>
+      <th id="plan_1">starter <br> <span>$10</span> <br> per mounth</th>
+      <th id="plan_2">econom <br> <span>$10</span> <br> per mounth</th>
+      <th id="plan_3">standard <br> <span>$10</span> <br> per mounth</th>
+      <th id="plan_4">professional<br> <span>$10</span> <br> per mounth</th>
+    </tr>
+    <tr>
+      <td>Amount of space</td>
+      <td>10</td>
+      <td>20</td>
+      <td>30</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Amount of space</td>
+      <td>10</td>
+      <td>20</td>
+      <td>30</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Amount of space</td>
+      <td>10</td>
+      <td>20</td>
+      <td>30</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Amount of space</td>
+      <td>10</td>
+      <td>20</td>
+      <td>30</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Amount of space</td>
+      <td>10</td>
+      <td>20</td>
+      <td>30</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Amount of space</td>
+      <td>10</td>
+      <td>20</td>
+      <td>30</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td style="border-bottom-left-radius: 15px;"></td>
+      <td><button>START</button></td>
+      <td><button>START</button></td>
+      <td><button>START</button></td>
+      <td style="border-bottom-right-radius: 15px;"><button>START</button></td>
+    </tr>
 
-<!--! таблица с подпиской, завершение -->
+  </table>
+
+  <!--! таблица с подпиской, завершение -->
 
 
 
@@ -519,10 +663,10 @@
 
 
 
-  
-  
+
+
   <h2 id="structure" class="new-title">Структура сайта</h2>
-  
+
   <!--! структура сайта -->
 
   <div id="site">
