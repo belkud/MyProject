@@ -45,10 +45,10 @@ html {
   z-index: -1;
   border:  5px solid red; /* крутящаяся рамка за машинкой */
   padding: 10px;
-  transform-origin: 52.5% 45.5%;
+  /* transform-origin: 52.5% 45.5%; */
   display: inline-block;
-  margin-top: -5px;
-  margin-left: -20px;
+  margin-top: -15px;
+  margin-left: -15px;
 
   animation: rotateCar linear 2000s infinite;
 }
