@@ -77,11 +77,13 @@ html {
   }
 }
       
-  /* ! Машинка с оранжевой крутящейся рамкой, завершение */
+/* ! Машинка с оранжевой крутящейся рамкой, завершение */
   
 
 
+
 /* ! задание с карточками при наведении */
+
 #container_card {
     display: flex; 
     margin-left: -50px; 
@@ -186,22 +188,40 @@ html {
   
   /* ! выдвижное меню (левая вертикальная полоса) */
 #container_menu{
-    background-color: gray;
-    width: 50px;
-    height: 100%; /* высота во всю шириню экрана */
-    position: fixed;
-    top: 0px; /* задаем отступ  от верхней части экрана */
-    margin-left: -100px;
-    color: aliceblue;
-    text-transform: uppercase;
-    z-index: 1;
-    transition: 1s;
-    color: transparent;
-  }
+   background-color: gray;
+   width: 50px;
+   height: 100%; /* высота во всю шириню экрана */
+   position: fixed;
+   top: 0px; /* задаем отступ  от верхней части экрана */
+   margin-left: -100px;
+   color: aliceblue;
+   text-transform: uppercase;
+   z-index: 1;
+   transition: 1s;
+   color: transparent;
+ }
+  
 #container_menu:hover{
   width: 175px;
   color: white;
 }
+
+#vertical_font { /* вертикальная надпись выдвижное меню */
+  color: aliceblue; 
+  writing-mode: vertical-rl; 
+  rotate: 180deg; 
+  margin-left: 14px; 
+  position: absolute; 
+  height: auto; 
+  margin-top: 100px; 
+  opacity: .6;
+}
+
+#container_menu:hover #vertical_font{
+  opacity: 0;
+  transition: 1s !important;
+}
+
 
 #container_menu:hover img{
 opacity: 1 !important;
@@ -234,6 +254,7 @@ transition: 5s !important;
   #container_menu div:hover {
     background-color: #000;
   }
+
   /* ! выдвижное меню, завершение */
 
 
