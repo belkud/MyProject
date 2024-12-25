@@ -49,13 +49,12 @@ html {
   display: inline-block;
   margin-top: -15px;
   margin-left: -15px;
-
+  transition: .5s;
   animation: rotateCar linear 2000s infinite;
 }
 
 #car_border:hover img{
   border: 5px solid greenyellow;
-
 }
 
 
