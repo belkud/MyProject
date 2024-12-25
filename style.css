@@ -217,13 +217,13 @@ html {
   opacity: .6;
 }
 
-#container_menu:hover #vertical_font{
+#container_menu:hover #vertical_font{ /* наведение вертикальная надпись выдвижное меню */
   opacity: 0;
   transition: 1s !important;
 }
 
 
-#container_menu:hover img{
+#container_menu:hover img{ /* gif с динозавром */
 opacity: 1 !important;
 transition: 5s !important;
 }
@@ -247,9 +247,9 @@ transition: 5s !important;
 
 
 #container_menu a:hover {
-      color: white;
+     color: white;
+}
 
-  }
 
   #container_menu div:hover {
     background-color: #000;
