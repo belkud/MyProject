@@ -14,7 +14,7 @@ body {
 
 html {
     /* scroll-behavior:smooth;  */
-    /*  плавный скрол при нажатии */
+    /*  плавный скрол при нажатии мышки*/
 }
 
 
@@ -31,7 +31,7 @@ html {
   
   #car_border div{
   width:200px;
-  height: 200px;
+  height: 209px;
   margin-left: -10px;
   border-right:  10px solid orange; /* крутящаяся рамка перед машинкой */
   border-left:  10px solid orange; /* крутящаяся рамка перед машинкой */
@@ -45,7 +45,7 @@ html {
   z-index: -1;
   border:  5px solid red; /* крутящаяся рамка за машинкой */
   padding: 10px;
-  /* transform-origin: 52.5% 45.5%; */
+  /* transform-origin: 50% 54%; */
   display: inline-block;
   margin-top: -15px;
   margin-left: -15px;
