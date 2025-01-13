@@ -10,11 +10,24 @@ body {
     margin-left: 100px;
     cursor: pointer;
     /* cursor: url('public/cats/cat_clean_64.png'), auto; */
-}
+  }
+  
+  
+  *{ 
+    box-sizing: border-box;
+    /* font-size: 25px; */
+    /* color: red; */
+} 
 
 html {
     /* scroll-behavior:smooth;  */
     /*  плавный скрол при нажатии мышки*/
+}
+
+
+#check_pseudo {
+  background-color: aqua;
+  width: 500px !important;
 }
 
 
@@ -1440,3 +1453,25 @@ dt {
         /* width: 500px; */
     }
 }
+
+
+/* @media screen and (max-width:900px){
+  body {
+    background:orange;
+  }
+}
+@media screen and (max-width:800px){
+  body {
+    background:black;
+  }
+}
+@media screen and (max-width:600px){
+  body {
+    background:red;
+  }
+  #test_screen {
+    flex-direction: column;
+  }
+
+} */
+ 
