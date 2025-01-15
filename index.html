@@ -6,9 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <!-- второй способ подключения стилей -->
+  <!-- <link rel="stylesheet" href="style900.css"> -->
+  
 </head>
 
 <body>
+
+  <!--Сubic-bezier для CSS анимации https://cubic-bezier.com/#.17,.67,.67,.55 -->
+
+
+
+  
   <div id="www" style="
     display: flex;
     background-color: gold;
@@ -22,6 +31,86 @@
     <div>4</div>
   </div>
   
+<input type="text" placeholder="Введите имя">
+<input type="text" placeholder="Введите имя">
+<input type="text" placeholder="Введите имя">
+
+
+
+
+
+
+
+
+
+
+
+<div id="infotext">
+  <div>
+    <div style="border: 2px solid #000; padding: 10px 30px;">Logo</div>
+    <input type="text" id="first_input">
+  </div>
+
+    
+  <div>
+    <div>home</div>
+    <div>about</div>
+    <div>gallery</div>
+    <div>contact</div>
+    <input type="text" id="second_input">
+  </div>
+
+</div>
+
+<style>
+  
+  #infotext {
+    margin-top: 500px;
+    margin-bottom: 500px;
+    background-color: lavender;
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    min-width: 380px;
+  }
+  
+  #infotext>div:nth-child(1) {
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  #first_input {
+    height: 20px;
+    display: none;
+  }
+  
+  #infotext>div:nth-child(2) {
+    display: flex;
+    padding: 5px;
+    gap: 2%;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-transform: uppercase;
+    border: 2px solid black;
+  }
+
+  #second_input {
+    width: 50%;
+    max-width: 150px;
+  }
+
+</style>
+
+
+
+
+
   <style>
     #www div {
       border: 3px solid #000;
@@ -51,7 +140,7 @@
 
 
 
-  <div id="ttt" style="display: flex;">
+  <div id="test_box" style="display: flex;">
     <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae vel iusto error dignissimos atque suscipit
       ipsum, corporis quod doloremque explicabo animi sed laboriosam repudiandae libero sequi laborum quos eveniet.
       Quaerat.</div>
@@ -69,9 +158,12 @@
   </div>
 
 
-  <img style="width: 200px; box-shadow: 10px 10px 5px black;" src="public/dog.jpg" alt="">
+  <img id="dog_change_size" src="public/dog.jpg" alt="">
 <style> 
- #ttt div::before {
+
+
+
+ #test_box div::before {
   content: 'TEXT';
   background-color: #000000c1;
   position: absolute;
@@ -84,17 +176,20 @@
   border-radius: 5px 5px 0px 5px;
   }
 
- #ttt div {
+ #test_box div {
    background-color: orangered;
    margin: 10px;
    width:20%;
-   /* min-width: 100px; */
-   /* max-width: 200px; */
+   min-width: 150px;
+   max-width: 250px;
    transition: 1S;
+   padding: 10px;
+   /* min-height: ; */
+   /* max-height: 200px; */
    /* min-width: calc(100px + 100px); */
   }
   
-  #ttt div:hover {   
+  #test_box div:hover {   
     box-shadow: 10px 10px 5px black;
     text-shadow: 2px 0px 2px white ;
   }

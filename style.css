@@ -1,4 +1,10 @@
+
+/*! 3-ий способ подключения стилей */
+/* @import url(style900.css) screen and (max-width:900px); */
+
+
 body {
+  
     /* background: url(public/mountain.jpeg); ..., ..., ... */
     /* общий параметр, можно перечислить несколько свойств*/
     
@@ -1475,3 +1481,70 @@ dt {
 
 } */
  
+#dog_change_size {
+  width: 200px; 
+  box-shadow: 10px 10px 5px black;
+  transition: 1s;
+}
+
+
+
+/*! 1-ый способ */
+@media screen and (max-width:1100px){
+      body {
+        background: red;
+      }
+      #dog_change_size {
+        width: 150px;
+      }
+    }
+
+
+@media screen and (max-width:900px){
+      body {
+        background: greenyellow;
+      }
+      #test_box {
+        flex-direction: column;
+      }
+
+      #test_box div {
+        background: pink !important;
+       
+      }
+
+      #cats_gallery {
+        display: none;
+      }
+
+      #dog_change_size {
+        width: 100px;
+      }
+
+      #first_input {
+        display: block !important;
+      }
+      #second_input {
+        display: none !important;
+      }
+        
+    }
+
+
+@media screen and (max-width:600px){
+      body {
+        background: blueviolet;
+      }
+      #cats_gallery {
+        display: block;
+      }
+
+      #dog_change_size {
+        width: 50px;
+      }
+    
+        
+    }
+
+
+
