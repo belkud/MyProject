@@ -103,6 +103,7 @@
   #second_input {
     width: 50%;
     max-width: 150px;
+    margin-left: auto;
   }
 
 </style>
@@ -140,22 +141,28 @@
 
 
 
-  <div id="test_box" style="display: flex;">
-    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae vel iusto error dignissimos atque suscipit
+<div id="test_box" style="display: flex;">
+  <div>
+    <h3 style="text-align: center;">Lorem</h3>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae vel iusto error dignissimos atque suscipit
       ipsum, corporis quod doloremque explicabo animi sed laboriosam repudiandae libero sequi laborum quos eveniet.
       Quaerat.</div>
-    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae vel iusto error dignissimos atque suscipit
+    <div>
+      <h3 style="text-align: center;">Lorem</h3>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae vel iusto error dignissimos atque suscipit
+        ipsum, corporis quod doloremque explicabo animi sed laboriosam repudiandae libero sequi laborum quos eveniet.
+        Quaerat.</div>
+      <div>
+    <h3 style="text-align: center;">Lorem</h3>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae vel iusto error dignissimos atque suscipit
       ipsum, corporis quod doloremque explicabo animi sed laboriosam repudiandae libero sequi laborum quos eveniet.
       Quaerat.</div>
-    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae vel iusto error dignissimos atque suscipit
+    <div>
+    <h3 style="text-align: center;">Lorem</h3>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae vel iusto error dignissimos atque suscipit
       ipsum, corporis quod doloremque explicabo animi sed laboriosam repudiandae libero sequi laborum quos eveniet.
       Quaerat.</div>
-    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae vel iusto error dignissimos atque suscipit
-      ipsum, corporis quod doloremque explicabo animi sed laboriosam repudiandae libero sequi laborum quos eveniet.
-      Quaerat.</div>
-
-
-  </div>
+</div>
 
 
   <img id="dog_change_size" src="public/dog.jpg" alt="">
@@ -163,12 +170,14 @@
 
 
 
- #test_box div::before {
+ #test_box div h3::before {
   content: 'TEXT';
   background-color: #000000c1;
   position: absolute;
-  margin-left: calc(10% - 35px);
-  margin-top: -10px;   
+  /* margin-left: calc(10% - 35px); */
+  /* margin-left: calc(3% + 20px); */
+  margin-top: -40px;  
+  padding: 5px;
   text-align: center;
   color: white;
   width: 50px;
@@ -337,13 +346,13 @@
 
     .first_line:nth-child(4n) {
       background-color: orange;
-      padding: 100px;
+      padding: 10px;
       margin: 10px;
       border: 2px solid #000;
       box-sizing: border-box;
       /* outline: 2px solid red; */
       /* outline-offset: 25px; */
-      width: calc(50% - 200px);
+      width: calc(80%);
     }
   </style>
 
@@ -455,22 +464,6 @@
     </div>
 
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   </div>
