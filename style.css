@@ -1533,7 +1533,7 @@ dt {
 
 @media screen and (max-width:600px){
       body {
-        background: blueviolet;
+        background: lightgrey;
       }
       #cats_gallery {
         display: block;

@@ -16,8 +16,157 @@
   <!--Сubic-bezier для CSS анимации https://cubic-bezier.com/#.17,.67,.67,.55 -->
 
 
+<form id="library" action="">
+    <h4>Inputs</h4>
+    <div style="display: flex; gap: 5px;">
+      <input name="inp1" type="text" placeholder="Enter some text">
+      <input name="inp2" class="input_img" type="text" placeholder="valid text">
+      <input name="inp3" class="input_img cl_2" type="text" placeholder="invalid text">
+    </div>
 
+    <h4>Check boxes</h4>
+
+    <div style="display: flex; gap: 20px;">
+
+      <div style="display: flex;">
+        <input name="checkbox1" type="checkbox" id="subs1">
+        <label style="margin-left: 25px; margin-top: 3px;" for="subs1">Subscribe</label>
+      </div>
+      <div style="display: flex;">
+        <input name="checkbox2" type="checkbox" id="subs2">
+        <label style="margin-left: 25px; margin-top: 3px;" for="subs2">Subscribe</label>
+      </div>
+    </div>
+
+    <h4>Radio buttons</h4>
+
+    <div style="display: flex; gap: 20px;">
+
+      <div>
+        <input id="male" name="gender" type="radio">
+        <label for="male">Male</label>
+      </div>
+      
+      <div>
+        <input id="female" name="gender" type="radio">
+        <label for="female">Female</label>
+      </div>
+
+    </div>
+
+    <h4>Buttons</h4>
+    <div id="input_btn">
+      <input style="background-color: greenyellow;" type="submit" value="Active">
+      <input style="background-color: green;" type="submit" value="Hover">
+      <input style="background-color: palevioletred;" type="submit" value="Danger">
+      <input style="background-color: rgb(110, 9, 22);" type="submit" value="Hover">
+      <input style="background-color: gray;" type="submit" value="Disabled">
+
+      <button class="button_btn1" >+</button>
+      <button class="button_btn2" >-</button>
+    </div>
+
+    <h4>Text area</h4>
+
+    <div>
+      <textarea name="" id="" cols="45" rows="5" placeholder="Enter some text"></textarea>
+    </div>
+
+</form>
   
+
+
+
+<style>
+#input_btn input {
+  color: white;
+  padding: 5px 20px !important;
+}
+
+.button_btn1 {
+  background-color: green;
+  width: 25px !important;
+  padding-top: 3px;
+  height: 24px;
+  color: aliceblue;
+  border-radius:50% !important;
+  border: none;
+}
+
+.button_btn2 {
+  background-color: red;
+  width: 25px !important;
+  padding-top: 3px;
+  height: 24px;
+  color: aliceblue;
+  border-radius:50% !important;
+  border: none;
+}
+
+
+
+
+
+
+#library {
+  margin: 300px;
+  margin-left: 100px;
+  background-color: #fff;
+  width: 600px;
+  padding: 20px;
+}
+
+#library input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.input_img {
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 150px 3px;
+
+  background-image: url(public/valid.png);
+  border: 2px solid greenyellow;
+}
+
+.input_img::placeholder {
+  color: rgb(86, 131, 18);
+}
+
+.cl_2 {
+  background-image: url(public/invalid.png);
+  border: 2px solid red;
+}
+
+.cl_2::placeholder {
+  color: red;
+}
+
+#subs1::before {
+  content: '';
+  color: transparent;
+  width: 35px;
+  height: 18px;
+  position: absolute;
+  background-image: url(public/img1.png);
+  border-radius: 3px;
+}
+
+#subs2::before {
+  content: '';
+  color: transparent;
+  width: 35px;
+  height: 18px;
+  position: absolute;
+  background-image: url(public/img2.png);
+  border-radius: 3px;
+}
+
+</style>
+ 
+
+
   <div id="www" style="
     display: flex;
     background-color: gold;
