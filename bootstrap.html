@@ -12,15 +12,150 @@
 
 <body>
 
-    <div class="d-flex">
+<div class="" style="margin-bottom: 500px;">
+    <nav class="d-flex justify-content-between p-3">
+        <div class="d-flex gap-4">
+            <img src="public/bootstrap/bank.png" class="col-1" alt="">
+            <div>Home</div>
+            <div>Homework</div>
+            <div>Settings</div>
+        </div>
+        <div><img src="public/bootstrap/av_64.png" class="w-50" alt=""></div>
+    </nav>
+
+    <div class="d-flex justify-content-between align-items-center">
+        <h2 class="mt-5">JavaScript</h2>
+        <h2 class="mt-n5">Homework</h2>
+        <div class="d-flex flex-column gap-2">
+
+            <div>
+                <div id="pseudo-1" class="h-100 w-100 bg-info text-info rounded-5">123</div>
+            </div>
+            <div>
+                <div id="pseudo-1" class="h-100 w-100 bg-danger text-danger rounded-5">123</div>
+            </div>
+            <div>
+                <div id="pseudo-1" class="h-100 w-100 bg-warning text-warning rounded-5">123</div>
+            </div>
+            <div>
+                <div id="pseudo-1" class="h-100 w-100 bg-success text-success rounded-5">123</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="d-flex gap-3 mt-5">
+        <div class="col-4 bg-secondary p-2">
+            <h5>Loops</h5>
+            <div>10/05/2020</div>
+            <form class="d-flex">
+                <input type="text" class="w-75" placeholder="choose file">
+                <input type="submit" value="Browse">
+            </form>
+        </div>
+        <div class="col-4 bg-info text-light p-2">
+            <h5>Loops</h5>
+            <div>10/05/2020</div>
+            <form class="d-flex">
+                <input type="submit" class="w-50 text-white border border-white bg-info rounded-start" value="&#128269; Your file">
+                <input type="submit" class="w-50 bg-info text-white border border-white rounded-end" value="&#129530;Browse">
+            </form>
+        </div>
+        <div class="col-4 bg-info text-light p-2">
+            <h5>Loops</h5>
+            <div>10/05/2020</div>
+            <form class="d-flex">
+                <input type="submit" class="w-50 text-white border border-white bg-info rounded-start" value="&#128269; Your file">
+                <input type="submit" class="w-50 bg-info text-white border border-white rounded-end" value="&#129530;Browse">
+            </form>
+        </div>        
+    </div>
+    
+    <h4 class="mt-5">HTML and CSS</h4>
+    <hr>
+
+    <div class="d-flex gap-3 mt-5">
+        <div class="col-4 bg-danger p-2">
+            <h5>Loops</h5>
+            <div>10/05/2020</div>
+            <form class="d-flex">
+                <input type="text" class="w-75" placeholder="choose file">
+                <input type="submit" value="Browse">
+            </form>
+        </div>
+        <div class="col-4 bg-danger p-2">
+            <h5>Loops</h5>
+            <div>10/05/2020</div>
+            <form class="d-flex">
+                <input type="text" class="w-75" placeholder="choose file">
+                <input type="submit" value="Browse">
+            </form>
+        </div>
+   
+        <div class="col-4 bg-success text-light p-2">
+            <h5>Loops</h5>
+            <div>10/05/2020</div>
+            <form class="d-flex">
+                <input type="submit" class="w-50 text-white border border-white bg-success rounded-start" value="&#128269; Your file">
+                <input type="submit" class="w-50 bg-success text-white border border-white rounded-end" value="&#129530;Browse">
+            </form>
+        </div>        
+    </div>
+
+    <div class="d-flex gap-3 mt-5">
+        <div class="col-4 bg-success text-light p-2">
+            <h5>Loops</h5>
+            <div>10/05/2020</div>
+            <form class="d-flex">
+                <input type="submit" class="w-50 text-white border border-white bg-success rounded-start" value="&#128269; Your file">
+                <input type="submit" class="w-50 bg-success text-white border border-white rounded-end" value="&#129530;Browse">
+            </form>
+        </div>  
+        <div class="col-4 bg-success text-light p-2">
+            <h5>Loops</h5>
+            <div>10/05/2020</div>
+            <form class="d-flex">
+                <input type="submit" class="w-50 text-white border border-white bg-success rounded-start" value="&#128269; Your file">
+                <input type="submit" class="w-50 bg-success text-white border border-white rounded-end" value="&#129530;Browse">
+            </form>
+        </div>  
+        <div class="col-4 bg-success text-light p-2">
+            <h5>Loops</h5>
+            <div>10/05/2020</div>
+            <form class="d-flex">
+                <input type="submit" class="w-50 text-white border border-white bg-success rounded-start" value="&#128269; Your file">
+                <input type="submit" class="w-50 bg-success text-white border border-white rounded-end" value="&#129530;Browse">
+            </form>
+        </div>   
+    </div>
+
+</div>
+
+
+
+
+<style>
+    #pseudo-1::before {
+        content: 'current - ';
+        color: black;
+        position: absolute;
+        margin-left: -60px;
+    }
+    .inp-1::-ms-value {
+        /* color: white; */
+    }
+</style>
+
+
+
+    <div class="d-flex flex-column  flex-md-column-reverse ">
         <div class="text-danger bg-primary pt-3 mx-5 col-4 rounded-3 text-center">Какой-нибудь текст</div>
-        <div class="text-danger bg-primary col-4 pt-3  mx-5 rounded-3 text-center">Какой-нибудь текст</div>
+        <div class="text-danger bg-warning col-4 pt-3  mx-5 rounded-3 text-center">Какой-нибудь текст 2</div>
     </div>
 
 
 <div class="text-danger bg-success w-25 border border-danger my-3 col-lg-6 pt-3 mx-5 rounded-5 shadow text-center">Какой-нибудь текст</div>
 
-<div class="d-md-none text-dark bg-primary col-6 pt-3 rounded-3 text-center">Какой-нибудь текст</div>
+<div class=" carousel-fade d-md-none text-dark bg-primary col-6 pt-3 rounded-3 text-center">Какой-нибудь текст</div>
 
 
 <style></style>
