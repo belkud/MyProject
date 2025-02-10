@@ -15,6 +15,7 @@ body {
     background-attachment: fixed; /* фиксируем или прокручиваем фон */
     margin-left: 100px;
     cursor: pointer;
+   
     /* cursor: url('public/cats/cat_clean_64.png'), auto; */
   }
   
