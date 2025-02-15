@@ -26,8 +26,6 @@ console.log(y-y2)
 console.log(y*y2)
 console.log(y/y2)
 console.log(y**2) // возведение числа в степень
-console.log(y*y) // возведение числа в степень
-
 console.log(y%y2) // остаток от деления 
 
 
@@ -88,6 +86,5 @@ console.log('переменная j = ' + j)
 // промпт
 
 console.log('вам '+ (2025 - 'год рождения пользователя'))
-
 
 
