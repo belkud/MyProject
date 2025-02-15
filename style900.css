@@ -3,6 +3,10 @@
 
 @media screen and (max-width:900px){
     body {
-      background: red !important;
+      background: red;
     }
+
+
+
+
  }

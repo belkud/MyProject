@@ -8,42 +8,343 @@
   <link rel="stylesheet" href="style.css">
   <!-- второй способ подключения стилей -->
   <!-- <link rel="stylesheet" href="style900.css"> -->
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+ 
+ 
+
 
 <body>
-  <div id="first_div">
 
-    <div id="back_image">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id deserunt, esse quaerat obcaecati minus blanditiis modi est aliquam assumenda consequuntur, quasi porro recusandae earum, deleniti libero sequi a neque.
-      Tenetur, quibusdam ab quis, repellendus minima exercitationem ea commodi, voluptates voluptatem ratione in quos esse ducimus laboriosam ipsa doloribus rem ad modi? Fugit tenetur rem temporibus voluptas impedit ipsa fuga!
-      Nesciunt inventore quod corporis, sed similique, dolor qui harum obcaecati nostrum quaerat quia rem vitae magnam asperiores minima aperiam molestias ut minus. Laudantium, iusto laborum assumenda quia a veritatis quis.
-      Voluptatum, quos. Corporis nobis repellendus veritatis fugiat veniam eos soluta ab! Neque explicabo laboriosam ducimus facere quos officiis odit vero quas laudantium! Veniam nemo minima maxime tempore ad, laboriosam pariatur.
-      Est vel explicabo aliquid fuga deleniti corrupti, labore consectetur nesciunt consequatur voluptas, cum nulla sequi laborum nam pariatur? Sequi harum quam repellat excepturi sit at quos expedita molestiae laboriosam hic!
-      Eveniet quisquam nemo minus fuga repellendus architecto eaque soluta molestias quidem, quibusdam omnis sit libero in ullam. Magnam quae commodi asperiores maiores reprehenderit soluta voluptates autem quia, quis, magni quod?
-      Commodi minus, earum iure neque impedit quia possimus magni cum repellendus libero sequi, quasi non sint similique officia necessitatibus sed nostrum facilis numquam corrupti aperiam? At aperiam deleniti numquam veritatis!
-      Libero praesentium eligendi saepe, excepturi quis recusandae at, ad iste aperiam, non minima blanditiis. Neque earum enim consequatur, mollitia quisquam velit harum ex exercitationem illo numquam, sed error facere deserunt.</div>
-      
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          Accordion Item #1
+        </button>
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          Accordion Item #1
+        </button>
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          Accordion Item #1
+        </button>
+      </h2>
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse show"
+        aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          This is the first item's accordion body.
+        </div>
+      </div>
     </div>
+    
+  </div>
+  
+  <div
+    class="btn-group"
+    role="group"
+    aria-label="Basic checkbox toggle button group"
+  >
+    <input
+      type="checkbox"
+      class="btn-check"
+      id="btncheck1"
+      autocomplete="off"
+    />
+    <label
+      class="btn btn-outline-primary"
+      for="btncheck1"
+      >First One</label
+    >
+  
+    <input
+      type="checkbox"
+      class="btn-check"
+      id="btncheck2"
+      autocomplete="off"
+    />
+    <label
+      class="btn btn-outline-primary"
+      for="btncheck2"
+      >Second One</label
+    >
+  
+    <input
+      type="checkbox"
+      class="btn-check"
+      id="btncheck3"
+      autocomplete="off"
+    />
+    <label
+      class="btn btn-outline-primary"
+      for="btncheck3"
+      >Third One</label
+    >
+  </div>
+  
+
+  <div id="fl">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <!-- <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div> -->
+      <!-- <div>10</div> -->
+  </div>
+      <style>
+        #fl {
+          display: flex;
+          /* flex-wrap: wrap; */
+        }
+  #fl div {
+    border: 1px solid #000;
+    width: 10%;
+    height: 100px;
+    /* width: 200px; */
+    flex-basis: 30% ;
+  }
+  
+  #fl div:nth-child(3) {
+    background: orange;
+    flex-grow: 5;
+    flex-shrink: 2;
+  }
+  #fl div:nth-child(4) {
+    background: #45abf5;
+    flex-grow: 5;
+  }
+
+
+
+</style>
+
+  <div id="gr">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+      <div>19</div>
+      <div>20</div>
+  </div>
+
+  <style>
+    #gr{
+      margin-top: 100px;
+        display: grid;
+        /* grid-template-columns: repeat(4, 200px 3fr); */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10,50px);
+
+    }
+    #gr div{
+      border: 1px solid #000;
+      padding: 10px;
+      background-color: antiquewhite;
+    }
+    #gr div:nth-child(4){
+      background-color: aqua;
+      background-image:url(public/book.png);
+      grid-column: 1/2;
+      grid-row: 2/5;
+    }
+
+  </style>
+
+
+<form action="" method="get">
+  <div>
+    <label for="">Имя</label>
+    <input type="text" placeholder="Введите имя" name="your_name" value="123">
+  </div>
+
+  <div>
+    <input type="checkbox" id="agree" checked disabled>
+    <label for="agree">Согласен с договором</label>
+  </div>
+
+  <div>
+    <input type="radio" id="gender" name="genders">
+    <label for="gender">Мужской</label>
+  </div>
+  <div>
+    <input type="radio" id="gender2" name="genders">
+    <label for="gender2">Женский</label>
+  </div>
+  <input type="password" name="pass" placeholder="Пароль">
+  <input type="email" name="" id="">
+  <div>
+    <input type="submit" value="Отправка данных">
+  </div>
+
+  <div>
+ 
+
+    <select style="width: 200px;" id="nameOfPizza" name="nameOfPizza">
+      <option>Margherita</option>
+      <option>Marinara</option>
+      <option>Quattro Stagioni</option>
+      <option>Q
+
+
+  </div>
+</form>
+
+
+
+
+  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident harum, est odit recusandae suscipit dolorum
+    distinctio reprehenderit magnam tempore numquam, aperiam officia ab accusantium accusamus nobis! Aperiam voluptas
+    ratione consequatur!</P>
+    <P>Odio quae ducimus, quidem quo neque explicabo, pariatur corporis facere autem sunt nostrum modi nisi possimus
+      beatae laboriosam a assumenda? Asperiores quis sed sint, dolores perspiciatis deserunt quasi neque aperiam?</P>
+      <P>Ut quibusdam, repellendus unde perspiciatis dicta ea debitis, voluptatem magnam magni facilis alias aliquid dolore
+        beatae natus ipsa saepe temporibus nostrum obcaecati? Esse, quod? Reprehenderit recusandae repudiandae perferendis
+        unde architecto?</P>
+
+
+
+<div >
+  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident harum, est odit recusandae suscipit dolorum
+    distinctio reprehenderit magnam tempore numquam, aperiam officia ab accusantium accusamus nobis! Aperiam voluptas
+    ratione consequatur!</P>
+    <P>Odio quae ducimus, quidem quo neque explicabo, pariatur corporis facere autem sunt nostrum modi nisi possimus
+      beatae laboriosam a assumenda? Asperiores quis sed sint, dolores perspiciatis deserunt quasi neque aperiam?</P>
+      <P>Ut quibusdam, repellendus unde perspiciatis dicta ea debitis, voluptatem magnam magni facilis alias aliquid dolore
+        beatae natus ipsa saepe temporibus nostrum obcaecati? Esse, quod? Reprehenderit recusandae repudiandae perferendis
+        unde architecto?</P>
+        <P>Porro voluptatum beatae fugiat recusandae qui non natus omnis quisquam error ratione eius voluptatibus eum
+    reiciendis, delectus veritatis repudiandae. Impedit fugiat consequuntur facilis unde qui necessitatibus at tempora
+    aliquam fuga!</P>
+    <P style="background-color: #45abf5; top: 100px; left: -100px; z-index: -5;">Dolore, incidunt? Suscipit, eligendi ab ipsam vero ipsa hic consequatur, ullam laborum, quod cupiditate harum optio
+      perspiciatis necessitatibus eos velit? Labore perspiciatis perferendis doloribus quas tempora minus, quibusdam ipsum
+      possimus.</P>
+      <P>Praesentium quos quod dolor, ad, eveniet voluptatibus, porro ullam officiis asperiores harum quo doloribus! Ipsum
+        non repellat repellendus, praesentium ea magni adipisci veniam accusamus recusandae et tempora, fuga assumenda
+    beatae!</P>
+    <P>Vitae, nulla. Fuga quo temporibus harum sit nisi exercitationem vitae, recusandae, nesciunt ipsum eligendi
+      doloribus fugit. Vel, debitis. Inventore corporis vel, quos consectetur molestias aperiam eius? Quibusdam quae id
+    ea.</P>
+    <P>Deleniti neque vitae repellat molestias, dolorum iste numquam consequatur eos corporis consequuntur! Incidunt
+    laudantium deleniti, expedita ducimus a culpa alias voluptate quos, repellat ipsum praesentium optio sunt recusandae
+    quam nostrum!</P>
+    <P>Perferendis itaque praesentium molestias numquam, cumque neque, accusantium distinctio veritatis error, aliquid est
+    quasi odio voluptate perspiciatis quam dolor a. Porro architecto itaque recusandae consequuntur provident blanditiis
+    temporibus eligendi iusto.</P>
+  <P>Magni consequuntur accusantium omnis quae est provident obcaecati, vitae quasi in dignissimos cupiditate sapiente
+    praesentium saepe atque perspiciatis voluptas. Amet dolore provident fuga asperiores? Ratione velit aspernatur id
+    maiores possimus.</P>
+    <P>Voluptas quisquam eum eius perferendis sint ad numquam doloribus architecto nulla rerum non excepturi suscipit
+    molestias a, quibusdam, et earum quis perspiciatis ipsum aspernatur! Enim minus dolorum ea assumenda provident.</P>
+    <P>Facilis quam minus reprehenderit itaque animi veritatis quibusdam reiciendis voluptatum amet harum quisquam ea
+      nulla excepturi eligendi officia enim cum, quidem dolores est rem earum repellat! Accusantium temporibus inventore
+    repudiandae.</P>
+    <P>Illo consequuntur vitae error aut sunt amet et nesciunt repellat ratione ipsam debitis officia aperiam eaque
+    molestiae facilis impedit cumque fugit, iste voluptates minima, sapiente eligendi rem totam! Alias, earum?</P>
+    <P>Impedit praesentium, exercitationem sed provident voluptatibus, maxime deserunt, ipsum autem quasi earum
+      perferendis aliquid laudantium ad veritatis facilis aperiam illum? Fuga rerum expedita reprehenderit, aliquam
+      ducimus quos repellendus aperiam? Excepturi!</P>
+      <P>Nostrum nihil nemo quos quas facere ex, numquam vel ut impedit vero quia. Unde tenetur sequi, in, corrupti, atque
+    mollitia laudantium suscipit qui magni delectus vel nihil sed natus aliquam.</P>
+  <P>In architecto quam similique eius eligendi laborum nulla praesentium, quo, ut assumenda reiciendis tenetur. Saepe,
+    voluptatem aliquam, perferendis facere neque nihil voluptates impedit modi quidem in totam vel itaque consequuntur?
+  </P>
+  <P>Quia libero iure sunt eius quaerat, omnis repellat porro cum, a qui, in molestiae? Molestiae, saepe esse deserunt,
+    qui dolorum error aperiam ex voluptates explicabo sapiente maxime provident quidem dolores.</P>
+  <P>Repellat accusantium minus quis nobis vel magni provident, eligendi maxime aliquid culpa nostrum sequi cupiditate
+    tenetur doloremque consequuntur distinctio dicta? Culpa cumque harum deleniti magni earum nam ad explicabo quis?</P>
+    <P>Iure blanditiis pariatur, quo dolorem et assumenda nam itaque animi ducimus illum placeat numquam. Maiores repellat
+      maxime assumenda totam veniam explicabo ut neque sed, quasi incidunt, obcaecati laborum magnam minus.</P>
+      <P>Ipsam, corporis maiores, totam ullam rerum sint labore harum dolorem enim aliquid sequi deleniti fugit laudantium
+        omnis autem voluptates libero doloribus dolore mollitia placeat molestias facilis a repudiandae! Iusto, saepe.</P>
+  </div>
+        
+        <div id="first_div">
+
+
+          
+          
+          <div id="back_image">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id deserunt, esse quaerat
+      obcaecati minus blanditiis modi est aliquam assumenda consequuntur, quasi porro recusandae earum, deleniti libero
+      sequi a neque.
+      Tenetur, quibusdam ab quis, repellendus minima exercitationem ea commodi, voluptates voluptatem ratione in quos
+      esse ducimus laboriosam ipsa doloribus rem ad modi? Fugit tenetur rem temporibus voluptas impedit ipsa fuga!
+      Nesciunt inventore quod corporis, sed similique, dolor qui harum obcaecati nostrum quaerat quia rem vitae magnam
+      asperiores minima aperiam molestias ut minus. Laudantium, iusto laborum assumenda quia a veritatis quis.
+      Voluptatum, quos. Corporis nobis repellendus veritatis fugiat veniam eos soluta ab! Neque explicabo laboriosam
+      ducimus facere quos officiis odit vero quas laudantium! Veniam nemo minima maxime tempore ad, laboriosam pariatur.
+      Est vel explicabo aliquid fuga deleniti corrupti, labore consectetur nesciunt consequatur voluptas, cum nulla
+      sequi laborum nam pariatur? Sequi harum quam repellat excepturi sit at quos expedita molestiae laboriosam hic!
+      Eveniet quisquam nemo minus fuga repellendus architecto eaque soluta molestias quidem, quibusdam omnis sit libero
+      in ullam. Magnam quae commodi asperiores maiores reprehenderit soluta voluptates autem quia, quis, magni quod?
+      Commodi minus, earum iure neque impedit quia possimus magni cum repellendus libero sequi, quasi non sint similique
+      officia necessitatibus sed nostrum facilis numquam corrupti aperiam? At aperiam deleniti numquam veritatis!
+      Libero praesentium eligendi saepe, excepturi quis recusandae at, ad iste aperiam, non minima blanditiis. Neque
+      earum enim consequatur, mollitia quisquam velit harum ex exercitationem illo numquam, sed error facere deserunt.
+    </div>
+
+  </div>
 
 
   <style>
     #back_image {
       margin-bottom: 600px;
-      
+
       width: 500px;
       height: 300px;
       border: 20px solid #000;
       /* background-image: url(public/city/road3.jpg); */
       background-repeat: no-repeat;
       background-position: 0px 0px;
-      background-size:500px 300px;
+      background-size: 500px 300px;
       color: #fff;
       padding: 50px;
       /* position: absolute; */
       overflow-y: scroll;
       box-sizing: border-box;
     }
-    
+
     /* #first_div {
       border: 5px solid green;
       width: 400px;
@@ -53,90 +354,85 @@
     } */
   </style>
 
-  
-    <table id="test_table">
-      <tr>
-        <th>Заголовок 1</th>
-        <th>Заголовок 2</th>
-        <th>Заголовок 3</th>
-        <th>Заголовок 4</th>
-        <th>Заголовок 5</th>
-      </tr>
 
-      <tr>
-        <td colspan="5">Ячейка 1111</td>
-        <!-- <td>Ячейка 2</td>
+  <table id="test_table">
+    <tr>
+      <th>Заголовок 1</th>
+      <th>Заголовок 2</th>
+      <th>Заголовок 3</th>
+      <th>Заголовок 4</th>
+      <th>Заголовок 5</th>
+    </tr>
+
+    <tr>
+      <td colspan="5">Ячейка 1111</td>
+      <!-- <td>Ячейка 2</td>
         <td>Ячейка 3</td>
         <td>Ячейка 4</td>
         <td>Ячейка 5</td> -->
-      </tr>
-      <tr>
-        <td rowspan="3">Ячейка 1</td>
-        <td>Ячейка 2</td>
-        <td>Ячейка 3</td>
-        <td>Ячейка 4</td>
-        <td>Ячейка 5</td>
-      </tr>
-      <tr>
-        <!-- <td>Ячейка 1</td> -->
-        <td>Ячейка 2</td>
-        <td>Ячейка 3</td>
-        <td>Ячейка 4</td>
-        <td>Ячейка 5</td>
-      </tr>
-      <tr>
-        <!-- <td>Ячейка 1</td> -->
-        <td>Ячейка 2</td>
-        <td>Ячейка 3</td>
-        <td>Ячейка 4</td>
-        <td>Ячейка 5</td>
-      </tr>
-      <tr>
-        <td>Ячейка 1</td>
-        <td>Ячейка 2</td>
-        <td>Ячейка 3</td>
-        <td>Ячейка 4</td>
-        <td>Ячейка 5</td>
-      </tr>
-    </table>
+    </tr>
+    <tr>
+      <td rowspan="3">Ячейка 1</td>
+      <td>Ячейка 2</td>
+      <td>Ячейка 3</td>
+      <td>Ячейка 4</td>
+      <td>Ячейка 5</td>
+    </tr>
+    <tr>
+      <!-- <td>Ячейка 1</td> -->
+      <td>Ячейка 2</td>
+      <td>Ячейка 3</td>
+      <td>Ячейка 4</td>
+      <td>Ячейка 5</td>
+    </tr>
+    <tr>
+      <!-- <td>Ячейка 1</td> -->
+      <td>Ячейка 2</td>
+      <td>Ячейка 3</td>
+      <td>Ячейка 4</td>
+      <td>Ячейка 5</td>
+    </tr>
+    <tr>
+      <td>Ячейка 1</td>
+      <td>Ячейка 2</td>
+      <td>Ячейка 3</td>
+      <td>Ячейка 4</td>
+      <td>Ячейка 5</td>
+    </tr>
+  </table>
 
-    <style>
-      #test_table {
-        background: lightgray;
-        border: 2px solid blue;
-        margin: 20px;
-        padding: 20px;
-        margin-top: 300px;
-        /* border-collapse: collapse; */
-      }
-      
-      #test_table td{
-        border: 2px solid blue;
-      }
-      
-      #test_table th{
-        border: 2px solid red;
-      }
-      
-      #test_table tr:nth-child(even) {
-        background-color: rgba(128, 128, 128, 0.432);
-      }
-      
-      #test_table td:nth-child(even) {
-        background-color: rgba(128, 128, 128, 0.432);
-      }
+  <style>
+    #test_table {
+      background: lightgray;
+      border: 2px solid blue;
+      margin: 20px;
+      padding: 20px;
+      margin-top: 300px;
+      /* border-collapse: collapse; */
+    }
 
+    #test_table td {
+      border: 2px solid blue;
+    }
 
+    #test_table th {
+      border: 2px solid red;
+    }
 
+    #test_table tr:nth-child(even) {
+      background-color: rgba(128, 128, 128, 0.432);
+    }
 
-
-    </style>
+    #test_table td:nth-child(even) {
+      background-color: rgba(128, 128, 128, 0.432);
+    }
+  </style>
 
 
 
 
 
-  
+
   <div class="block2" style="">4325 <br> 34 <b>wr5wetr</b>5345</div>
   <div class="block2" style="position: absolute;">5555555 <br> 34 <b>wr5wetr</b>5345</div>
   <div class="block2" style="">4325 <br> 34 <b>wr5wetr</b>5345</div>
@@ -151,57 +447,64 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste, quidem optio distinctio quos, excepturi
       repellat deserunt, libero modi itaque quia autem rem ducimus explicabo tempore. Quod amet maiores voluptatum
     </div>
-  <p class="first-line2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eveniet in hic vero aliquid distinctio accusantium repudiandae, adipisci corrupti ullam nemo dolorum iste blanditiis laboriosam, tenetur quidem quam culpa porro!</p>
-  <div class="first-line2">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste, quidem optio distinctio quos, excepturi
-    repellat deserunt, libero modi itaque quia autem rem ducimus explicabo tempore. Quod amet maiores voluptatum
+    <p class="first-line2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eveniet in hic vero aliquid
+      distinctio accusantium repudiandae, adipisci corrupti ullam nemo dolorum iste blanditiis laboriosam, tenetur
+      quidem quam culpa porro!</p>
+    <div class="first-line2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste, quidem optio distinctio quos, excepturi
+      repellat deserunt, libero modi itaque quia autem rem ducimus explicabo tempore. Quod amet maiores voluptatum
+    </div>
+    <p class="first-line2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eveniet in hic vero aliquid
+      distinctio accusantium repudiandae, adipisci corrupti ullam nemo dolorum iste blanditiis laboriosam, tenetur
+      quidem quam culpa porro!</p>
+    <blockquote class="first-line2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odio delectus
+      harum maxime error quo consequatur, autem laboriosam placeat suscipit?</blockquote>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste, quidem optio distinctio quos, excepturi
+      repellat deserunt, libero modi itaque quia autem rem ducimus explicabo tempore. Quod amet maiores voluptatum
+    </div>
+
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eveniet in hic vero aliquid distinctio
+      accusantium repudiandae, adipisci corrupti ullam nemo dolorum iste blanditiis laboriosam, tenetur quidem quam
+      culpa porro!</p>
   </div>
-  <p class="first-line2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eveniet in hic vero aliquid distinctio accusantium repudiandae, adipisci corrupti ullam nemo dolorum iste blanditiis laboriosam, tenetur quidem quam culpa porro!</p>
-  <blockquote class="first-line2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odio delectus harum maxime error quo consequatur, autem laboriosam placeat suscipit?</blockquote>
-  <div>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste, quidem optio distinctio quos, excepturi
-    repellat deserunt, libero modi itaque quia autem rem ducimus explicabo tempore. Quod amet maiores voluptatum
-  </div>
-  
-  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eveniet in hic vero aliquid distinctio accusantium repudiandae, adipisci corrupti ullam nemo dolorum iste blanditiis laboriosam, tenetur quidem quam culpa porro!</p>
-</div>
 
 
-<style>
-  .first-line2::first-line {
-    color: blue;
-  }
-  
-  .first-line2::first-letter {
-    color: red;
-    font-size: 25px;
-    background-color: yellowgreen;
-    padding: 5px;
-  }
-  
-  .first-line2:last-child {
-      background-color: rgb(180, 30, 118) !important; 
+  <style>
+    .first-line2::first-line {
+      color: blue;
     }
-</style>
+
+    .first-line2::first-letter {
+      color: red;
+      font-size: 25px;
+      background-color: yellowgreen;
+      padding: 5px;
+    }
+
+    .first-line2:last-child {
+      background-color: rgb(180, 30, 118) !important;
+    }
+  </style>
 
 
 
 
 
 
-<ul style="list-style-type: none; margin-left: -30px;">
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-</ul>
+  <ul style="list-style-type: none; margin-left: -30px;">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ul>
 
-<ol start="0" id="ol_text">
-  <li><a href="bootstrap.html">Переход во вкладку Bootsrap</a> </li>
-  <li>text</li>
-  <li>text</li>
-  <li>text</li>
-</ol>
+  <ol start="0" id="ol_text">
+    <li><a href="bootstrap.html">Переход во вкладку Bootsrap</a> </li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+  </ol>
 
   <style>
     .block2 {
@@ -209,19 +512,19 @@
       width: 150px;
 
       /* animation: Anim3 2s; */
-      
+
       animation: Anim3 alternate 2s 1s 3;
       transition: 2s;
       border: 1px solid #000;
-      
-      
-      
+
+
+
       animation: name duration timing-function delay iteration-count direction fill-mode;
-      
+
       animation-timing-function: steps(5);
-      
+
     }
-    
+
     .block2:hover {
       /* transform: scale(1.2); */
       /* transform:rotateY(90deg); */
@@ -237,17 +540,20 @@
 
 
     @keyframes Anim3 {
-      0%{
-        background: orange ;
+      0% {
+        background: orange;
       }
-      25%{
+
+      25% {
         background: green;
       }
-      50%{
-        background: rebeccapurple ;
+
+      50% {
+        background: rebeccapurple;
       }
-      75%{
-        background: white ;
+
+      75% {
+        background: white;
       }
 
       100% {
@@ -255,16 +561,12 @@
       }
 
     }
-    
-    
+
+
     @keyframes Anim3 {
-     from {
+      from {}
 
-     }
-     
-     to {
-
-     }
+      to {}
     }
 
 
@@ -296,12 +598,11 @@
 
     #ol_text li::before {
       content: counter(number);
-      counter-increment: number; 
+      counter-increment: number;
       font-size: 30px;
       color: aqua;
 
     }
-
   </style>
 
 
@@ -2522,8 +2823,10 @@
 
 
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
